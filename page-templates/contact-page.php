@@ -28,7 +28,6 @@ get_header();
 		</div>
 	</div>
 	<div class="page-content">
-		<div class="container">	
 			<?php while ( have_posts() ) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					
@@ -38,34 +37,11 @@ get_header();
 				
 				</article><!-- #post -->
 			<?php endwhile; // end of the loop. ?>
-		</div>
 		<div class="brands-logo other-page">
 			<div class="container">
 			<?php echo do_shortcode('[ourbrands]'); ?>
 			</div>
-		</div>
-		<div class="home-static3 other-page">
-			<div class="container">
-				<?php if(isset($chairman_opt['static_block3'])) {
-					echo wp_kses($chairman_opt['static_block3'], array(
-						'a' => array(
-						'class' => array(),
-						'href' => array(),
-						'title' => array()
-						),
-						'img' => array(
-							'src' => array(),
-							'alt' => array()
-						),
-						'strong' => array(),
-						'h2' => array(),
-						'p' => array(),
-						'i' => array(),
-					)); 
-				} ?>
-			</div>	
-		</div>
-		
+		</div>		
 	</div>
 </div>
 <?php
