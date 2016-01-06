@@ -401,10 +401,10 @@ Class chairman {
 		// This theme uses a custom image size for featured images, displayed on "standard" posts.
 		add_theme_support( 'post-thumbnails' );
 
-		set_post_thumbnail_size( 870, 9999 ); // Unlimited height, soft crop
-		add_image_size( 'chairman-category-thumb', 320, 320, true ); // (cropped)
-		add_image_size( 'chairman-post-thumb', 650, 440, true ); // (cropped)
-		add_image_size( 'chairman-post-thumbwide', 370, 250, true ); // (cropped)
+		set_post_thumbnail_size( 1170, 9999 ); // Unlimited height, soft crop
+		add_image_size( 'chairman-category-thumb', 1170, 1037, true ); // (cropped)
+		add_image_size( 'chairman-post-thumb', 1170, 1037, true ); // (cropped)
+		add_image_size( 'chairman-post-thumbwide', 370, 328, true ); // (cropped)
 	}
 	//Override woocommerce widgets
 	function chairman_override_woocommerce_widgets() {

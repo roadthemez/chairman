@@ -641,6 +641,7 @@
   border: 1px solid #f1f0f0;
   border-left: 0;
   padding: 33px 5px 10px;
+  min-height: 326px;
 }
 .main-container .testimonials-container .testimonials blockquote {
   border: none;
