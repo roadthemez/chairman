@@ -991,55 +991,13 @@
 .main-container.contact-page .page-content {
   padding-bottom: 0;
 }
-.main-container.contact-page .contact-infor ul {
-  list-style: none;
-  background: #f8f8f8;
-  padding: 50px 0;
-  float: left;
-  width: 100%;
-}
-.main-container.contact-page .contact-infor ul li {
-  clear: both;
-  float: left;
-  text-align: center;
-  font-size: 13px;
-  text-transform: uppercase;
-  margin-bottom: 46px;
-  width: 100%;
-}
-.main-container.contact-page .contact-infor ul li:last-child {
+.main-container.contact-page .title-breadcrumb {
   margin-bottom: 0;
 }
-.main-container.contact-page .contact-infor ul li.call-contact h4 {
-  font-size: 18px;
-}
-.main-container.contact-page .contact-infor ul li i {
-  display: inline-block;
-  height: 52px;
-  width: 52px;
-  line-height: 48px;
-  text-align: center;
-  color: #838383;
-  border: 2px solid #e6e6e6;
-  background: #fff;
-  font-size: 20px;
-  border-radius: 100%;
-  margin-bottom: 26px;
-}
-.main-container.contact-page .contact-infor ul li h4 {
-  font-size: 15px;
-  font-weight: 500;
-}
-.main-container.contact-page .contact-form h3 {
-  background: url(../images/bg-widget-title.png) no-repeat left bottom;
-  font-size: 20px;
-  margin: 0 0 40px;
-  padding-bottom: 15px;
-  text-transform: uppercase;
-  width: 100%;
-}
-.main-container.contact-page .wpcf7 {
-  margin: 0 0 50px;
+.main-container.contact-page .contact-form .wpb_content_element h2,
+.main-container.contact-page .contact-infor .wpb_content_element h2 {
+  font-weight: 900;
+  font-size: 30px;
 }
 .main-container.contact-page .contact-input {
   display: block;
@@ -1067,7 +1025,7 @@
 }
 .main-container.contact-page .contact-input span input,
 .main-container.contact-page .contact-input span .wpcf7-text {
-  background: none;
+  background: #f2f2f2;
   border: 1px solid #e3e3e3;
   border-radius: 0;
   height: 46px;
@@ -1096,7 +1054,6 @@
   background: #fbaf5d;
   border-radius: 0;
   color: #fff;
-  float: right;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 700;
@@ -1104,12 +1061,23 @@
   line-height: 45px;
   padding: 0 36px;
   text-transform: uppercase;
-  width: 100%;
   border: none;
-  border-radius: 20px;
 }
 .main-container.contact-page .wpcf7-submit:hover {
   background: #999999;
+}
+.main-container.contact-page .address ul {
+  max-width: 380px;
+}
+.main-container.contact-page .address ul li {
+  padding: 10px 0;
+  border-top: 1px solid #e4e4e4;
+}
+.main-container.contact-page .address ul li i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
 }
 .main-container.default-page blockquote {
   background: #e0e0e0;
