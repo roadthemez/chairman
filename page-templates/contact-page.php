@@ -37,11 +37,6 @@ get_header();
 				
 				</article><!-- #post -->
 			<?php endwhile; // end of the loop. ?>
-		<div class="brands-logo other-page">
-			<div class="container">
-			<?php echo do_shortcode('[ourbrands]'); ?>
-			</div>
-		</div>		
 	</div>
 </div>
 <?php
