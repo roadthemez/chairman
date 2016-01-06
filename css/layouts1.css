@@ -138,7 +138,6 @@
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
-  width: 60%;
   margin: 0 auto 15px;
   -webkit-transform: translate(0,30px);
   -moz-transform: translate(0,30px);
@@ -208,6 +207,7 @@
 .main-container .banner-static1 .box.box1 .text h3 {
   border-bottom: 1px dotted #424242;
   padding-bottom: 20px;
+  width: 60%;
 }
 .main-container .banner-static1 .box.box1 .text p a.shopnow {
   margin-top: 70px;
@@ -401,6 +401,7 @@
 .main-container .latest-posts .posts-carousel .item-col .post-wrapper {
   position: relative;
   overflow: hidden;
+  min-height: 180px;
 }
 .main-container .latest-posts .posts-carousel .item-col .post-wrapper:hover .post-info h3.post-title a:after {
   height: 2px;
