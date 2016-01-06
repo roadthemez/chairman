@@ -1079,6 +1079,123 @@
   text-align: center;
   line-height: 40px;
 }
+.main-container.contact-page .box-contact-1 {
+  text-align: center;
+}
+.main-container.contact-page .box-contact-1 .widget_text .widgettitle {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.main-container.contact-page .box-contact-2 {
+  text-align: center;
+}
+.main-container.contact-page .box-contact-2 .vc_icon_element > div {
+  width: 95px !important;
+  height: 95px !important;
+  text-align: center;
+  line-height: 95px !important;
+  border-radius: 100%;
+  box-shadow: 0 0 0 3px #2f2f2f;
+  color: #fff;
+  border: 0;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.main-container.contact-page .box-contact-2 .vc_icon_element > div:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  top: -2px;
+  left: -2px;
+  padding: 2px;
+  z-index: -1;
+  background: #2f2f2f;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.main-container.contact-page .box-contact-2 .vc_icon_element > div:hover {
+  box-shadow: 0 0 0 3px #fbaf5d;
+}
+.main-container.contact-page .box-contact-2 .vc_icon_element > div:hover:after {
+  -webkit-transform: scale(0.85);
+  -moz-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  background: #fbaf5d;
+}
+.main-container.contact-page .box-contact-2 .vc_icon_element > div span,
+.main-container.contact-page .box-contact-2 .vc_icon_element > div a {
+  color: #fff !important;
+}
+.main-container.contact-page .box-contact-3 .contact-input span input {
+  background: #e7e7e7;
+}
+.main-container.contact-page .box-contact-3 .contact-message .wpcf7-textarea {
+  background: #e7e7e7;
+}
+.main-container.contact-page .box-contact-3 .contact-submit {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.main-container.contact-page .box-contact-4 {
+  text-align: center;
+}
+.main-container.contact-page .box-contact-4 .vc_icon_element > div {
+  width: 95px !important;
+  height: 95px !important;
+  text-align: center;
+  line-height: 95px !important;
+  border-radius: 100%;
+  color: #fff;
+  border: 0;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+  background: rgba(120,120,120,0.61);
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  transition: background 0.2s, color 0.2s;
+}
+.main-container.contact-page .box-contact-4 .vc_icon_element > div:after {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 50%;
+  content: '';
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  right: 4px;
+  z-index: 1;
+  border: 2px solid transparent;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.main-container.contact-page .box-contact-4 .vc_icon_element > div:hover {
+  background: #fbaf5d;
+}
+.main-container.contact-page .box-contact-4 .vc_icon_element > div:hover:after {
+  border-color: #fff;
+}
+.main-container.contact-page .box-contact-4 .vc_icon_element > div span,
+.main-container.contact-page .box-contact-4 .vc_icon_element > div a {
+  z-index: 11;
+  color: #fff !important;
+}
 .main-container.default-page blockquote {
   background: #e0e0e0;
   border: none;
