@@ -82,68 +82,48 @@
 	.f-logo{
 		text-align: center;
 	}
-	.header-container{
-
-		&.layout4, &.layout7 {
-			.header-search {
-				padding-left: 0;
-			}
-			.widget.widget_shopping_cart {
-				padding: 12px 0;
-			}
-		}
-		.header {
-			.horizontal-menu {
-				#mega_main_menu_first {
-					& > .menu_holder {
-						.menu_inner {
-							& > ul {
-								& > li {
-									a.item_link {
-										padding: 30px 15px;
-									}
-								}
-							}
-						}
+	.main-container {
+		.banner-static1 {
+			.box {
+				.text {
+					.text-inner {
+						margin-top: -50px;
+					}
+					h3 {
+						font-size: 18px;
+					}
+					p {
+						a.shopnow {
+							font-size: 11px;
+							padding: 0 20px;
+							line-height: 31px;	
+						} 
 					}
 				}
 			}
 		}
-		.header-search {
-			padding: 32px 10px;
-		}
-		.widget.widget_shopping_cart {
-			padding: 32px 10px;
-		}
-		.vmenu-toggler {
-			padding: 32px 0 32px 10px;
-		}
-	}
-	.sidebar-home.collapse-menu {
-		width: 250px;
-
-		&.layout6 {
-			.widget {
-				&.widget_shopping_cart {
-					border: none;
-					padding: 0;
-					bottom: 60px;
+		.testimonials-container {
+			.title1 {
+				margin-bottom: 13px;
+			}
+			.box-testimonial {
+				.vc_column-inner {
+					& > .wpb_wrapper {
+						padding: 8px 5px 0px;
+						min-height: 251px;
+					}
 				}
-				&.widget_text:last-child {
-					bottom: 20px;
+			}
+			.testimonials {
+				blockquote {
+					margin-bottom: 5px;
+				}
+				img {
+					margin-bottom: 5px;
 				}
 			}
 		}
-		.widget.widget_product_search {
-			form {
-				width: 211px;
-
-				#ws {
-					width: 162px;
-				}
-			}
-		}
-	}
+	} 
 	.quickview-wrapper {
 		.qvbtn {
 			left: 0;
@@ -165,14 +145,7 @@
 				
 			}
 		}
-	}
-	.main-container .product-layout5 .shop-products .item-col .product-wrapper .actions.product-layout4 .add-to-links .add-to-cart .add_to_cart_inline a.button {
-		padding: 0 10px;
-		font-size: 11px;
-	}
-	.footer .footer-middle .widget.widget_wysija form.widget_wysija .widget_wysija .wysija-paragraph .wysija-input, .footer .footer-middle .widget.widget_wysija .widget_wysija_cont .widget_wysija .wysija-paragraph .wysija-input {
-		width: 235px;
-	}
+	} 
 }
 @media screen and (max-width: 992px) {
 	.front-page {

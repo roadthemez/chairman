@@ -56,42 +56,29 @@
   .f-logo {
     text-align: center;
   }
-  .header-container.layout4 .header-search,
-  .header-container.layout7 .header-search {
-    padding-left: 0;
+  .main-container .banner-static1 .box .text .text-inner {
+    margin-top: -50px;
   }
-  .header-container.layout4 .widget.widget_shopping_cart,
-  .header-container.layout7 .widget.widget_shopping_cart {
-    padding: 12px 0;
+  .main-container .banner-static1 .box .text h3 {
+    font-size: 18px;
   }
-  .header-container .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li a.item_link {
-    padding: 30px 15px;
+  .main-container .banner-static1 .box .text p a.shopnow {
+    font-size: 11px;
+    padding: 0 20px;
+    line-height: 31px;
   }
-  .header-container .header-search {
-    padding: 32px 10px;
+  .main-container .testimonials-container .title1 {
+    margin-bottom: 13px;
   }
-  .header-container .widget.widget_shopping_cart {
-    padding: 32px 10px;
+  .main-container .testimonials-container .box-testimonial .vc_column-inner > .wpb_wrapper {
+    padding: 8px 5px 0px;
+    min-height: 251px;
   }
-  .header-container .vmenu-toggler {
-    padding: 32px 0 32px 10px;
+  .main-container .testimonials-container .testimonials blockquote {
+    margin-bottom: 5px;
   }
-  .sidebar-home.collapse-menu {
-    width: 250px;
-  }
-  .sidebar-home.collapse-menu.layout6 .widget.widget_shopping_cart {
-    border: none;
-    padding: 0;
-    bottom: 60px;
-  }
-  .sidebar-home.collapse-menu.layout6 .widget.widget_text:last-child {
-    bottom: 20px;
-  }
-  .sidebar-home.collapse-menu .widget.widget_product_search form {
-    width: 211px;
-  }
-  .sidebar-home.collapse-menu .widget.widget_product_search form #ws {
-    width: 162px;
+  .main-container .testimonials-container .testimonials img {
+    margin-bottom: 5px;
   }
   .quickview-wrapper .qvbtn {
     left: 0;
@@ -106,14 +93,6 @@
   }
   .quickview-wrapper #quickview-content .widget_socialsharing_widget ul.social-icons {
     margin: 10px 0 0;
-  }
-  .main-container .product-layout5 .shop-products .item-col .product-wrapper .actions.product-layout4 .add-to-links .add-to-cart .add_to_cart_inline a.button {
-    padding: 0 10px;
-    font-size: 11px;
-  }
-  .footer .footer-middle .widget.widget_wysija form.widget_wysija .widget_wysija .wysija-paragraph .wysija-input,
-  .footer .footer-middle .widget.widget_wysija .widget_wysija_cont .widget_wysija .wysija-paragraph .wysija-input {
-    width: 235px;
   }
 }
 @media screen and (max-width: 992px) {
