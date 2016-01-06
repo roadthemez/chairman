@@ -53,23 +53,30 @@
   font-size: 15px;
   color: #838383;
 }
+.main-container.about-page .about-intro h2 {
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+.main-container.about-page .about-intro h2 strong {
+  font-weight: 900;
+}
 .main-container.about-page .about-intro p {
   margin-bottom: 15px;
 }
 .main-container.about-page .about-intro a.button {
   border-width: 1px;
-  height: 36px;
+  height: 40px;
   margin-top: 26px;
-  line-height: 36px;
+  line-height: 40px;
+  background: none;
+  color: #838383;
+  border: 1px solid #2f2f2f;
 }
-.main-container.about-page .about-skill {
-  background: url(../images/bg-about.png) repeat;
-}
-.main-container.about-page .about-skill h3 {
-  background-image: url(../images/bg-about-title.png);
-  padding-left: 15px;
+.main-container.about-page .about-intro a.button:hover {
+  background: #fbaf5d;
   color: #fff;
-  background-position: 15px bottom;
+  border-color: #fbaf5d;
 }
 .main-container.about-page .about-skill .vc_progress_bar .vc_single_bar {
   margin-bottom: 35px;
@@ -80,94 +87,6 @@
 .main-container.about-page .about-skill .vc_progress_bar .vc_single_bar .vc_label {
   padding: 0 0 0 10px;
   text-transform: uppercase;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column {
-  text-align: center;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column img {
-  margin-bottom: 25px;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column h3 {
-  text-align: left;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column h4 {
-  font-size: 15px;
-  color: #838383;
-  margin: 0 0 5px;
-  text-transform: uppercase;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column h5 {
-  color: #999999;
-  font-size: 13px;
-  margin-top: 0;
-  text-transform: capitalize;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column p {
-  margin: 0;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 15px;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column ul li {
-  display: inline-block;
-  margin: 0 5px;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column ul li a {
-  display: block;
-  overflow: hidden;
-  text-align: center;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column ul li a i {
-  color: #fff;
-  height: 40px;
-  font-size: 18px;
-  line-height: 40px;
-  width: 40px;
-  display: block;
-  background: #ccc;
-  border-radius: 100%;
-  text-indent: -9999px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column ul li a i:hover {
-  background: #fbaf5d !important;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column ul li a i.fa-facebook {
-  background: #2b80e0;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column ul li a i.fa-twitter {
-  background: #1fb8ff;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column ul li a i.fa-youtube {
-  background: #da2c2c;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column ul li a i.fa-dribbble {
-  background: #2595cf;
-}
-.main-container.about-page .about-team .vc_column_container .wpb_wrapper .wpb_text_column ul li a i:before {
-  display: block;
-  text-indent: 0;
-}
-.main-container.about-page .about-us2 {
-  text-align: center;
-}
-.main-container.about-page .about-us2 .vc_column_container .wpb_wrapper h4 {
-  margin-bottom: 5px;
-}
-.main-container.about-page .about-us2 .vc_icon_element {
-  display: inline-block;
-  margin: 0;
-}
-.main-container.about-page .about-us2 .vc_icon_element > div {
-  width: 20px;
-  height: 20px;
-  margin: 0 5px;
-}
-.main-container.about-page .about-us2 .vc_icon_element > div:hover .vc_icon_element-icon {
-  color: #fbaf5d;
 }
 .main-container.about-page .vc_column_container .wpb_wrapper h3 {
   border: none;
@@ -216,6 +135,16 @@
   list-style: none;
   padding-left: 0;
   position: relative;
+}
+.main-container.about-page .testimonials-container .slick-slider .slick-dots {
+  text-align: center;
+}
+.main-container.about-page .testimonials-container .slick-slider .slick-dots li button {
+  border: 1px solid #2f2f2f;
+}
+.main-container.about-page .testimonials-container .slick-slider .slick-dots .slick-active button {
+  border-color: #fbaf5d;
+  background: #fbaf5d;
 }
 .main-container .blog-page.blog-sidebar.right-sidebar {
   padding: 0;

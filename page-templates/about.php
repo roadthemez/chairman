@@ -34,27 +34,6 @@ get_header();
 			<?php echo do_shortcode('[ourbrands]'); ?>
 			</div>
 		</div>
-		<div class="home-static3 other-page">
-			<div class="container">
-				<?php if(isset($chairman_opt['static_block3'])) {
-					echo wp_kses($chairman_opt['static_block3'], array(
-						'a' => array(
-						'class' => array(),
-						'href' => array(),
-						'title' => array()
-						),
-						'img' => array(
-							'src' => array(),
-							'alt' => array()
-						),
-						'strong' => array(),
-						'h2' => array(),
-						'p' => array(),
-						'i' => array(),
-					)); 
-				} ?>
-			</div>	
-		</div>
 	</div>
 </div>
 <?php get_footer(); ?>
