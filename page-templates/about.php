@@ -29,11 +29,6 @@ get_header();
 				<?php get_template_part( 'content', 'page' ); ?>
 			<?php endwhile; ?>
 		</div>
-		<div class="brands-logo other-page">
-			<div class="container">
-			<?php echo do_shortcode('[ourbrands]'); ?>
-			</div>
-		</div>
 	</div>
 </div>
 <?php get_footer(); ?>

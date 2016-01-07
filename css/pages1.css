@@ -106,27 +106,28 @@
 .main-container.about-page .vc_column_container .vc_progress_bar .vc_single_bar .vc_label {
   color: #000;
   font-size: 12px;
-  height: 30px;
-  line-height: 30px;
+  height: 15px;
+  line-height: 15px;
   padding-bottom: 0;
-  padding-left: 30px;
+  padding-left: 40px;
   padding-top: 0;
 }
 .main-container.about-page .vc_column_container .vc_progress_bar .vc_single_bar .vc_label .vc_label_units {
-  background: #fbaf5d;
+  background: #3e3e3e;
   border-radius: 100%;
+  border: 3px solid #a0a0a0;
   color: #fff;
   display: block;
-  font-size: 16px;
+  font-size: 11px;
   font-weight: 700;
-  height: 50px;
+  height: 40px;
   left: -10px;
-  line-height: 50px;
+  line-height: 35px;
   position: absolute;
   text-align: center;
   text-shadow: none;
   top: -10px;
-  width: 50px;
+  width: 40px;
 }
 .main-container.about-page .vc_column_container ul {
   padding: 0;
