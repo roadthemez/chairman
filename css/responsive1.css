@@ -56,6 +56,10 @@
   .f-logo {
     text-align: center;
   }
+  .header-container .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   .main-container .banner-static1 .box .text .text-inner {
     margin-top: -50px;
   }
