@@ -113,7 +113,8 @@
   .wrapper .slick-slider .slick-dots {
     display: none !important;
   }
-  .home-slider .tparrows {
+  .home-slider .tparrows,
+  .home-slider .tp-bullet {
     display: none;
   }
   .yith_magnifier_mousetrap {
@@ -318,6 +319,15 @@
   }
   .footer .footer-middle .col-sm-6 {
     min-height: 270px;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .main-container .banner-static2 .box {
+    padding-left: 50px;
+  }
+  .main-container .banner-static2 .box:before {
+    font-size: 30px;
+    line-height: 30px;
   }
 }
 @media screen and (max-width: 767px) {
