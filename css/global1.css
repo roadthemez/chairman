@@ -1417,20 +1417,15 @@ button {
   color: #fbaf5d;
 }
 .header-container .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.menu-item-has-children > a.item_link:after {
-  border: none;
-  color: #fff;
-  content: "\f107";
   display: none;
-  font-family: FontAwesome;
-  font-size: 14px;
-  margin: 0;
-  position: absolute;
-  right: 5px;
-  top: 0;
-  width: auto;
 }
-.header-container .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.menu-item-has-children > a.item_link:hover:after {
-  color: #fbaf5d;
+.header-container .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.menu-item-has-children > a.item_link .link_text:after {
+  border: none;
+  content: "\f107";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-weight: 400;
+  margin: 0 0 0 10px;
 }
 .header-container .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link {
   background: none;
@@ -2417,14 +2412,14 @@ button {
   line-height: 42px;
   color: #fff;
   font-size: 18px;
-  padding: 50px 23px;
+  padding: 31px 23px;
 }
 .footer .footer-top .footer-top-inner .widget.widget-social .social-icons li a:hover {
   background: #323334;
   color: #fff;
 }
 .footer .footer-top .footer-top-inner .widget.widget_wysija {
-  padding: 53px 0;
+  padding: 34px 0;
   text-align: right;
 }
 .footer .footer-top .footer-top-inner .widget.widget_wysija .widgettitle {

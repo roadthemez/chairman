@@ -1588,28 +1588,21 @@ a, input, button {
 										}
 									}
 								}
-								&.menu-item-has-children {
-									
+								&.menu-item-has-children { 
 									& > a {
-										&.item_link {
-											
-											&:after {
-												border: none;
-												color: #fff;
-												content: "\f107";
-												display: none;
-												font-family: FontAwesome;
-												font-size: 14px;
-												margin: 0;
-												position: absolute;
-												right: 5px;
-												top: 0;
-												width: auto;
-											}
-											&:hover {
+										&.item_link { 
+											&:after { 
+												display: none;  
+											} 
+											.link_text {
 												&:after {
-													color: @primarycolor;
-												}
+													border: none; 
+													content: "\f107";
+													display: inline-block;
+													font-family: FontAwesome; 
+													font-weight: 400;
+													margin: 0 0 0 10px;    
+												} 
 											}
 										}
 									}
