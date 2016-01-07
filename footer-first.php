@@ -164,7 +164,7 @@
 			<div class="container">
 				<div class="footer-bottom-inner">
 					<div class="row">
-						<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="widget-copyright">
 								<?php 
 								if( isset($chairman_opt['copyright']) && $chairman_opt['copyright']!='' ) {
@@ -183,7 +183,7 @@
 								?>
 							</div>
 						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="col-lg-6 col-md-6 col-sm-12">
 							<div class="widget-payment">
 								<?php if(isset($chairman_opt['payment_icons']) && $chairman_opt['payment_icons']!='' ) {
 									echo wp_kses($chairman_opt['payment_icons'], array(
