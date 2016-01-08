@@ -11,21 +11,21 @@ body {
   color: #ffffff;
 }
 a {
-  color: #252525;
+  color: #fbaf5d;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
 a:hover {
-  color: #C43B68;
+  color: #ee9c9c;
   text-decoration: none;
 }
 a:focus {
-  color: #C43B68;
+  color: #ee9c9c;
   outline: none;
   text-decoration: none;
 }
 a:active {
-  color: #C43B68;
+  color: #ee9c9c;
 }
 img {
   max-width: 100%;
@@ -37,9 +37,9 @@ h3,
 h4,
 h5,
 h6 {
-  color: #444444;
+  color: #353535;
   font-family: Raleway, Arial, Helvetica, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.35;
   letter-spacing: 1.5px;
   margin: 0 0 5px;
@@ -66,7 +66,7 @@ li > ol {
 }
 table {
   border-collapse: separate;
-  border-color: #e5e5e5;
+  border-color: #f1f0f0;
   border-spacing: 0;
   border-style: solid;
   border-width: 1px 0 0 1px;
@@ -75,8 +75,8 @@ table {
 }
 table th,
 table td {
-  border-bottom: 1px solid #e5e5e5;
-  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #f1f0f0;
+  border-right: 1px solid #f1f0f0;
   padding: 10px;
 }
 caption {

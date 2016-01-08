@@ -619,7 +619,8 @@ Class chairman {
 				}
 				switch ($presetopt) {
 					case 2:
-						 
+						$themevariables['primary_color'] = '#c7631a';
+						$themevariables['link_color'] = '#fbaf5d';
 					break;
 					case 3:
 						$themevariables['primary_color'] = '#D95380';
