@@ -62,56 +62,7 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 	<div id="yith-wcwl-popup-message" style="display:none;"><div id="yith-wcwl-message"></div></div>
 	<div class="wrapper <?php if($chairman_opt['page_layout']=='box'){echo 'box-layout';}?>">
 		<div class="page-wrapper">
-			<div class="header-container layout2"> 
-				<div class="top-bar">
-					<div class="container">
-						<div class="row">
-							<div class="col-xs-12 col-md-6">
-								<div class="box-left">
-									<div class="top-message"><?php echo esc_html($chairman_opt['welcome_message']); ?></div>
-									<?php if((isset($chairman_opt['blog_header']) && $chairman_opt['blog_header']!=''))
-									{ ?>
-										<div class="blog-header"> 
-											<?php echo wp_kses($chairman_opt['blog_header'], array(
-												'a' => array(
-													'href' => array(),
-													'title' => array()
-												),
-												'img' => array(
-													'src' => array(),
-													'alt' => array()
-												),
-												'ul' => array(),
-												'li' => array(
-													'class' => array()
-												),
-												'label' => array(),
-												'i' => array(
-													'class' => array()
-												),
-												'br' => array(),
-												'em' => array(),
-												'strong' => array(),
-												'p' => array(),
-											)); ?>
-										</div>
-									<?php } ?>
-
-								</div> 
-							</div>	
-							<div class="col-xs-12 col-md-6">
-								<div class="box-right"> 
-									<div class="switcher">
-										<?php wp_nav_menu( array('menu' => 'login' )); ?>
-										<?php do_action('icl_language_selector'); ?>
-										<div class="currency"><?php do_action('currency_switcher'); ?></div>
-										
-									</div> 
-								</div> 
-							</div>
-						</div>
-					</div>
-				</div> 
+			<div class="header-container furniture2">  
 				<div class="header">
 					<div class="<?php if(isset($chairman_opt['sticky_header']) && $chairman_opt['sticky_header']) {echo 'header-sticky';} ?> <?php if ( is_admin_bar_showing() ) {echo 'with-admin-bar';} ?>">
 						<div class="container header-inner">
@@ -164,6 +115,11 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 											</div>
 											<div class="vmenu-content">
 												<?php wp_nav_menu( array( 'theme_location' => 'topmenu', 'container_class' => 'top-menu-container', 'menu_class' => 'nav-menu' ) ); ?> 
+												<div class="switcher">
+													<?php do_action('icl_language_selector'); ?>
+													<div class="currency"><?php do_action('currency_switcher'); ?></div>
+													
+												</div> 
 											</div>
 										</div>
 									</div>

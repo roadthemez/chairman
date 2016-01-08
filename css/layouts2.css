@@ -798,3 +798,6 @@
   -ms-transform: scaleYscaleY(0);
   -o-transform: scaleY(0);
 }
+.home .header-container.furniture2 {
+  position: absolute;
+}
