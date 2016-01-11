@@ -152,7 +152,7 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 										<?php if( isset($chairman_opt['logo_footer']['url']) ){ ?>
 											<div class="widget-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url($chairman_opt['logo_footer']['url']); ?>" alt="" /></a></div>
 										<?php } ?>
-										<?php echo wp_kses($chairman_opt['about_us'], array(
+										<?php echo wp_kses($chairman_opt['portfolio1_about_us'], array(
 											'a' => array(
 												'href' => array(),
 												'title' => array()
@@ -177,51 +177,16 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 											'strong' => array(),
 											'p' => array(),
 										)); ?> 
-									</div>
-									<?php if( isset($chairman_opt['contact_us']) && $chairman_opt['contact_us']!='' ) { ?>
-										<div class="widget widget_contact_us"> 
-											<?php echo wp_kses($chairman_opt['contact_us'], array(
-												'a' => array(
-													'href' => array(),
-													'title' => array()
-												),
-												'div' => array(
-													'class' => array(),
-												),
-												'img' => array(
-													'src' => array(),
-													'alt' => array()
-												),
-												'h3' => array(
-													'class' => array(),
-												),
-												'ul' => array(),
-												'li' => array(),
-												'i' => array(
-													'class' => array()
-												),
-												'br' => array(),
-												'em' => array(),
-												'strong' => array(),
-												'p' => array(),
-											)); ?>
-										</div>
-									<?php } ?>
+									</div> 
 								</div>
 							<?php } ?> 
 							<div class="col-sm-6  col-md-3 col-lg-3">
 								<div class="widget-latest-tweets">
-									<?php if(isset($road_opt['twitter_widget_title'])){ ?>
-											<h3 class="widget-title"><?php echo esc_html($road_opt['twitter_widget_title']);?></h3>
-										<?php } ?>
-									<?php echo do_shortcode('[rotatingtweets screen_name="'.$road_opt['twitter_username'].'"]');?>
+									 
 								</div> 
 							</div>
 						 
-							<div class="col-sm-6  col-md-3 col-lg-3">
-								<?php if(isset($road_opt['product_tag_title'])){ ?>
-									<h3 class="widget-title"><?php echo esc_html($road_opt['product_tag_title']);?></h3>
-								<?php } ?>
+							<div class="col-sm-6  col-md-3 col-lg-3"> 
 								<?php the_widget('WC_Widget_Product_Tag_Cloud');?>
 							</div> 
 							<?php if ( isset($chairman_opt['newsletter_form']) || isset($chairman_opt['social_icons']) ) { ?> 

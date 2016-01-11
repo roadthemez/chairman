@@ -637,7 +637,7 @@ if (!class_exists('chairman_Theme_Config')) {
 							'textarea_rows'    => 5,
 							'media_buttons'	=> true,
 						)
-					), 
+					),  
                 ),
             );
 			$this->sections[] = array(
@@ -730,6 +730,13 @@ if (!class_exists('chairman_Theme_Config')) {
 						'subtitle'         => esc_html__('HTML tags allowed: a, img, br, em, strong, p, ul, li', 'chairman'),
 						'default' => '',
 					),
+                    array(
+                        'id'=>'portfolio1_about_us',
+                        'type' => 'textarea',
+                        'title' => esc_html__('About Us', 'chairman'), 
+                        'subtitle'         => esc_html__('HTML tags allowed: a, img, br, em, strong, p, ul, li', 'chairman'),
+                        'default' => '',
+                    ),
 				)
 			);
              
@@ -753,6 +760,7 @@ if (!class_exists('chairman_Theme_Config')) {
                     ),
                 )
             );
+       
 			
 			$this->sections[] = array(
 				'icon'       => 'el-icon-website',
