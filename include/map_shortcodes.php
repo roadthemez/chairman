@@ -498,5 +498,40 @@ function chairman_vc_shortcodes() {
 			),
 		)
 	) );
+	
+	//Counter
+	vc_map( array(
+		'name' => esc_html__( 'Counter', 'chairman' ),
+		'base' => 'chairman_counter',
+		'class' => '',
+		'category' => esc_html__( 'Theme', 'chairman'),
+		'params' => array(
+			array(
+				'type' => 'attach_image',
+				'holder' => 'div',
+				'class' => '',
+				'heading' => esc_html__( 'Image icon', 'chairman' ),
+				'param_name' => 'image',
+				'value' => '',
+				'description' => esc_html__( 'Upload icon image', 'chairman' ),
+			),
+			array(
+				'type' => 'textfield',
+				'holder' => 'div',
+				'class' => '',
+				'heading' => esc_html__( 'Number', 'chairman' ),
+				'param_name' => 'number',
+				'value' => '',
+			),
+			array(
+				'type' => 'textfield',
+				'holder' => 'div',
+				'class' => '',
+				'heading' => esc_html__( 'Text', 'chairman' ),
+				'param_name' => 'text',
+				'value' => '',
+			),
+		)
+	) );
 }
 ?>
