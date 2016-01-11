@@ -140,7 +140,172 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 					
 				</div>
 			</div>
-			<?php get_footer(); ?>
+			<div class="footer portfolio1"> 
+				<?php if(isset($chairman_opt)) { ?>
+				<div class="footer-middle">
+					<div class="container">
+						<div class="row">	
+							<?php
+							if(isset($chairman_opt['about_us']) && $chairman_opt['about_us']!=''){ ?>
+								<div class="col-sm-6  col-md-3 col-lg-3">
+									<div class="widget widget_about_us"> 
+										<?php if( isset($chairman_opt['logo_footer']['url']) ){ ?>
+											<div class="widget-logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url($chairman_opt['logo_footer']['url']); ?>" alt="" /></a></div>
+										<?php } ?>
+										<?php echo wp_kses($chairman_opt['about_us'], array(
+											'a' => array(
+												'href' => array(),
+												'title' => array()
+											),
+											'div' => array(
+												'class' => array(),
+											),
+											'img' => array(
+												'src' => array(),
+												'alt' => array()
+											),
+											'h3' => array(
+												'class' => array(),
+											),
+											'ul' => array(),
+											'li' => array(),
+											'i' => array(
+												'class' => array()
+											),
+											'br' => array(),
+											'em' => array(),
+											'strong' => array(),
+											'p' => array(),
+										)); ?> 
+									</div>
+									<?php if( isset($chairman_opt['contact_us']) && $chairman_opt['contact_us']!='' ) { ?>
+										<div class="widget widget_contact_us"> 
+											<?php echo wp_kses($chairman_opt['contact_us'], array(
+												'a' => array(
+													'href' => array(),
+													'title' => array()
+												),
+												'div' => array(
+													'class' => array(),
+												),
+												'img' => array(
+													'src' => array(),
+													'alt' => array()
+												),
+												'h3' => array(
+													'class' => array(),
+												),
+												'ul' => array(),
+												'li' => array(),
+												'i' => array(
+													'class' => array()
+												),
+												'br' => array(),
+												'em' => array(),
+												'strong' => array(),
+												'p' => array(),
+											)); ?>
+										</div>
+									<?php } ?>
+								</div>
+							<?php } ?> 
+							<div class="col-sm-6  col-md-3 col-lg-3">
+								<div class="widget-latest-tweets">
+									<?php if(isset($road_opt['twitter_widget_title'])){ ?>
+											<h3 class="widget-title"><?php echo esc_html($road_opt['twitter_widget_title']);?></h3>
+										<?php } ?>
+									<?php echo do_shortcode('[rotatingtweets screen_name="'.$road_opt['twitter_username'].'"]');?>
+								</div> 
+							</div>
+						 
+							<div class="col-sm-6  col-md-3 col-lg-3">
+								<?php if(isset($road_opt['product_tag_title'])){ ?>
+									<h3 class="widget-title"><?php echo esc_html($road_opt['product_tag_title']);?></h3>
+								<?php } ?>
+								<?php the_widget('WC_Widget_Product_Tag_Cloud');?>
+							</div> 
+							<?php if ( isset($chairman_opt['newsletter_form']) || isset($chairman_opt['social_icons']) ) { ?> 
+								<div class="col-sm-6  col-md-3 col-lg-3"> 
+									<?php if(class_exists( 'WYSIJA_NL_Widget' )){
+										the_widget('WYSIJA_NL_Widget', array(
+											'title' => esc_html($chairman_opt['newsletter_title']),
+											'form' => (int)$chairman_opt['newsletter_form'],
+											'id_form' => 'newsletter1',
+											'success' => '',
+										));
+									}?> 
+									
+									<?php if(isset($chairman_opt['social_icons']) && $chairman_opt['about_us']!=''){ ?> 
+										<div class="widget widget-social"> 
+											<?php
+
+											if(isset($chairman_opt['social_icons'])) {
+												echo '<ul class="social-icons">';
+												foreach($chairman_opt['social_icons'] as $key=>$value ) {
+													if($value!=''){
+														if($key=='vimeo'){
+															echo '<li><a class="'.esc_attr($key).' social-icon" href="'.esc_url($value).'" title="'.ucwords(esc_attr($key)).'" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>';
+														} else {
+															echo '<li><a class="'.esc_attr($key).' social-icon" href="'.esc_url($value).'" title="'.ucwords(esc_attr($key)).'" target="_blank"><i class="fa fa-'.esc_attr($key).'"></i></a></li>';
+														}
+													}
+												}
+												echo '</ul>';
+											}
+											?>
+										</div> 
+									<?php } ?> 
+								</div> 
+							<?php } ?>
+						</div>
+					</div>
+				</div>
+				<?php } ?>
+				<div class="footer-bottom">
+					<div class="container">
+						<div class="footer-bottom-inner">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="widget-copyright">
+										<?php 
+										if( isset($chairman_opt['copyright']) && $chairman_opt['copyright']!='' ) {
+											echo wp_kses($chairman_opt['copyright'], array(
+												'a' => array(
+													'href' => array(),
+													'title' => array()
+												),
+												'br' => array(),
+												'em' => array(),
+												'strong' => array(),
+											));
+										} else {
+											echo 'Copyright <a href="'.esc_url( home_url( '/' ) ).'">'.get_bloginfo('name').'</a> '.date('Y').'. All Rights Reserved';
+										}
+										?>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-12">
+									<div class="widget-payment">
+										<?php if(isset($chairman_opt['payment_icons']) && $chairman_opt['payment_icons']!='' ) {
+											echo wp_kses($chairman_opt['payment_icons'], array(
+												'a' => array(
+													'href' => array(),
+													'title' => array()
+												),
+												'img' => array(
+													'src' => array(),
+													'alt' => array()
+												),
+											)); 
+										} ?>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div><!-- .page -->
 	</div><!-- .wrapper -->
 	<!--<div class="chairman_loading"></div>-->
