@@ -504,6 +504,10 @@ Class chairman {
 		wp_enqueue_script( 'html5-js', get_template_directory_uri() . '/js/html5.js', array(), '3.7.0', true );
 		$wp_scripts->add_data( 'html5-js', 'conditional', 'lt IE 9' );
 		
+		// Add jQuery counter files
+		wp_enqueue_script( 'waypoints-js', get_template_directory_uri() . '/js/waypoints.min.js', array('jquery'), '1.0', true );
+		wp_enqueue_script( 'counterup-js', get_template_directory_uri() . '/js/jquery.counterup.min.js', array('jquery'), '1.0', true );
+		
 		// Add theme.js file
 		wp_enqueue_script( 'theme-js', get_template_directory_uri() . '/js/theme.js', array('jquery'), '20140826', true );
 

@@ -1002,6 +1002,12 @@
 			}
 		});
 		
+		//Counter up
+		jQuery('.counter-number span').counterUp({
+			delay: 10,
+			time: 1000
+		});
+		
 		//Go to top
 		jQuery('#back-top').on('click', function(){
 			jQuery("html, body").animate({ scrollTop: 0 }, "slow");
