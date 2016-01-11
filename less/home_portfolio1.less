@@ -1,0 +1,126 @@
+
+//Header
+
+.header-container {
+	&.portfolio1 {
+		border-bottom: 3px double @bordercolor;
+		display: block;
+		.global-table {
+		    height: 97px;
+		}
+		.logo-wrap {
+			border-right: 1px solid @bordercolor;
+		}
+		.content-header {
+			padding: 30px 0 31px;
+			border-left: 1px solid @bordercolor;
+		}
+		.header {
+			.horizontal-menu {
+				#mega_main_menu_first {
+					& > .menu_holder {
+						.menu_inner {
+							& > ul {
+								text-align: right;
+								& > li {
+									& > a.item_link {
+										padding: 29px 10px 28px;
+										.link_text {
+											padding: 0 15px;
+											border-radius: 3px;
+											&:after {
+												margin: 0 0 0 5px;
+												color: @primarycolor;
+											}
+										}
+									}
+									&:hover, &.current-menu-ancestor, &.current-menu-item {
+										& > a.item_link {
+											.link_text {
+												background: @primarycolor;
+												color: #fff;
+												&:after {
+													color: #fff;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.main-container {
+	.page-title {
+		text-align: center;
+		h1 {
+			font-size: 40px;
+			font-weight: 400;
+		}
+	}
+	.portfolio1-static1 {
+		h2 {
+			font-size: 30px;
+			font-weight: 400;
+			strong {
+				font-weight: 700;
+			}
+		}
+		p {
+			color: @greycolor;
+			font-size: 16px;
+			font-style: italic;
+		}
+		.banner-content {
+			position: relative; 
+			.more-info {
+				border: 2px solid #4d4d55;
+				border-radius: 3px;
+				color: #4d4d55;
+				display: block;
+				line-height: 50px;
+				position: absolute;
+				padding: 0 35px;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 700;
+				text-transform: uppercase;
+				top: 50%;
+				right: 0;
+				margin-top: -27px;
+				&:after {
+					display: inline-block;
+					content: "\f107";
+					font-family: FontAwesome;
+					margin-left: 10px;
+				}
+				&:hover {
+					border-color: @primarycolor;
+					color: @primarycolor;
+				}
+			}
+		}
+	}
+	.tilte-portfolio1 {
+		.wpb_wrapper {
+			& > h3 {
+				color: @headingcolor;
+				font-size: 28px;
+				font-family: @headingfont; 
+				&:before {
+					background: @primarycolor;
+					content: "";
+					display: block;
+					height: 12px;
+					width: 12px; 
+					margin-bottom: 5px;
+				}
+			}
+		} 
+	}
+}

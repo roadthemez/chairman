@@ -1,7 +1,7 @@
 <?php
-$_SESSION["preset"] = 2;
+$_SESSION["preset"] = 3;
 /**
- * Template Name: Demo Furniture 2
+ * Template Name: Demo Portfolio 1
  *
  * Description: A page template that provides a key component of WordPress as a CMS
  * by meeting the need for a carefully crafted introductory page. The front page template
@@ -62,7 +62,7 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 	<div id="yith-wcwl-popup-message" style="display:none;"><div id="yith-wcwl-message"></div></div>
 	<div class="wrapper <?php if($chairman_opt['page_layout']=='box'){echo 'box-layout';}?>">
 		<div class="page-wrapper">
-			<div class="header-container furniture2">  
+			<div class="header-container portfolio1">  
 				<div class="header">
 					<div class="<?php if(isset($chairman_opt['sticky_header']) && $chairman_opt['sticky_header']) {echo 'header-sticky';} ?> <?php if ( is_admin_bar_showing() ) {echo 'with-admin-bar';} ?>">
 						<div class="container header-inner">
@@ -105,10 +105,7 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 													<?php the_widget('WC_Widget_Product_Search', array('title' => 'Search')); ?>
 												</div>
 											</div>
-										<?php } ?>
-										<?php if ( class_exists( 'WC_Widget_Cart' ) ) {
-											the_widget('Custom_WC_Widget_Cart'); 
-										} ?>
+										<?php } ?> 
 										<div class="vmenu-toggler">
 											<div class="vmenu-toggler-button">
 												<i class="fa fa-bars"></i>

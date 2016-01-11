@@ -5,10 +5,10 @@
   width: 100%;
 }
 .filter-options .btn {
-  background: #ededed;
+  background: #f8f8f8;
   border: none;
   border-radius: 0;
-  color: #444444;
+  color: #353535;
   float: none;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -20,10 +20,10 @@
   transition: all 0.3s ease;
 }
 .filter-options .btn:hover {
-  color: #D95380;
+  color: #71a9d0;
 }
 .filter-options .btn.active {
-  background: #D95380;
+  background: #71a9d0;
   box-shadow: none;
   color: #fff;
 }
@@ -85,7 +85,7 @@
   width: 100%;
 }
 .list_projects .project .project-permalink .project-info .project-title {
-  color: #222222;
+  color: #838383;
   float: left;
   font-size: 18px;
   line-height: 22px;
@@ -148,8 +148,8 @@
 .projects-pagination ul.page-numbers li a.current,
 .projects-pagination ul.page-numbers li span:hover,
 .projects-pagination ul.page-numbers li span.current {
-  background: #D95380;
-  border-color: #D95380;
+  background: #71a9d0;
+  border-color: #71a9d0;
   color: #fff;
 }
 .single-project .project {
@@ -198,7 +198,7 @@
   width: 100%;
 }
 .single-project .related_projects .single-featured a .project-info .project-title {
-  color: #222222;
+  color: #838383;
   float: left;
   font-size: 18px;
   line-height: 22px;
@@ -354,7 +354,7 @@
 }
 .single-project.has-gallery .summary .entry-header .project_title,
 .single-project.no-gallery .summary .entry-header .project_title {
-  color: #444444;
+  color: #353535;
   font-size: 24px;
   margin: 0;
   padding: 0;
@@ -390,11 +390,11 @@
 }
 .single-project.has-gallery .summary .project-meta a,
 .single-project.no-gallery .summary .project-meta a {
-  color: #D95380;
+  color: #71a9d0;
 }
 .single-project.has-gallery .summary .project-meta a:hover,
 .single-project.no-gallery .summary .project-meta a:hover {
-  color: #222222;
+  color: #838383;
 }
 .single-project .related_projects {
   background: url('../images/shadow1.png') no-repeat center bottom;

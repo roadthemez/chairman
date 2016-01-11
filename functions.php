@@ -623,8 +623,7 @@ Class chairman {
 						$themevariables['link_color'] = '#fbaf5d';
 					break;
 					case 3:
-						$themevariables['primary_color'] = '#D95380';
-						$themevariables['sale_color'] = '#D95380';
+						$themevariables['primary_color'] = '#71a9d0'; 
 					break;
 					case 4:
 						$themevariables['primary_color'] = '#FFB548';

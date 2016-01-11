@@ -17,13 +17,11 @@ get_header();
 ?>
 <div class="main-container default-page">
 	<div class="title-breadcrumb">
-		<div class="container">
-			<div class="blog-header-title">
-				<header class="entry-header">
-					<h1 class="entry-title"><?php the_title(); ?></h1>
-				</header>
-				<?php Chairman::chairman_breadcrumb(); ?>
-			</div>
+		<div class="container"> 
+			<header class="entry-header">
+				<h1 class="entry-title"><?php the_title(); ?></h1>
+			</header>
+			<?php Chairman::chairman_breadcrumb(); ?> 
 		</div>
 	</div>
 	<div class="clearfix"></div>

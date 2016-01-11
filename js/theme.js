@@ -221,7 +221,7 @@
 		jQuery('.wcml_currency_switcher').chosen({disable_search: true, width: "auto"});
 		
 		//Brand logos carousel
-		jQuery('.brands-carousel').each(function(){
+		jQuery('.brands-logo .brands-carousel').each(function(){
 			var chairman_brandcols = jQuery(this).attr('data-col');
 			jQuery(this).slick({
 				infinite: true,
@@ -245,6 +245,45 @@
 					  breakpoint: 768,
 					  settings: {
 						slidesToShow: 3,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 480,
+					  settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					  }
+					}
+				]
+			});
+		});
+
+		//Brand logos carousel Portfolio1
+		jQuery('.portfolio1-brandlogo .brands-carousel').each(function(){
+			var chairman_brandcols = jQuery(this).attr('data-col');
+			jQuery(this).slick({
+				infinite: true,
+				slidesToShow: 3,
+				slidesToScroll: chairman_brandscrollnumber,
+				speed: chairman_brandanimate,
+				easing: 'linear',
+				dots: false,
+				arrows: true,
+				autoplay: chairman_brandscroll,
+				autoplaySpeed: chairman_brandpause,
+				responsive: [
+					{
+					  breakpoint: 1200,
+					  settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 768,
+					  settings: {
+						slidesToShow: 2,
 						slidesToScroll: 1
 					  }
 					},
