@@ -2439,6 +2439,10 @@ button {
   width: 100%;
   position: relative;
 }
+.footer .footer-top .footer-top-inner .widget.widget_wysija form.widget_wysija .widget_wysija .intro,
+.footer .footer-top .footer-top-inner .widget.widget_wysija .widget_wysija_cont .widget_wysija .intro {
+  display: none;
+}
 .footer .footer-top .footer-top-inner .widget.widget_wysija form.widget_wysija .widget_wysija .wysija-paragraph,
 .footer .footer-top .footer-top-inner .widget.widget_wysija .widget_wysija_cont .widget_wysija .wysija-paragraph {
   float: left;

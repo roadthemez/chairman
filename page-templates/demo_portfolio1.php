@@ -142,11 +142,11 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 			</div>
 			<div class="footer portfolio1"> 
 				<?php if(isset($chairman_opt)) { ?>
-				<div class="footer-middle">
+				<div class="footer-top">
 					<div class="container">
 						<div class="row">	
 							<?php
-							if(isset($chairman_opt['about_us']) && $chairman_opt['about_us']!=''){ ?>
+							if(isset($chairman_opt['portfolio1_about_us']) && $chairman_opt['portfolio1_about_us']!=''){ ?>
 								<div class="col-sm-6  col-md-3 col-lg-3">
 									<div class="widget widget_about_us"> 
 										<?php if( isset($chairman_opt['logo_footer']['url']) ){ ?>

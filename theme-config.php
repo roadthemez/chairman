@@ -733,7 +733,7 @@ if (!class_exists('chairman_Theme_Config')) {
                     array(
                         'id'=>'portfolio1_about_us',
                         'type' => 'textarea',
-                        'title' => esc_html__('About Us', 'chairman'), 
+                        'title' => esc_html__('Portfolio1 About Us', 'chairman'), 
                         'subtitle'         => esc_html__('HTML tags allowed: a, img, br, em, strong, p, ul, li', 'chairman'),
                         'default' => '',
                     ),
