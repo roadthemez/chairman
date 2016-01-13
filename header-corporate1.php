@@ -55,9 +55,9 @@ if(is_ssl()){
 						<div class="col-xs-12 col-md-6">
 							<?php
 
-							if(isset($chairman_opt['social_icons'])) {
+							if(isset($chairman_opt['social_icons2'])) {
 								echo '<ul class="social-icons">';
-								foreach($chairman_opt['social_icons'] as $key=>$value ) {
+								foreach($chairman_opt['social_icons2'] as $key=>$value ) {
 									if($value!=''){
 										if($key=='vimeo'){
 											echo '<li><a class="'.esc_attr($key).' social-icon" href="'.esc_url($value).'" title="'.ucwords(esc_attr($key)).'" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>';

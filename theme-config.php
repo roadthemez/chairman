@@ -416,14 +416,14 @@ if (!class_exists('chairman_Theme_Config')) {
 			
 			$this->sections[] = array(
 				'icon'       => 'el-icon-website',
-				'title'      => esc_html__( 'Social Icons', 'chairman' ),
+				'title'      => esc_html__( 'Social Icons 2', 'chairman' ),
 				'subsection' => true,
 				'fields'     => array(
 				
 					array(
-						'id'       => 'social_icons',
+						'id'       => 'social_icons2',
 						'type'     => 'sortable',
-						'title'    => esc_html__('Social Icons', 'chairman'),
+						'title'    => esc_html__('Social Icons 2', 'chairman'),
 						'subtitle' => esc_html__('Enter social links', 'chairman'),
 						'desc'     => esc_html__('Drag/drop to re-arrange', 'chairman'),
 						'mode'     => 'text',
