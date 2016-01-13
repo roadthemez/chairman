@@ -1016,6 +1016,11 @@
 .main-container .portfolio1-testimonial .slick-slider .slick-dots li.slick-active button {
   background: #dbdbdb;
 }
+.main-container .essential-container .tilte-portfolio1 {
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+}
 .main-container .portfolio1-counter {
   background: #fbaf5d;
 }
