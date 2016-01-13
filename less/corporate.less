@@ -1,5 +1,40 @@
 
 
+.header-container{
+	&.corporate1{
+		background: transparent;
+		.top-bar{
+			background: transparent;
+			font-weight: normal;
+			.top-bar-inner{
+				border-bottom: 1px @topbarcolor dotted;
+			}
+			.social-icons{
+				float: right;
+				line-height: 40px;
+				li{
+					display: inline-block;
+					margin-left: 20px;
+					a{
+						display: block;
+					}
+				}
+			}
+		}
+	}
+	.header-search .search-icon:before{
+		color: #fff;
+	}
+}
+.home .header-container{
+	&.corporate1{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+	}
+}
+
 .corporate-meetteam{
 	.vc_column-inner{
 		> div{
