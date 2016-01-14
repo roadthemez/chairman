@@ -377,6 +377,7 @@ if (!class_exists('chairman_Theme_Config')) {
                             'blank' => 'Blank',
                             'sixth' => 'Sixth',
                             'seventh' => 'Seventh',
+							'corporate1' => 'corporate1',
                         ),
                         'default'   => 'default'
                     ),
@@ -412,6 +413,53 @@ if (!class_exists('chairman_Theme_Config')) {
                     ),
                 ),
             );
+			
+			$this->sections[] = array(
+				'icon'       => 'el-icon-website',
+				'title'      => esc_html__( 'Social Icons 2', 'chairman' ),
+				'subsection' => true,
+				'fields'     => array(
+				
+					array(
+						'id'       => 'social_icons2',
+						'type'     => 'sortable',
+						'title'    => esc_html__('Social Icons 2', 'chairman'),
+						'subtitle' => esc_html__('Enter social links', 'chairman'),
+						'desc'     => esc_html__('Drag/drop to re-arrange', 'chairman'),
+						'mode'     => 'text',
+						'options'  => array(
+							'facebook'     => '',
+							'twitter'     => '',
+							'instagram' => '',
+							'tumblr'     => '',
+							'pinterest'     => '',
+							'google-plus'     => '',
+							'linkedin'     => '',
+							'behance'     => '',
+							'dribbble'     => '',
+							'youtube'     => '',
+							'vimeo'     => '',
+							'rss'     => '',
+						),
+						'default' => array(
+						    'facebook'     => 'https://www.facebook.com/',
+							'twitter'     => 'https://twitter.com/',
+							'instagram' => '',
+							'tumblr'     => '',
+							'pinterest'     => 'https://www.pinterest.com/',
+							'google-plus'     => 'https://plus.google.com/',
+							'linkedin'     => '',
+							'behance'     => '',
+							'dribbble'     => 'https://dribbble.com/',
+							'youtube'     => '',
+							'vimeo'     => '',
+							'rss'     => '',
+						),
+					),
+				)
+			);
+			
+			
 			$this->sections[] = array(
                 'icon'       => 'el-icon-website',
                 'title'      => esc_html__( 'Sticky header', 'chairman' ),

@@ -32,6 +32,10 @@
   max-width: 100%;
   width: 100%;
 }
+.main-container .full-width .row-container .vc_column-inner {
+  padding-left: 0;
+  padding-right: 0;
+}
 .main-container .home-slider.full-width {
   padding-top: 0;
   margin-left: 0;
@@ -1159,6 +1163,7 @@
   background: #4b4d4e;
   color: #fff;
 }
+<<<<<<< HEAD
 .footer .aiwidgetscss .imgdisplay {
   padding: 0;
 }
@@ -1179,6 +1184,41 @@
 .footer .aiwidgetscss .tweet_author a:hover {
   color: #fff;
 }
+=======
+.header-container.corporate1 {
+  background: transparent;
+}
+.header-container.corporate1 .top-bar {
+  background: transparent;
+  font-weight: normal;
+}
+.header-container.corporate1 .top-bar .top-bar-inner {
+  border-bottom: 1px #5b6e82 dotted;
+}
+.header-container.corporate1 .top-bar .social-icons {
+  float: right;
+  line-height: 40px;
+}
+.header-container.corporate1 .top-bar .social-icons li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.header-container.corporate1 .top-bar .social-icons li a {
+  display: block;
+}
+.header-container.corporate1 .top-bar .social-icons li .chairmantip {
+  display: none;
+}
+.header-container .header-search .search-icon:before {
+  color: #fff;
+}
+.home .header-container.corporate1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+>>>>>>> origin/master
 .corporate-meetteam .vc_column-inner > div {
   position: relative;
   overflow: hidden;
