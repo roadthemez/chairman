@@ -182,7 +182,7 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 							<?php } ?> 
 							<div class="col-sm-6  col-md-3 col-lg-3">
 								<div class="widget-latest-tweets">
-									 
+									<?php echo do_shortcode('[AIGetTwitterFeeds ai_username="roadthemes"]'); ?>
 								</div> 
 							</div>
 						 

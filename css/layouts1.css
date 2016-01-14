@@ -1159,6 +1159,26 @@
   background: #4b4d4e;
   color: #fff;
 }
+.footer .aiwidgetscss .imgdisplay {
+  padding: 0;
+}
+.footer .aiwidgetscss .tweettext {
+  color: #848484;
+}
+.footer .aiwidgetscss .tweettext a {
+  color: #fbaf5d;
+}
+.footer .aiwidgetscss .tweettext a:hover {
+  color: #fff;
+}
+.footer .aiwidgetscss .tweet_author_name a,
+.footer .aiwidgetscss .tweet_author a {
+  color: #fbaf5d;
+}
+.footer .aiwidgetscss .tweet_author_name a:hover,
+.footer .aiwidgetscss .tweet_author a:hover {
+  color: #fff;
+}
 .corporate-meetteam .vc_column-inner > div {
   position: relative;
   overflow: hidden;
