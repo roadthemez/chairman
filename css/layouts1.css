@@ -1433,3 +1433,37 @@
   padding: 0 20px;
   line-height: 20px;
 }
+.main-container .corporate-services .services-left .wpb_content_element,
+.main-container .corporate-services .services-right .wpb_content_element {
+  max-width: 260px;
+  float: right;
+}
+.main-container .corporate-services .services-left .wpb_content_element h3,
+.main-container .corporate-services .services-left .wpb_content_element h4,
+.main-container .corporate-services .services-right .wpb_content_element h3,
+.main-container .corporate-services .services-right .wpb_content_element h4 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.main-container .corporate-services .services-left .wpb_content_element h3 i,
+.main-container .corporate-services .services-left .wpb_content_element h4 i,
+.main-container .corporate-services .services-right .wpb_content_element h3 i,
+.main-container .corporate-services .services-right .wpb_content_element h4 i {
+  font-size: 0;
+  color: #fbaf5d;
+  padding: 0 20px;
+}
+.main-container .corporate-services .services-left .wpb_content_element h3 i:before,
+.main-container .corporate-services .services-left .wpb_content_element h4 i:before,
+.main-container .corporate-services .services-right .wpb_content_element h3 i:before,
+.main-container .corporate-services .services-right .wpb_content_element h4 i:before {
+  font-size: 30px;
+}
+.main-container .corporate-services .services-left .wpb_content_element p,
+.main-container .corporate-services .services-right .wpb_content_element p {
+  line-height: 20px;
+}
+.main-container .corporate-services .services-right .wpb_content_element {
+  float: left;
+}
