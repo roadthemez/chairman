@@ -920,6 +920,44 @@
   border-color: #fbaf5d;
   color: #fbaf5d;
 }
+.main-container .portfolio2-static1 h2 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+}
+.main-container .portfolio2-static1 p {
+  color: #a1a1a1;
+  font-size: 16px;
+  font-style: italic;
+}
+.main-container .portfolio2-static1 .banner-content {
+  position: relative;
+}
+.main-container .portfolio2-static1 .banner-content .more-info {
+  background: #fbaf5d;
+  border-radius: 3px;
+  color: #fff;
+  display: block;
+  line-height: 50px;
+  position: absolute;
+  padding: 0 35px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  top: 50%;
+  right: 0;
+  margin-top: -27px;
+}
+.main-container .portfolio2-static1 .banner-content .more-info:after {
+  display: inline-block;
+  content: "\f107";
+  font-family: FontAwesome;
+  margin-left: 10px;
+}
+.main-container .portfolio2-static1 .banner-content .more-info:hover {
+  background: #a43d21;
+}
 .main-container .tilte-portfolio1 .wpb_wrapper > h3 {
   color: #353535;
   font-size: 28px;
@@ -932,6 +970,30 @@
   height: 12px;
   width: 12px;
   margin-bottom: 5px;
+}
+.main-container .tilte-portfolio2 {
+  text-align: center;
+}
+.main-container .tilte-portfolio2 .wpb_wrapper > h3 {
+  color: #353535;
+  font-size: 24px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.main-container .tilte-portfolio2 .wpb_wrapper > h3:after {
+  background: #353535;
+  content: "";
+  display: block;
+  width: 48px;
+  height: 3px;
+  margin: 20px auto 0;
+}
+.main-container .tilte-portfolio2 p {
+  font-style: italic;
+  font-size: 16px;
+  max-width: 500px;
+  margin: auto;
 }
 .main-container .portfolio1-brandlogo .brands-carousel {
   border: 1px solid #dedede;
@@ -1019,6 +1081,69 @@
 .main-container .portfolio1-testimonial .slick-slider .slick-dots li:hover button,
 .main-container .portfolio1-testimonial .slick-slider .slick-dots li.slick-active button {
   background: #dbdbdb;
+}
+.main-container .portfolio2-testimonial .testimonials-list .slick-list {
+  padding: 0;
+}
+.main-container .portfolio2-testimonial .testimonials-list .slick-list .quote {
+  text-align: center;
+  padding-top: 65px;
+  background: url(../images/portfolio2_icon_testimonials.png) no-repeat 50% 0;
+}
+.main-container .portfolio2-testimonial .testimonials-list .slick-list .quote blockquote {
+  border: 0;
+  text-align: center;
+  position: relative;
+  margin: 0 auto 20px;
+  max-width: 1000px;
+}
+.main-container .portfolio2-testimonial .testimonials-list .slick-list .quote blockquote p {
+  color: #bbbbbb;
+  font-size: 16px;
+  font-style: italic;
+}
+.main-container .portfolio2-testimonial .testimonials-list .slick-list .quote img {
+  display: none;
+}
+.main-container .portfolio2-testimonial .testimonials-list .slick-list .quote .author {
+  text-align: center;
+  display: block;
+  padding: 20px 0;
+}
+.main-container .portfolio2-testimonial .testimonials-list .slick-list .quote .author span {
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.main-container .portfolio2-testimonial .testimonials-list .slick-list .quote .author span.title {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-style: italic;
+  margin-left: 20px;
+}
+.main-container .portfolio2-testimonial .slick-slider {
+  margin: 0;
+}
+.main-container .portfolio2-testimonial .slick-slider .slick-dots li {
+  margin: 0 3px;
+}
+.main-container .portfolio2-testimonial .slick-slider .slick-dots li button {
+  background: none;
+  border-radius: 100%;
+  border: 1px solid #a1a1a1;
+  width: 11px;
+  height: 11px;
+}
+.main-container .portfolio2-testimonial .slick-slider .slick-dots li:hover button,
+.main-container .portfolio2-testimonial .slick-slider .slick-dots li.slick-active button {
+  background: #fbaf5d;
+  border-color: #fbaf5d;
+}
+.main-container .brands-logo.portfolio2-brandlogo {
+  float: none;
 }
 .main-container .essential-container .tilte-portfolio1 {
   position: absolute;
@@ -1163,7 +1288,6 @@
   background: #4b4d4e;
   color: #fff;
 }
-<<<<<<< HEAD
 .footer .aiwidgetscss .imgdisplay {
   padding: 0;
 }
@@ -1184,7 +1308,6 @@
 .footer .aiwidgetscss .tweet_author a:hover {
   color: #fff;
 }
-=======
 .header-container.corporate1 {
   background: transparent;
 }
@@ -1193,7 +1316,7 @@
   font-weight: normal;
 }
 .header-container.corporate1 .top-bar .top-bar-inner {
-  border-bottom: 1px #5b6e82 dotted;
+  border-bottom: 1px #9d9d9e dotted;
 }
 .header-container.corporate1 .top-bar .social-icons {
   float: right;
@@ -1209,7 +1332,7 @@
 .header-container.corporate1 .top-bar .social-icons li .chairmantip {
   display: none;
 }
-.header-container .header-search .search-icon:before {
+.header-container.corporate1 .header-search .search-icon:before {
   color: #fff;
 }
 .home .header-container.corporate1 {
@@ -1218,7 +1341,6 @@
   top: 0;
   width: 100%;
 }
->>>>>>> origin/master
 .corporate-meetteam .vc_column-inner > div {
   position: relative;
   overflow: hidden;
