@@ -345,3 +345,149 @@
 		}
 	}
 }
+
+// corporate-project
+.main-container{
+	.corporate-project{
+		.feature-content{
+			h3,h4{
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 12px;
+				text-transform: uppercase;
+				font-weight: bold;
+				width: 30%;
+				margin-bottom: 20px;
+				i{
+					font-size: 0;
+					&:before{
+						font-size:20px;
+						margin-right: 10px;
+						width: 50px;
+						height: 50px;
+						text-align: center;
+						line-height: 50px;
+						color: #fff;
+						background: @primarycolor;
+						border-radius: 3px;
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}
+// .corporate-contact7
+.corporate-contact7{
+	.wpcf7{
+		.contact-input,.contact-message{
+			float: left;
+			width:50%;
+			padding: 0 20px;
+			span{
+				width: 100%;
+				display: block;
+			}
+			input,textarea{
+				width: 100%;
+				background: none;
+				border: 2px solid #fff;
+				border-radius: 2px;
+				margin: 0 0 10px;
+				padding: 5px;
+				height: 50px;
+			}
+			textarea{
+				height: 230px;
+			}
+		}
+		.contact-submit{
+			clear: both;
+			text-align: center;
+			display: inline-block;
+			margin: 20px 0 0;
+			width: 100%;
+			.button{
+				background: @primarycolor;
+				border-color: @primarycolor;
+				color: #fff;
+				&:hover{
+					background: @darkcolor;
+					border-color: @darkcolor;
+				}
+			}
+		}
+
+	}
+}
+
+// corporate-price-table
+
+.corporate-price-table{
+	.ts-price-table{
+		background: #fff;
+		border-radius: 3px;
+		box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34, 25, 25, 0.4);
+		text-align: center;
+		header{
+			padding: 20px;
+			background: lighten(@primarycolor, 10%);
+			h3,h4{
+				color: #fff;
+				font-size: 14px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+		}
+		.table-description{
+			padding: 0 20px 40px 20px;
+			.table-price{
+				padding: 50px 0;
+				margin: 0;
+				font-size: 48px;
+				font-family: @headingfont;
+				font-weight: bold;
+				text-transform: uppercase;
+				.desc-price{
+					font-size: 12px;
+				}
+			}
+			ul{
+				li{
+					padding: 15px 0;
+					border-bottom: 1px solid @bordercolor;
+					&:first-child{
+						border-top: 1px solid @bordercolor;
+					}
+				}
+			}
+			a.button{
+				margin:40px 0 0;
+				background: none;
+				border: 1px solid @darkcolor;
+				color:@darkcolor; 
+				&:hover{
+					background: @primarycolor;
+					border-color:@primarycolor;
+					color: #fff; 
+				}
+			}
+		}
+		&.active-table{
+			header{
+				background: @primarycolor;
+			}
+			.table-description{
+				a.button{
+					background: @primarycolor;
+					border-color:@primarycolor;
+					color: #fff;
+					&:hover{
+						background: @darkcolor; 
+						border-color:@darkcolor; 
+					}
+				}
+			}
+		}
+	}
+}

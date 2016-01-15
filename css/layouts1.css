@@ -577,8 +577,6 @@
 .main-container .brands-logo {
   margin: 0;
   padding: 30px 0;
-  float: left;
-  width: 100%;
 }
 .main-container .brands-logo:hover .slick-slider button {
   opacity: 1;
@@ -1664,4 +1662,135 @@
 }
 .main-container .corporate-services .services-right .wpb_content_element {
   float: left;
+}
+.main-container .corporate-project .feature-content h3,
+.main-container .corporate-project .feature-content h4 {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 30%;
+  margin-bottom: 20px;
+}
+.main-container .corporate-project .feature-content h3 i,
+.main-container .corporate-project .feature-content h4 i {
+  font-size: 0;
+}
+.main-container .corporate-project .feature-content h3 i:before,
+.main-container .corporate-project .feature-content h4 i:before {
+  font-size: 20px;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  background: #fbaf5d;
+  border-radius: 3px;
+  display: inline-block;
+}
+.corporate-contact7 .wpcf7 .contact-input,
+.corporate-contact7 .wpcf7 .contact-message {
+  float: left;
+  width: 50%;
+  padding: 0 20px;
+}
+.corporate-contact7 .wpcf7 .contact-input span,
+.corporate-contact7 .wpcf7 .contact-message span {
+  width: 100%;
+  display: block;
+}
+.corporate-contact7 .wpcf7 .contact-input input,
+.corporate-contact7 .wpcf7 .contact-input textarea,
+.corporate-contact7 .wpcf7 .contact-message input,
+.corporate-contact7 .wpcf7 .contact-message textarea {
+  width: 100%;
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  margin: 0 0 10px;
+  padding: 5px;
+  height: 50px;
+}
+.corporate-contact7 .wpcf7 .contact-input textarea,
+.corporate-contact7 .wpcf7 .contact-message textarea {
+  height: 230px;
+}
+.corporate-contact7 .wpcf7 .contact-submit {
+  clear: both;
+  text-align: center;
+  display: inline-block;
+  margin: 20px 0 0;
+  width: 100%;
+}
+.corporate-contact7 .wpcf7 .contact-submit .button {
+  background: #fbaf5d;
+  border-color: #fbaf5d;
+  color: #fff;
+}
+.corporate-contact7 .wpcf7 .contact-submit .button:hover {
+  background: #2f2f2f;
+  border-color: #2f2f2f;
+}
+.corporate-price-table .ts-price-table {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px #FFFFFF inset, 0 1px 3px rgba(34,25,25,0.4);
+  text-align: center;
+}
+.corporate-price-table .ts-price-table header {
+  padding: 20px;
+  background: #fcc88f;
+}
+.corporate-price-table .ts-price-table header h3,
+.corporate-price-table .ts-price-table header h4 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.corporate-price-table .ts-price-table .table-description {
+  padding: 0 20px 40px 20px;
+}
+.corporate-price-table .ts-price-table .table-description .table-price {
+  padding: 50px 0;
+  margin: 0;
+  font-size: 48px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.corporate-price-table .ts-price-table .table-description .table-price .desc-price {
+  font-size: 12px;
+}
+.corporate-price-table .ts-price-table .table-description ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #f1f0f0;
+}
+.corporate-price-table .ts-price-table .table-description ul li:first-child {
+  border-top: 1px solid #f1f0f0;
+}
+.corporate-price-table .ts-price-table .table-description a.button {
+  margin: 40px 0 0;
+  background: none;
+  border: 1px solid #2f2f2f;
+  color: #2f2f2f;
+}
+.corporate-price-table .ts-price-table .table-description a.button:hover {
+  background: #fbaf5d;
+  border-color: #fbaf5d;
+  color: #fff;
+}
+.corporate-price-table .ts-price-table.active-table header {
+  background: #fbaf5d;
+}
+.corporate-price-table .ts-price-table.active-table .table-description a.button {
+  background: #fbaf5d;
+  border-color: #fbaf5d;
+  color: #fff;
+}
+.corporate-price-table .ts-price-table.active-table .table-description a.button:hover {
+  background: #2f2f2f;
+  border-color: #2f2f2f;
 }
