@@ -442,6 +442,23 @@ button {
 .sidebar-home.collapse-menu .widget.widget_shopping_cart .widget_shopping_cart_content .mini_cart_content.loading .loading {
   display: block;
 }
+.aiwidgetscss .aiwidget-title {
+  display: none;
+}
+.aiwidgetscss .imgdisplay {
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.aiwidgetscss .thinkTwitFollow {
+  padding: 0 15px;
+}
+.aiwidgetscss .tweettxts {
+  font-size: 12px;
+}
+.aiwidgetscss .tweet_author_name a,
+.aiwidgetscss .tweet_author a {
+  font-size: 13px;
+}
 .wrapper .slick-slider .slick-list {
   padding-top: 30px;
   padding-bottom: 5px;
@@ -2438,6 +2455,10 @@ button {
 .footer .footer-top .footer-top-inner .widget.widget_wysija .widget_wysija_cont .widget_wysija {
   width: 100%;
   position: relative;
+}
+.footer .footer-top .footer-top-inner .widget.widget_wysija form.widget_wysija .widget_wysija .intro,
+.footer .footer-top .footer-top-inner .widget.widget_wysija .widget_wysija_cont .widget_wysija .intro {
+  display: none;
 }
 .footer .footer-top .footer-top-inner .widget.widget_wysija form.widget_wysija .widget_wysija .wysija-paragraph,
 .footer .footer-top .footer-top-inner .widget.widget_wysija .widget_wysija_cont .widget_wysija .wysija-paragraph {

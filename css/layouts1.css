@@ -1200,6 +1200,11 @@
   top: 12px;
   left: 0;
 }
+.footer.portfolio1 .tagcloud:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .footer.portfolio1 .tagcloud a {
   border-radius: 2px;
   border: 1px solid #4b4d4e;
@@ -1307,6 +1312,77 @@
 .footer .aiwidgetscss .tweet_author_name a:hover,
 .footer .aiwidgetscss .tweet_author a:hover {
   color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .header-container.portfolio1 {
+    border: 0;
+  }
+  .header-container.portfolio1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link {
+    padding: 29px 1px 28px;
+  }
+  .header-container.portfolio1 .content-header {
+    top: -160px;
+  }
+  .header-container.portfolio1 .logo-wrap {
+    border: 0;
+  }
+  .main-container .page-title h1 {
+    font-size: 30px;
+  }
+  .main-container .tilte-portfolio1 .wpb_wrapper > h3 {
+    font-size: 20px;
+  }
+  .main-container .essential-container .tilte-portfolio1 {
+    position: static;
+    margin-bottom: 15px;
+  }
+  .main-container .portfolio1-static1 h2,
+  .main-container .portfolio2-static1 h2 {
+    font-size: 20px;
+  }
+  .main-container .portfolio1-static1 p,
+  .main-container .portfolio2-static1 p {
+    font-size: 14px;
+  }
+  .footer.portfolio1 .widget-social .social-icons li {
+    margin: 0 10px 3px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-container.portfolio1 {
+    border: 0;
+  }
+  .header-container.portfolio1 .content-header {
+    top: -160px;
+    border: 0;
+  }
+  .header-container.portfolio1 .logo-wrap {
+    border: 0;
+  }
+  .footer.portfolio1 .footer-top .col-sm-6 {
+    min-height: 370px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-container .header .header-inner .content-header {
+    margin-right: -49px;
+  }
+  .main-container .page-title h1 {
+    font-size: 18px;
+  }
+  .main-container .portfolio1-testimonial {
+    margin-bottom: 50px;
+  }
+  .main-container .portfolio1-static1 .banner-content .more-info,
+  .main-container .portfolio2-static1 .banner-content .more-info {
+    position: static;
+    margin: 20px 0 0;
+    display: inline-block;
+  }
+  .footer.portfolio1 .footer-top .col-sm-6 {
+    min-height: auto;
+    margin-bottom: 30px;
+  }
 }
 .header-container.corporate1 {
   background: transparent;
