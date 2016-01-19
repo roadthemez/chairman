@@ -634,8 +634,8 @@ Class chairman {
 						$themevariables['menu_color'] = '#fff';
 					break;
 					case 5:
-						$themevariables['primary_color'] = '#3ACF87';
-						$themevariables['sale_color'] = '#3ACF87';
+						$themevariables['primary_color'] = '#71a9d0';
+						$themevariables['menu_color'] = '#fff';						
 					break;
 					case 6:
 						$themevariables['primary_color'] = '#DB6163';
