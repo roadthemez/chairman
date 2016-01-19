@@ -1690,6 +1690,12 @@
   border-radius: 3px;
   display: inline-block;
 }
+.main-container .corporate-project-2 .row-container {
+  margin-top: -220px;
+  position: relative;
+  background: #fff;
+  padding-top: 20px;
+}
 .corporate-contact7 .wpcf7 .contact-input,
 .corporate-contact7 .wpcf7 .contact-message {
   float: left;
