@@ -1338,7 +1338,7 @@ button {
   color: #fbaf5d;
 }
 .header-container .header .horizontal-menu .primary-menu-container ul.nav-menu li a {
-  color: #ffffff;
+  color: #323334;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -1452,7 +1452,7 @@ button {
   padding: 41px 25px;
 }
 .header-container .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link .link_text {
-  color: #ffffff;
+  color: #323334;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 700;
@@ -1861,7 +1861,7 @@ button {
   background-color: #fbaf5d;
   background-image: none;
   border-bottom: 1px solid #faa344;
-  color: #ffffff;
+  color: #323334;
   display: block;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -1901,7 +1901,7 @@ button {
   background-color: #fbaf5d;
   background-image: none;
   border-bottom: 1px solid #faa344;
-  color: #ffffff;
+  color: #323334;
   display: block;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-size: 12px;
@@ -1930,7 +1930,7 @@ button {
 .header-container .header .morelesscate span {
   background-color: #fbaf5d !important;
   background-image: none;
-  color: #ffffff;
+  color: #323334;
   cursor: pointer;
   display: block;
   font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -1950,7 +1950,7 @@ button {
   height: 47px;
   line-height: 47px;
   padding-right: 15px;
-  color: #ffffff;
+  color: #323334;
 }
 .header-container .header .morelesscate span.lesscate {
   display: none;
