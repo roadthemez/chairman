@@ -379,6 +379,7 @@ if (!class_exists('chairman_Theme_Config')) {
                             'seventh' => 'Seventh',
 							'corporate1' => 'Corporate1',
 							'corporate2' => 'Corporate2',
+							'corporate3' => 'Corporate3',
                         ),
                         'default'   => 'default'
                     ),

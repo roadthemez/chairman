@@ -1390,7 +1390,7 @@
   font-weight: normal;
 }
 .header-container.corporate1 .top-bar .top-bar-inner {
-  border-bottom: 1px #5b6e82 dotted;
+  border-bottom: 1px #9d9d9e dotted;
 }
 .header-container.corporate1 .top-bar .social-icons {
   float: right;
@@ -1406,14 +1406,51 @@
 .header-container.corporate1 .top-bar .social-icons li .chairmantip {
   display: none;
 }
-.header-container.corporate1 .header-search .search-icon:before {
-  color: #fff;
+.header-container.corporate2 {
+  border-bottom: 1px solid #576777;
+}
+.header-container.corporate3 .top-bar,
+.header-container.corporate3 .header {
+  padding: 0 70px;
+}
+.header-container.corporate3 .top-bar .social-icons,
+.header-container.corporate3 .header .social-icons {
+  float: right;
+  line-height: 40px;
+}
+.header-container.corporate3 .top-bar .social-icons li,
+.header-container.corporate3 .header .social-icons li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.header-container.corporate3 .top-bar .social-icons li a,
+.header-container.corporate3 .header .social-icons li a {
+  display: block;
+}
+.header-container.corporate3 .top-bar .social-icons li .chairmantip,
+.header-container.corporate3 .header .social-icons li .chairmantip {
+  display: none;
 }
 .home .header-container.corporate1 {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
+}
+.home .header-container.corporate1 .header-search .search-icon:before {
+  color: #fff;
+}
+.home .header-container.corporate2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.home .header-container.corporate2 .header-search .search-icon:before {
+  color: #fff;
+}
+.home .header-container.corporate2 .vmenu-toggler .vmenu-toggler-button {
+  color: #fff;
 }
 .corporate-meetteam .vc_column-inner > div {
   position: relative;
@@ -1779,6 +1816,8 @@
 }
 .corporate-price-table .ts-price-table .table-description a.button {
   margin: 40px 0 0;
+  line-height: 40px;
+  padding: 0 20px;
   background: none;
   border: 1px solid #2f2f2f;
   color: #2f2f2f;
@@ -1799,4 +1838,10 @@
 .corporate-price-table .ts-price-table.active-table .table-description a.button:hover {
   background: #2f2f2f;
   border-color: #2f2f2f;
+}
+@media screen and (max-width: 767px) {
+  .corporate-contact7 .wpcf7 .contact-input,
+  .corporate-contact7 .wpcf7 .contact-message {
+    width: 100%;
+  }
 }
