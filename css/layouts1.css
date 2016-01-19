@@ -1406,14 +1406,29 @@
 .header-container.corporate1 .top-bar .social-icons li .chairmantip {
   display: none;
 }
-.header-container.corporate1 .header-search .search-icon:before {
-  color: #fff;
+.header-container.corporate2 {
+  border-bottom: 1px solid #576777;
 }
 .home .header-container.corporate1 {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
+}
+.home .header-container.corporate1 .header-search .search-icon:before {
+  color: #fff;
+}
+.home .header-container.corporate2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.home .header-container.corporate2 .header-search .search-icon:before {
+  color: #fff;
+}
+.home .header-container.corporate2 .vmenu-toggler .vmenu-toggler-button {
+  color: #fff;
 }
 .corporate-meetteam .vc_column-inner > div {
   position: relative;
