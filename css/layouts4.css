@@ -1845,3 +1845,12 @@
     width: 100%;
   }
 }
+.construction-about .widget_text .widgettitle {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+.construction-about .about-right .widget_text {
+  padding-left: 20px;
+}
