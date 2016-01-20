@@ -48,6 +48,11 @@ switch($bloglayout) {
 		$blogcolclass = 9;
 		$chairman_postthumb = '';
 		break;
+	case 'index1':
+		$blogclass = 'index1';
+		$blogcolclass = 9;
+		$chairman_postthumb = '';
+		break;
 	default:
 		$blogclass = 'blog-nosidebar';
 		$blogcolclass = 12;
@@ -55,17 +60,9 @@ switch($bloglayout) {
 		$chairman_postthumb = 'chairman-post-thumb';
 }
 ?>
+
 <div class="main-container">
-	<div class="blog-header-title">
-		<div class="container">
-			<div class="title-breadcrumb-inner">
-				<header class="entry-header">
-					<h1 class="entry-title"><?php if(isset($chairman_opt)) { echo esc_html($chairman_opt['blog_header_text']); } else { _e('Blog', 'chairman');}  ?></h1>
-				</header>
-				<?php Chairman::chairman_breadcrumb(); ?>
-			</div>
-		</div>
-	</div>
+	<?php  putRevSlider("blog1_slider");  ?> 
 	<div class="container">
 		<div class="row">
 			<?php if($blogsidebar=='left') : ?>
