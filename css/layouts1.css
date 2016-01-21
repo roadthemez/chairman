@@ -1845,6 +1845,7 @@
     width: 100%;
   }
 }
+<<<<<<< HEAD
 .header-container.blog1 .header .header-top {
   background: #fff;
 }
@@ -1987,4 +1988,14 @@
 }
 .footer .footer-bottom .widget-copyright {
   color: #848484;
+=======
+.construction-about .widget_text .widgettitle {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+.construction-about .about-right .widget_text {
+  padding-left: 20px;
+>>>>>>> origin/master
 }
