@@ -17,7 +17,7 @@
 			<div class="container">
 				<div class="footer-top-inner"> 
 					<div class="row">
-						<?php if(isset($chairman_opt['social_icons']) && $chairman_opt['about_us']!=''){ ?>
+						<?php if(isset($chairman_opt['social_icons']) && $chairman_opt['social_icons']!=''){ ?>
 							<div class="col-md-5 col-xs-12">
 								<div class="widget widget-social"> 
 									<?php

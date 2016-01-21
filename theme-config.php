@@ -371,15 +371,12 @@ if (!class_exists('chairman_Theme_Config')) {
                         //Must provide key => value pairs for select options
                         'options'   => array(
                             'default' => 'Default',
-                            'second' => 'Second',
-                            'third' => 'Third',
-                            'four' => 'Four',
-                            'blank' => 'Blank',
-                            'sixth' => 'Sixth',
-                            'seventh' => 'Seventh',
+                            'furniture2' => 'Furniture2',
+                            'portfolio1' => 'Portfolio1',  
 							'corporate1' => 'Corporate1',
 							'corporate2' => 'Corporate2',
 							'corporate3' => 'Corporate3',
+                            'blog1' => 'Blog1',
                         ),
                         'default'   => 'default'
                     ),
@@ -619,9 +616,9 @@ if (!class_exists('chairman_Theme_Config')) {
                         //Must provide key => value pairs for select options
                         'options'   => array(
                             'default' => 'Default',
-                            'second' => 'Second',
-                            'third' => 'Third',
-                            'four' => 'Four',
+                            'furniture2' => 'Furniture2',
+                            'portfolio1' => 'Portfolio1', 
+                            'blog1' => 'Blog1',
                         ),
                         'default'   => 'default'
                     ),
@@ -810,7 +807,7 @@ if (!class_exists('chairman_Theme_Config')) {
                     ),
                 )
             );
-       
+             
 			
 			$this->sections[] = array(
 				'icon'       => 'el-icon-website',
@@ -831,8 +828,16 @@ if (!class_exists('chairman_Theme_Config')) {
 						'title'    => esc_html__( 'Menu #2', 'chairman' ),
 						'subtitle' => esc_html__( 'Select a menu', 'chairman' ),
 					), 
+                    array(
+                        'id'       => 'menu_blog1',
+                        'type'     => 'select',
+                        'data'     => 'menus',
+                        'title'    => esc_html__( 'Menu Blog1', 'chairman' ),
+                        'subtitle' => esc_html__( 'Select a menu', 'chairman' ),
+                    ),
 				)
 			);
+            
 			
 			//Fonts
 			$this->sections[] = array(
