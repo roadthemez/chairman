@@ -1848,6 +1848,10 @@
 .home .blog-header-title {
   display: none;
 }
+.home .main-container .blog-page .post {
+  border: 0;
+  padding-bottom: 0;
+}
 .home .main-container .blog-page .post:after {
   content: "";
   display: table;
@@ -1885,6 +1889,10 @@
 .home .main-container .blog-page .post.even .postinfo-wrapper {
   float: left;
   padding-right: 15px;
+}
+.home .main-container .blog-page .post.sticky {
+  border-bottom: 1px solid #f1f0f0;
+  padding-bottom: 20px;
 }
 .home .main-container .blog-page .post.sticky .post-thumbnail {
   width: 100%;

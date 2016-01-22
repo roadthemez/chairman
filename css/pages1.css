@@ -403,6 +403,7 @@
 }
 .main-container .blog-page .social-sharing .social-icons li .social-icon:hover {
   background: #fbaf5d !important;
+  color: #fff;
 }
 .main-container .blog-page .social-sharing .social-icons li .social-icon i {
   line-height: 26px;

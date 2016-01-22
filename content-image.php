@@ -81,7 +81,9 @@ global $chairman_opt, $chairman_postthumb, $chairman_postclass;
 							<?php echo '<span class="month">'.get_the_date('M', $post->ID).'</span><span class="day">'.get_the_date('d', $post->ID).'</span><span class="year">'.get_the_date('Y', $post->ID).'</span>' ;?>
 						</span>
 					</div> 
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h1 class="entry-title">
+						<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+					</h1>
 				</header>
 			<?php }?>
 			<?php if ( is_single() ) : ?>
