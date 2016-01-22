@@ -637,7 +637,7 @@ button {
 }
 .header-container .top-bar {
   background: #323334;
-  color: #9d9d9e;
+  color: #ffffff;
   font-size: 13px;
   font-weight: 700;
   position: relative;
@@ -689,7 +689,7 @@ button {
   background: none;
   border: 0;
   box-shadow: none;
-  color: #9d9d9e;
+  color: #ffffff;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   height: 40px;
 }
@@ -714,7 +714,7 @@ button {
   box-shadow: 0 1px 2px 1px rgba(0,0,0,0.2);
 }
 .header-container .top-bar .box-right .switcher .currency .chosen-container .chosen-results li {
-  color: #9d9d9e;
+  color: #ffffff;
 }
 .header-container .top-bar .box-right .switcher .currency .chosen-container .chosen-results li.result-selected,
 .header-container .top-bar .box-right .switcher .currency .chosen-container .chosen-results li:hover {
@@ -749,7 +749,7 @@ button {
 .header-container .top-bar .box-right .switcher #lang_sel ul > li a {
   background: none;
   border: 0;
-  color: #9d9d9e;
+  color: #ffffff;
   line-height: 40px;
   height: 40px;
 }
@@ -778,7 +778,7 @@ button {
   color: #fbaf5d;
 }
 .header-container .vmenu-toggler .vmenu-toggler-button {
-  color: #323334;
+  color: #5b6e82;
   cursor: pointer;
   font-size: 22px;
   float: left;
@@ -885,7 +885,7 @@ button {
   margin: auto;
 }
 .header-container .widget_shopping_cart .widget_shopping_cart_content .cart-toggler a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
   font-size: 16px;
   font-weight: bold;
@@ -1122,7 +1122,7 @@ button {
 .header-container .header-search .search-icon:before {
   display: block;
   content: "\f002";
-  color: #323334;
+  color: #5b6e82;
   font-family: FontAwesome;
   font-size: 16px;
   line-height: 36px;
