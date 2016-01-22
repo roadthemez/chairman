@@ -1845,3 +1845,76 @@
     width: 100%;
   }
 }
+.construction-about .widget_text .widgettitle {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+.construction-about .about-right .widget_text {
+  padding-left: 20px;
+}
+.construction-teams .short-biography {
+  text-align: center;
+}
+.construction-teams .short-biography .name-content {
+  padding: 15px;
+}
+.construction-teams .short-biography .name-content h3,
+.construction-teams .short-biography .name-content h4 {
+  font-size: 18px;
+}
+.construction-teams .short-biography .name-content h3 a,
+.construction-teams .short-biography .name-content h4 a {
+  color: #353535;
+}
+.construction-teams .short-biography .name-content h3 a:hover,
+.construction-teams .short-biography .name-content h4 a:hover {
+  color: #71a9d0;
+}
+.construction-teams .short-biography .social {
+  padding: 15px;
+  background-color: #f1f0f0;
+}
+.construction-teams .short-biography .social br {
+  display: none;
+}
+.construction-teams .short-biography .social a {
+  display: inline-block;
+  color: #353535;
+  font-size: 0;
+  padding: 0 10px;
+}
+.construction-teams .short-biography .social a:hover {
+  color: #71a9d0;
+}
+.construction-teams .short-biography .social a i {
+  font-size: 14px;
+}
+.box-construction {
+  text-align: center;
+}
+.box-construction .vc_icon_element >div {
+  width: 135px !important;
+  height: 135px !important;
+  line-height: 135px !important;
+  border-radius: 100%;
+  border: 2px solid #fff !important;
+  background: rgba(255,255,255,0.3);
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  transition: background 0.2s, color 0.2s;
+}
+.box-construction .vc_icon_element >div:hover {
+  background-color: #71a9d0 !important;
+  border-color: #71a9d0 !important;
+}
+.box-construction .vc_custom_heading {
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+}
