@@ -1845,7 +1845,73 @@
     width: 100%;
   }
 }
-<<<<<<< HEAD
+.home .blog-header-title {
+  display: none;
+}
+.home .main-container .blog-page .post:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.home .main-container .blog-page .post .post-thumbnail {
+  width: 50%;
+  margin: 0;
+}
+.home .main-container .blog-page .post .postinfo-wrapper {
+  width: 50%;
+}
+.home .main-container .blog-page .post .postinfo-wrapper .entry-header {
+  display: block;
+}
+.home .main-container .blog-page .post .postinfo-wrapper .entry-summary {
+  text-align: left;
+}
+.home .main-container .blog-page .post .postinfo-wrapper .post-cateogy {
+  display: inline-block;
+  margin-right: 15px;
+}
+.home .main-container .blog-page .post.odd .post-thumbnail {
+  float: left;
+  padding-right: 15px;
+}
+.home .main-container .blog-page .post.odd .postinfo-wrapper {
+  float: right;
+  padding-left: 15px;
+}
+.home .main-container .blog-page .post.even .post-thumbnail {
+  float: right;
+  padding-left: 15px;
+}
+.home .main-container .blog-page .post.even .postinfo-wrapper {
+  float: left;
+  padding-right: 15px;
+}
+.home .main-container .blog-page .post.sticky .post-thumbnail {
+  width: 100%;
+  margin: 30px 0;
+  padding: 0;
+}
+.home .main-container .blog-page .post.sticky .postinfo-wrapper {
+  width: 100%;
+  padding: 0;
+}
+.home .main-container .blog-page .post.sticky .postinfo-wrapper .entry-header {
+  display: none;
+}
+.home .main-container .blog-page .post.sticky .entry-header {
+  display: block;
+  text-align: center;
+}
+.home .main-container .blog-page .post.sticky .entry-summary {
+  text-align: center;
+}
+.home .main-container .blog-page .post .entry-header {
+  display: none;
+  text-align: left;
+}
+.blog .rev_slider_wrapper {
+  margin-bottom: 30px !important;
+}
 .header-container.blog1 .header .header-top {
   background: #fff;
 }
@@ -1988,7 +2054,7 @@
 }
 .footer .footer-bottom .widget-copyright {
   color: #848484;
-=======
+}
 .construction-about .widget_text .widgettitle {
   margin-bottom: 10px;
   text-transform: capitalize;
@@ -1997,7 +2063,6 @@
 }
 .construction-about .about-right .widget_text {
   padding-left: 20px;
->>>>>>> origin/master
 }
 .construction-teams .short-biography {
   text-align: center;

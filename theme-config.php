@@ -1391,6 +1391,12 @@ if (!class_exists('chairman_Theme_Config')) {
                         'title'     => esc_html__('Blog header text', 'chairman'),
                         'default'   => 'Blog'
                     ),
+					array(
+                        'id'        => 'blog_slider_alias',
+                        'type'      => 'text',
+                        'title'     => esc_html__('Blog slider alias', 'chairman'),
+                        'default'   => ''
+                    ),
                     array(
                         'id'        => 'blog_layout',
                         'type'      => 'select',
@@ -1399,6 +1405,7 @@ if (!class_exists('chairman_Theme_Config')) {
 							'largeimage' => 'Large Image',
                             'nosidebar' => 'No Sidebar',
                             'sidebar' => 'Sidebar',
+							'grid' => 'Grid',
                         ),
                         'default'   => 'nosidebar'
                     ),

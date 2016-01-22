@@ -13,11 +13,13 @@
  * @subpackage chairman_Themes
  * @since Huge Shop 1.0
  */
-global $chairman_opt, $chairman_postthumb, $chairman_postcount;
+global $chairman_opt, $chairman_postthumb, $chairman_postcount, $chairman_postclass;
 
 get_header(); ?>
 <?php
 $chairman_postcount = 0;
+$chairman_postindex = 0;
+$chairman_postclass = '';
 
 if(isset($chairman_opt)){
 	$bloglayout = 'nosidebar';
@@ -46,12 +48,12 @@ switch($bloglayout) {
 	case 'largeimage':
 		$blogclass = 'blog-large';
 		$blogcolclass = 9;
-		$chairman_postthumb = '';
+		$chairman_postthumb = 'chairman-category-thumb';
 		break;
-	case 'index1':
-		$blogclass = 'index1';
+	case 'grid':
+		$blogclass = 'grid';
 		$blogcolclass = 9;
-		$chairman_postthumb = '';
+		$chairman_postthumb = 'chairman-category-thumb';
 		break;
 	default:
 		$blogclass = 'blog-nosidebar';
@@ -62,7 +64,23 @@ switch($bloglayout) {
 ?>
 
 <div class="main-container">
-	<?php  putRevSlider("blog1_slider");  ?> 
+
+	<?php 
+	if(isset($chairman_opt['blog_slider_alias'])){
+		if(is_home() && $chairman_opt['blog_slider_alias']!=''){
+			putRevSlider($chairman_opt['blog_slider_alias']);
+		}
+	}?> 
+	<div class="blog-header-title">
+		<div class="container">
+			<div class="title-breadcrumb-inner">
+				<header class="entry-header">
+					<h1 class="entry-title"><?php if(isset($chairman_opt)) { echo esc_html($chairman_opt['blog_header_text']); } else { _e('Blog', 'chairman');}  ?></h1>
+				</header>
+				<?php Chairman::chairman_breadcrumb(); ?>
+			</div>
+		</div>
+	</div>
 	<div class="container">
 		<div class="row">
 			<?php if($blogsidebar=='left') : ?>
@@ -76,7 +94,15 @@ switch($bloglayout) {
 
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
+							<?php if($chairman_postindex == 0){
+								$chairman_postclass = 'odd';
+							} else {
+								$chairman_postclass = 'even';
+							}?>
 							<?php get_template_part( 'content', get_post_format() ); ?>
+							<?php
+								$chairman_postindex = 1 - $chairman_postindex;
+							?>
 						<?php endwhile; ?>
 
 						<div class="pagination">

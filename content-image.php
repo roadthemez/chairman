@@ -9,9 +9,9 @@
  * @since Huge Shop 1.0
  */
 
-global $chairman_opt, $chairman_postthumb;
+global $chairman_opt, $chairman_postthumb, $chairman_postclass;
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class($chairman_postclass); ?>>
 	<header class="entry-header">
 		<?php if ( is_single() ) : ?>
 			<span class="post-cateogy"> 
@@ -66,6 +66,24 @@ global $chairman_opt, $chairman_postthumb;
 	<div class="postinfo-wrapper <?php if ( !has_post_thumbnail() ) { echo 'no-thumbnail';} ?>">
 		
 		<div class="post-info"> 
+			<?php if (is_home()){ ?>
+				<header class="entry-header"> 
+					<div class="link-top">
+						<span class="post-cateogy"> 
+							<?php echo get_the_category_list( ', ' ); ?>
+						</span>
+						<span class="post-author">
+							<span class="post-by"><?php esc_html_e('Posts by', 'chairman');?> : </span>
+							<?php printf( get_the_author() ); ?>
+						</span>
+						<span class="post-separator">|</span>
+						<span class="post-date"> 
+							<?php echo '<span class="month">'.get_the_date('M', $post->ID).'</span><span class="day">'.get_the_date('d', $post->ID).'</span><span class="year">'.get_the_date('Y', $post->ID).'</span>' ;?>
+						</span>
+					</div> 
+					<h1 class="entry-title"><?php the_title(); ?></h1>
+				</header>
+			<?php }?>
 			<?php if ( is_single() ) : ?>
 				<div class="entry-content">
 					<?php the_content( wp_kses(__( 'Continue reading <span class="meta-nav">&rarr;</span>', 'chairman' ), array('span'=>array('class'=>array())) )); ?>
