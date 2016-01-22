@@ -2031,23 +2031,23 @@
   left: 0;
   font-size: 14px;
 }
-.footer .footer-middle {
+.footer.blog1 .footer-middle {
   padding: 0;
 }
-.footer .footer-middle #sb_instagram {
+.footer.blog1 .footer-middle #sb_instagram {
   position: relative;
   padding: 0 !important;
 }
-.footer .footer-middle #sb_instagram .sb_instagram_header {
+.footer.blog1 .footer-middle #sb_instagram .sb_instagram_header {
   display: none;
 }
-.footer .footer-middle #sb_instagram #sbi_images {
+.footer.blog1 .footer-middle #sb_instagram #sbi_images {
   padding: 0 !important;
 }
-.footer .footer-middle #sb_instagram #sbi_images .sbi_item {
+.footer.blog1 .footer-middle #sb_instagram #sbi_images .sbi_item {
   padding: 0 !important;
 }
-.footer .footer-middle #sb_instagram #sbi_load {
+.footer.blog1 .footer-middle #sb_instagram #sbi_load {
   background: #fff;
   position: absolute;
   top: 50%;
@@ -2057,10 +2057,10 @@
   margin-left: -170px;
   margin-top: -34px;
 }
-.footer .footer-bottom {
+.footer.blog1 .footer-bottom {
   color: #848484;
 }
-.footer .footer-bottom .widget-copyright {
+.footer.blog1 .footer-bottom .widget-copyright {
   color: #848484;
 }
 .construction-about .widget_text .widgettitle {

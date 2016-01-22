@@ -63,14 +63,7 @@ switch($bloglayout) {
 }
 ?>
 
-<div class="main-container">
-
-	<?php 
-	if(isset($chairman_opt['blog_slider_alias'])){
-		if(is_home() && $chairman_opt['blog_slider_alias']!=''){
-			putRevSlider($chairman_opt['blog_slider_alias']);
-		}
-	}?> 
+<div class="main-container"> 
 	<div class="blog-header-title">
 		<div class="container">
 			<div class="title-breadcrumb-inner">
@@ -82,6 +75,11 @@ switch($bloglayout) {
 		</div>
 	</div>
 	<div class="container">
+		<?php if(isset($chairman_opt['blog_slider_alias'])){
+			if(is_home() && $chairman_opt['blog_slider_alias']!=''){
+				putRevSlider($chairman_opt['blog_slider_alias']);
+			}
+		}?> 
 		<div class="row">
 			<?php if($blogsidebar=='left') : ?>
 				<?php get_sidebar(); ?>
