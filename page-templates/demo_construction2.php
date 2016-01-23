@@ -113,7 +113,7 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 					<div class="<?php if(isset($chairman_opt['sticky_header']) && $chairman_opt['sticky_header']) {echo 'header-sticky';} ?> <?php if ( is_admin_bar_showing() ) {echo 'with-admin-bar';} ?>">
 						<div class="container header-inner">
 							<div class="row">
-								<div class="col-xs-12 col-md-2 logo-wrap">
+								<div class="col-xs-12 col-md-3 logo-wrap">
 									<div class="global-table">
 										<div class="global-row">
 											<div class="global-cell">
@@ -129,7 +129,7 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 									</div>
 								</div>
 
-								<div class="col-xs-12 col-md-10 menu-wrap">	
+								<div class="col-xs-12 col-md-9 menu-wrap">	
 									<div class="horizontal-menu">
 										<div class="visible-large">
 											<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'primary-menu-container', 'menu_class' => 'nav-menu' ) ); ?>
