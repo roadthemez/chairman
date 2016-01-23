@@ -4,6 +4,14 @@
 		.top-bar{
 			font-weight: normal;
 			padding: 8px 0;
+			.box-left .blog-header ul li i{
+				color: @primarycolor;
+				font-size: 20px;
+			}
+		}
+		.header{
+			padding: 30px 0;
+			background: url(../images/bkg_header.png) repeat-x center bottom;
 		}
 		.global-table {
 		    height: 97px;
@@ -78,8 +86,28 @@
 			}
 		}
 	}
+	&.construction2 {
+		.header{
+			padding: 0;
+			background: none;
+		}
+		.widget.widget_product_search{
+			border: 0;
+			box-shadow:none;
+			width: 200px;
+		}
+	}
 }
-
+.home{
+	.header-container{
+		&.construction2{
+			.header{
+				position: absolute;
+				width: 100%;
+			}
+		}
+	}
+}
 
 
 
@@ -170,5 +198,20 @@
 		display: inline-block;
 		text-transform: uppercase;
 		border-bottom: 1px solid #fff;
+	}
+}
+
+
+@media screen and (max-width: 767px){
+	.header-container{
+		&.construction1{
+			.widget.widget_product_search{
+				float:none;
+				margin: 10px auto;
+			}
+			.header .header-inner{
+				padding-top: 0;
+			}
+		}
 	}
 }
