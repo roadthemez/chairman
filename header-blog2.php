@@ -14,18 +14,12 @@ if(is_ssl()){
 	$chairman_opt['logo_main']['url'] = str_replace('http:', 'https:', $chairman_opt['logo_main']['url']);
 }
 ?>
-	<div class="header-container blog1">  
+	<div class="header-container blog2"> 
+
 		<div class="header">
 			<div class="header-top">
 				<div class="container"> 
 					<div class="box-left"> 
-						<div class="horizontal-menu">
-							<div class="visible-large">
-								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'primary-menu-container', 'menu_class' => 'nav-menu' ) ); ?>
-							</div> 
-						</div>
-					</div>  
-					<div class="box-right"> 
 						<?php if(isset($chairman_opt['social_icons2'])) {
 							echo '<ul class="social-icons">';
 							foreach($chairman_opt['social_icons2'] as $key=>$value ) {
@@ -38,7 +32,10 @@ if(is_ssl()){
 								}
 							}
 							echo '</ul>';
-						}
+						} ?>
+					</div>  
+					<div class="box-right"> 
+						 <?php
 						if(class_exists('WC_Widget_Product_Search') ) { ?>
 							<div class="header-search">
 								<div class="search-icon">
@@ -65,13 +62,20 @@ if(is_ssl()){
 								</div>
 							</div>
 						</div> 
+					</div>
+				</div>
+				<div class="horizontal-menu">
+					<div class="container">
+						<div class="visible-large">
+							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'container_class' => 'primary-menu-container', 'menu_class' => 'nav-menu' ) ); ?>
+						</div>
 						<div class="visible-small mobile-menu">
 							<div class="nav-container">
 								<div class="mbmenu-toggler"><?php echo esc_html($chairman_opt['mobile_menu_label']);?><span class="mbmenu-icon"><i class="fa fa-bars"></i></span></div>
 								<?php wp_nav_menu( array( 'theme_location' => 'mobilemenu', 'container_class' => 'mobile-menu-container', 'menu_class' => 'nav-menu' ) ); ?>
 							</div>
 						</div>
-					</div>
+					</div> 
 				</div>
 			</div>
 		</div><!-- .header -->

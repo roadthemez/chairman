@@ -377,6 +377,10 @@ if (!class_exists('chairman_Theme_Config')) {
 							'corporate2' => 'Corporate2',
 							'corporate3' => 'Corporate3',
                             'blog1' => 'Blog1',
+                            'blog2' => 'Blog2',
+                            'blog3' => 'Blog3',
+                            'event1' => 'Event1',
+                            'event2' => 'Event2', 
                         ),
                         'default'   => 'default'
                     ),
@@ -619,6 +623,8 @@ if (!class_exists('chairman_Theme_Config')) {
                             'furniture2' => 'Furniture2',
                             'portfolio1' => 'Portfolio1', 
                             'blog1' => 'Blog1',
+                            'event1' => 'Event1',
+                            'event2' => 'Event2', 
                         ),
                         'default'   => 'default'
                     ),

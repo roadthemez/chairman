@@ -74,12 +74,17 @@ switch($bloglayout) {
 			</div>
 		</div>
 	</div>
+	<?php if(isset($chairman_opt['blog_slider_alias'])){
+		if(is_home() && $chairman_opt['blog_slider_alias']!=''){ ?>
+			<div class="revo-container">
+				<div class="container">
+					<?php putRevSlider($chairman_opt['blog_slider_alias']); ?>
+				</div>  
+			</div>
+		<?php }
+	}?> 
 	<div class="container">
-		<?php if(isset($chairman_opt['blog_slider_alias'])){
-			if(is_home() && $chairman_opt['blog_slider_alias']!=''){
-				putRevSlider($chairman_opt['blog_slider_alias']);
-			}
-		}?> 
+		
 		<div class="row">
 			<?php if($blogsidebar=='left') : ?>
 				<?php get_sidebar(); ?>
