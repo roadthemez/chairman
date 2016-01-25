@@ -131,7 +131,7 @@
     display: block;
   }
   .mobile-menu {
-    background: #ffb300;
+    background: #cd232f;
     float: left;
     height: 60px;
     position: relative;
@@ -200,7 +200,7 @@
     width: 100%;
   }
   .mobile-menu .mobile-menu-container ul.nav-menu > li > a:hover {
-    color: #ffb300;
+    color: #cd232f;
   }
   .mobile-menu .mobile-menu-container ul.nav-menu > li:first-child a {
     border-top: none;
@@ -219,13 +219,13 @@
     z-index: 2;
   }
   .mobile-menu .mobile-menu-container ul.nav-menu > li .fa:hover {
-    color: #ffb300;
+    color: #cd232f;
   }
   .mobile-menu .mobile-menu-container ul.nav-menu > li > ul.sub-menu > li > a {
     color: #999999;
   }
   .mobile-menu .mobile-menu-container ul.nav-menu > li > ul.sub-menu > li > a:hover {
-    color: #ffb300;
+    color: #cd232f;
   }
   .mobile-menu .mobile-menu-container ul.nav-menu > li ul.sub-menu {
     float: left;

@@ -28,8 +28,8 @@
   padding-left: 60px;
 }
 .main-container.about-page .our-works ul li i {
-  background: #ffb300;
-  border: 3px solid #ffca4d;
+  background: #cd232f;
+  border: 3px solid #e35a63;
   border-radius: 84px;
   color: #fff;
   display: inline-block;
@@ -75,9 +75,9 @@
   border: 1px solid #2f2f2f;
 }
 .main-container.about-page .about-intro a.button:hover {
-  background: #ffb300;
+  background: #cd232f;
   color: #fff;
-  border-color: #ffb300;
+  border-color: #cd232f;
 }
 .main-container.about-page .about-skill .vc_progress_bar .vc_single_bar {
   margin-bottom: 35px;
@@ -145,8 +145,8 @@
   border: 1px solid #2f2f2f;
 }
 .main-container.about-page .testimonials-container .slick-slider .slick-dots .slick-active button {
-  border-color: #ffb300;
-  background: #ffb300;
+  border-color: #cd232f;
+  background: #cd232f;
 }
 .main-container .blog-page.blog-sidebar.right-sidebar {
   padding: 0;
@@ -249,7 +249,7 @@
   color: #353535;
 }
 .main-container .blog-page .entry-title a:hover {
-  color: #ffb300;
+  color: #cd232f;
 }
 .main-container .blog-page .su-responsive-media-yes {
   margin-bottom: 0;
@@ -285,7 +285,7 @@
   font-style: italic;
   margin: 40px 0 40px 0;
   padding: 0 0 0 10px;
-  border-left: 5px solid #ffb300;
+  border-left: 5px solid #cd232f;
   line-height: 26px;
 }
 .main-container .blog-page .post-date {
@@ -298,14 +298,14 @@
   padding-right: 5px;
 }
 .main-container .blog-page .post-cateogy {
-  color: #ffb300;
+  color: #cd232f;
   font-size: 11px;
   display: block;
   font-weight: 700;
   text-transform: uppercase;
 }
 .main-container .blog-page .post-cateogy a {
-  color: #ffb300;
+  color: #cd232f;
   text-decoration: underline;
 }
 .main-container .blog-page .post-cateogy a:hover {
@@ -353,7 +353,7 @@
   color: #999999;
 }
 .main-container .blog-page .entry-meta a:hover {
-  color: #ffb300;
+  color: #cd232f;
 }
 .main-container .blog-page .entry-meta {
   margin: 0 0 30px;
@@ -402,7 +402,7 @@
   margin-right: 10px;
 }
 .main-container .blog-page .social-sharing .social-icons li .social-icon:hover {
-  background: #ffb300 !important;
+  background: #cd232f !important;
   color: #fff;
 }
 .main-container .blog-page .social-sharing .social-icons li .social-icon i {
@@ -426,10 +426,10 @@
   margin-left: 100px;
 }
 .main-container .blog-page .moretag {
-  color: #ffb300;
+  color: #cd232f;
 }
 .main-container .blog-page .moretag:hover {
-  color: #ffb300;
+  color: #cd232f;
 }
 .main-container .blog-page .navigation .newer {
   float: left;
@@ -534,8 +534,8 @@
   text-transform: uppercase;
 }
 .main-container .blog-page .page-links a:hover {
-  color: #ffb300;
-  border-bottom: 2px solid #ffb300;
+  color: #cd232f;
+  border-bottom: 2px solid #cd232f;
 }
 .main-container .blog-page .page-links > span {
   background: none;
@@ -609,8 +609,8 @@
   -o-transition: all 0.4s ease-out;
 }
 .main-container .blog-page .comments-area .commentlist li.comment article.comment .comment-info .reply a:hover {
-  border-color: #ffb300;
-  background: #ffb300;
+  border-color: #cd232f;
+  background: #cd232f;
   color: #fff;
 }
 .main-container .blog-page .comments-area .commentlist .comment-meta {
@@ -637,7 +637,7 @@
   color: #353535;
 }
 .main-container .blog-page .comments-area .commentlist .comment-meta cite .fn a:hover {
-  color: #ffb300;
+  color: #cd232f;
 }
 .main-container .blog-page .comments-area .commentlist .comment-meta cite span {
   display: none;
@@ -721,7 +721,7 @@
   border: 0;
 }
 .main-container .blog-page .comments-area .comment-respond .comment-form #submit:hover {
-  background: #ffb300;
+  background: #cd232f;
 }
 .main-container .blog-page .nav-single {
   border-bottom: 1px solid #f1f0f0;
@@ -735,7 +735,7 @@
   color: #999999;
 }
 .main-container .blog-page .nav-single a:hover {
-  color: #ffb300;
+  color: #cd232f;
 }
 .main-container .blog-page .nav-single .nav-previous {
   float: left;
@@ -747,7 +747,7 @@
 .main-container .blog-page .btn-primary,
 .main-container .blog-page #searchsubmit,
 .main-container .blog-page #wsearchsubmit {
-  background: #ffb300;
+  background: #cd232f;
   border: none;
   border-radius: 2px;
   box-shadow: none;
@@ -841,7 +841,7 @@
   color: #353535;
 }
 .main-container .blog-page.single .relatedthumb h4 a:hover {
-  color: #ffb300;
+  color: #cd232f;
 }
 .main-container .blog-page.single .relatedthumb img {
   padding: 0;
@@ -980,7 +980,7 @@
   width: 100%;
 }
 .main-container.contact-page .wpcf7-submit {
-  background: #ffb300;
+  background: #cd232f;
   border-radius: 0;
   color: #fff;
   font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -1052,14 +1052,14 @@
   transition: transform 0.2s, opacity 0.2s;
 }
 .main-container.contact-page .box-contact-2 .vc_icon_element > div:hover {
-  box-shadow: 0 0 0 3px #ffb300;
+  box-shadow: 0 0 0 3px #cd232f;
 }
 .main-container.contact-page .box-contact-2 .vc_icon_element > div:hover:after {
   -webkit-transform: scale(0.85);
   -moz-transform: scale(0.85);
   -ms-transform: scale(0.85);
   transform: scale(0.85);
-  background: #ffb300;
+  background: #cd232f;
 }
 .main-container.contact-page .box-contact-2 .vc_icon_element > div span,
 .main-container.contact-page .box-contact-2 .vc_icon_element > div a {
@@ -1115,7 +1115,7 @@
   transition: transform 0.2s, opacity 0.2s;
 }
 .main-container.contact-page .box-contact-4 .vc_icon_element > div:hover {
-  background: #ffb300;
+  background: #cd232f;
 }
 .main-container.contact-page .box-contact-4 .vc_icon_element > div:hover:after {
   border-color: #fff;
@@ -1188,7 +1188,7 @@
   color: #999;
 }
 .main-container.default-page .comments-area .commentlist li.comment article.comment .comment-info .reply .comment-reply-link:hover {
-  color: #ffb300;
+  color: #cd232f;
 }
 .main-container.default-page .comments-area .commentlist li.comment article.comment .comment-info .reply .comment-reply-link:after {
   content: "\f112";
@@ -1256,7 +1256,7 @@
 .main-container.error404 .search-form-wrapper h1 {
   font-size: 200px;
   font-weight: 900;
-  color: #ffb300;
+  color: #cd232f;
   letter-spacing: 10px;
   line-height: 1.1;
   margin: 0 0 30px;
@@ -1303,10 +1303,10 @@
   font-size: 18px;
 }
 .main-container.error404 .search-form-wrapper .form-input .button:hover {
-  color: #ffb300;
+  color: #cd232f;
 }
 .main-container.error404 .search-form-wrapper a.button {
-  background: #ffb300;
+  background: #cd232f;
   border-radius: 35px;
   box-shadow: none;
   color: #fff;
@@ -1325,7 +1325,7 @@
   margin-top: 60px;
 }
 .main-container.error404 .search-form-wrapper a.button:hover {
-  background: #cc8f00;
+  background: #a11c25;
 }
 .main-container.service-page .box-services .wpb_column:hover .wpb_text_column .box-content {
   opacity: 1;

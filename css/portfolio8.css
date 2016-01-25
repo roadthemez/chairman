@@ -20,10 +20,10 @@
   transition: all 0.3s ease;
 }
 .filter-options .btn:hover {
-  color: #ffb300;
+  color: #cd232f;
 }
 .filter-options .btn.active {
-  background: #ffb300;
+  background: #cd232f;
   box-shadow: none;
   color: #fff;
 }
@@ -148,8 +148,8 @@
 .projects-pagination ul.page-numbers li a.current,
 .projects-pagination ul.page-numbers li span:hover,
 .projects-pagination ul.page-numbers li span.current {
-  background: #ffb300;
-  border-color: #ffb300;
+  background: #cd232f;
+  border-color: #cd232f;
   color: #fff;
 }
 .single-project .project {
@@ -390,7 +390,7 @@
 }
 .single-project.has-gallery .summary .project-meta a,
 .single-project.no-gallery .summary .project-meta a {
-  color: #ffb300;
+  color: #cd232f;
 }
 .single-project.has-gallery .summary .project-meta a:hover,
 .single-project.no-gallery .summary .project-meta a:hover {
