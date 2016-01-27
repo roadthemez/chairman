@@ -637,7 +637,7 @@ button {
 }
 .header-container .top-bar {
   background: #323334;
-  color: #ffffff;
+  color: #9d9d9e;
   font-size: 13px;
   font-weight: 700;
   position: relative;
@@ -689,7 +689,7 @@ button {
   background: none;
   border: 0;
   box-shadow: none;
-  color: #ffffff;
+  color: #9d9d9e;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   height: 40px;
 }
@@ -714,7 +714,7 @@ button {
   box-shadow: 0 1px 2px 1px rgba(0,0,0,0.2);
 }
 .header-container .top-bar .box-right .switcher .currency .chosen-container .chosen-results li {
-  color: #ffffff;
+  color: #9d9d9e;
 }
 .header-container .top-bar .box-right .switcher .currency .chosen-container .chosen-results li.result-selected,
 .header-container .top-bar .box-right .switcher .currency .chosen-container .chosen-results li:hover {
@@ -749,7 +749,7 @@ button {
 .header-container .top-bar .box-right .switcher #lang_sel ul > li a {
   background: none;
   border: 0;
-  color: #ffffff;
+  color: #9d9d9e;
   line-height: 40px;
   height: 40px;
 }
