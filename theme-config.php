@@ -382,7 +382,8 @@ if (!class_exists('chairman_Theme_Config')) {
                             'blog2' => 'Blog2',
                             'blog3' => 'Blog3',
                             'event1' => 'Event1',
-                            'event2' => 'Event2', 
+                            'event2' => 'Event2',
+							'medician1' => 'Medician1', 							
                         ),
                         'default'   => 'default'
                     ),

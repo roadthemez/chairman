@@ -2017,6 +2017,46 @@
     padding-top: 0;
   }
 }
+.header-container.medician1 .top-bar {
+  border-bottom: 1px solid #f1f0f0;
+  padding: 0;
+}
+.header-container.medician1 .top-bar .box-left .blog-header ul li i {
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 100%;
+  border: 1px solid #4b4d4e;
+  color: #9d9d9e;
+}
+.header-container.medician1 .widget.widget_product_search {
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border-right: 1px solid #4b4d4e;
+  border-left: 1px solid #4b4d4e;
+}
+.header-container.medician1 .widget.widget_product_search #searchform #wsearchsubmit {
+  color: #9d9d9e;
+}
+.header-container.medician1 ul.social-icons {
+  float: right;
+  border-left: 1px solid #4b4d4e;
+}
+.header-container.medician1 ul.social-icons li {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 40px;
+}
+.header-container.medician1 ul.social-icons li a {
+  font-size: 18px;
+}
+.header-container.medician1 .header {
+  padding: 0;
+  background-image: none;
+}
 .box-medician-1 .vc_custom_heading {
   font-size: 34px;
   font-weight: 300;
@@ -2200,6 +2240,17 @@
 .main-container .box-medician-2 .wpb_content_element:hover > div h3:after,
 .main-container .box-medician-2 .wpb_content_element:hover > div h4:after {
   border-color: #18afd3;
+}
+@media screen and (max-width: 767px) {
+  .header-container.medician1 ul.social-icons {
+    border: 0;
+    float: none;
+    display: inline-block;
+  }
+  .header-container.medician1 .logo-wrap .global-table {
+    height: auto;
+    padding: 30px 0;
+  }
 }
 .home .blog-header-title {
   display: none;

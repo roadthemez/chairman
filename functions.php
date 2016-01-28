@@ -659,6 +659,14 @@ Class chairman {
 						$themevariables['link_color'] = '#3c9feb';
 						$themevariables['footer_link_hover_color'] = '#cd232f';
 					break;
+					case 9:
+						$themevariables['primary_color'] = '#18afd3';
+						$themevariables['topbar_color'] = '#666666';
+						$themevariables['topbar_bg'] = '#fff';
+						$themevariables['topbar_link_color'] = '#666666';
+						$themevariables['topbar_link_hover_color'] = '#18afd3';
+						$themevariables['footer_link_hover_color'] = '#18afd3';
+					break;
 
 				}
 

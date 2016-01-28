@@ -1,4 +1,55 @@
 
+// header-container
+.header-container{
+	 &.medician1{
+	 	.top-bar{
+	 		border-bottom: 1px solid @bordercolor;
+	 		padding: 0;
+	 		.box-left .blog-header ul li i{
+		 		font-size: 14px;
+		 		width: 25px;
+		 		height: 25px;
+		 		text-align: center;
+		 		line-height: 25px;
+		 		border-radius: 100%;
+		 		border: 1px solid @bordercolor;
+		 		color: @topbarcolor;
+	 		}
+	 	}
+	 	.widget.widget_product_search{
+	 		border: 0;
+	 		box-shadow: none;
+	 		border-radius: 0;
+	 		border-right: 1px solid @bordercolor;
+	 		border-left: 1px solid @bordercolor;
+	 		#searchform #wsearchsubmit{
+	 			color: @topbarcolor;
+	 		}
+	 	}
+	 	ul.social-icons{
+	 		float:right;
+	 		border-left: 1px solid @bordercolor;
+	 		li{
+	 			display: inline-block;
+ 			    padding: 0 15px;
+ 			    line-height: 40px;
+ 			    a{
+ 			    	font-size: 16px;
+ 			    	line-height: 1;
+ 			    	&:hover{
+ 			    		color: @topbarlinkhovercolor;
+ 			    	}
+ 			    }
+	 		}
+	 	}
+	 	.header{
+	 		padding: 0;
+	 		background-image: none;
+	 	}
+
+	 }
+}
+
 
 // box-medician-1
 
@@ -218,6 +269,24 @@
 							border-color: #18afd3;
 						}
 					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px){
+	.header-container{
+		&.medician1{
+			ul.social-icons{
+				border: 0;
+				float: none;
+				display: inline-block;
+			}
+			.logo-wrap{
+				.global-table{
+					height: auto;
+					padding: 30px 0;
 				}
 			}
 		}
