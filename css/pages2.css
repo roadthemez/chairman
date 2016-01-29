@@ -206,9 +206,6 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #e9e9e9;
 }
-.main-container .blog-page .post.sticky .entry-title a {
-  color: #c7631a;
-}
 .main-container .blog-page .post .post-thumbnail {
   margin: 30px 0;
   position: relative;
@@ -406,6 +403,7 @@
 }
 .main-container .blog-page .social-sharing .social-icons li .social-icon:hover {
   background: #c7631a !important;
+  color: #fff;
 }
 .main-container .blog-page .social-sharing .social-icons li .social-icon i {
   line-height: 26px;

@@ -210,3 +210,78 @@
 		}
 	}
 }
+
+.main-container {
+	.event1-static1 {
+		text-align: center;
+		.content-static {
+			background: url(../images/event1_img1.png) no-repeat 50% 0;
+			padding-top: 80px;
+			h4 {
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+			h3 {
+				margin-bottom: 20px;
+			}
+			.button-container {
+				a {
+					border-radius: 3px;
+					color: #fff;
+					display: inline-block;
+					line-height: 50px;
+					padding: 0 25px;
+					text-transform: uppercase;
+					vertical-align: middle;
+					margin:  20px 5px 0;
+					&.ticket {
+						background: @linkcolor;
+						&:hover {
+							background: @primarycolor;
+						}
+					}
+					&.viewmore {
+						background: @primarycolor;
+						&:hover {
+							background: @linkcolor;
+						}
+					}
+				}
+			}
+		}
+	}
+	.event-title {
+		font-size: 36px !important;
+		font-weight: 700;
+		color: @headingcolor;
+		text-transform: uppercase;
+	}
+	.latest-posts3 {
+		.post-wrapper {
+			.post-thumb {
+				width: 50%;
+				float: left;
+				padding-right: 20px;
+			}
+			.post-info {
+				padding-left: 20px;
+				width: 50%;
+				text-align: left;
+				float: left;
+				.post-title {
+					a {
+						color: @headingcolor;
+						&:hover {
+							color: @primarycolor;
+						}
+					}
+				}
+				.post-bottom {
+					.comment {
+						margin: 0 10px;
+					}
+				}
+			}
+		}
+	}
+}

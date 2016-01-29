@@ -692,6 +692,55 @@
 			]
 		});
 		
+		//Latest posts carousel - layout 2
+		jQuery('.latest-posts3 .posts-carousel').slick({
+			infinite: false,
+			arrows: true,
+			dots: false,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			speed: chairman_bloganimate,
+			easing: 'linear',
+			autoplay: chairman_blogscroll,
+			autoplaySpeed: chairman_blogpause,
+			responsive: [
+				{
+				  breakpoint: 1200,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				  }
+				},
+				{
+				  breakpoint: 960,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				  }
+				},
+				{
+				  breakpoint: 760,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				  }
+				},
+				{
+				  breakpoint: 600,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				  }
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				  }
+				}
+			]
+		});
 		
 		//Testimonials carousel
 		jQuery('.box-testimonial .wpb_wrapper > h3').each(function(){
