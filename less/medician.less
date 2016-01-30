@@ -12,7 +12,7 @@
 		 		text-align: center;
 		 		line-height: 25px;
 		 		border-radius: 100%;
-		 		border: 1px solid lighten(@topbarbg, 10%);
+		 		border: 1px solid @bordercolor;
 		 		color: @topbarcolor;
 	 		}
 	 	}
@@ -20,15 +20,15 @@
 	 		border: 0;
 	 		box-shadow: none;
 	 		border-radius: 0;
-	 		border-right: 1px solid lighten(@topbarbg, 10%);
-	 		border-left: 1px solid lighten(@topbarbg, 10%);
+	 		border-right: 1px solid @bordercolor;
+	 		border-left: 1px solid @bordercolor;
 	 		#searchform #wsearchsubmit{
 	 			color: @topbarcolor;
 	 		}
 	 	}
 	 	ul.social-icons{
 	 		float:right;
-	 		border-left: 1px solid lighten(@topbarbg, 10%);
+	 		border-left: 1px solid @bordercolor;
 	 		li{
 	 			display: inline-block;
  			    padding: 0 15px;
@@ -269,58 +269,6 @@
 							border-color: #18afd3;
 						}
 					}
-				}
-			}
-		}
-	}
-}
-
-// medician-contacts
-
-.medician-contacts{
-	.box-opending{
-		color: #fff;
-		.wpb_wrapper{
-			h3,h4{
-				color: #fff;
-				margin-bottom: 30px;
-				font-size: 18px;
-			}
-			ul{
-				text-align: right;
-				color: @greycolor;
-				li{
-					    padding: 10px 0;
-					border-bottom: 1px solid #484848;
-					strong{
-						text-align: left;
-						float: left;
-						color: #fff;
-					}
-				}
-			}
-		}
-	}
-	.box-times{
-		color: #fff;
-		ul{
-			li{
-				margin-bottom: 15px;
-				i{
-					width: 40px;
-					height: 40px;
-					text-align: center;
-					line-height: 40px;
-					color: #fff;
-					background: #258acd;
-					font-size: 0;
-					margin-right: 15px;
-					&:before{
-						font-size: 14px;
-					}
-				}
-				&:last-child{
-					margin-bottom: 0;
 				}
 			}
 		}
