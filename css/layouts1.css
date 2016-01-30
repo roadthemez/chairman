@@ -2412,7 +2412,7 @@
   padding: 0 10px;
 }
 .header-container.blog1 .header .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
   line-height: 60px;
 }
@@ -2467,7 +2467,7 @@
   padding: 0 10px;
 }
 .header-container.blog2 .header .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
   line-height: 48px;
 }
@@ -2529,7 +2529,7 @@
   padding: 0 10px;
 }
 .header-container.blog3 .header .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
   line-height: 60px;
 }
@@ -2708,7 +2708,7 @@
   padding: 0 7px;
 }
 .header-container.event1 .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
 }
 .header-container.event1 .social-icons li a:hover {
@@ -2744,7 +2744,7 @@
   padding: 0 7px;
 }
 .header-container.event2 .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
 }
 .header-container.event2 .social-icons li a:hover {
@@ -2870,6 +2870,7 @@
   font-weight: 700;
   color: #353535;
   text-transform: uppercase;
+  text-align: center;
 }
 .main-container .latest-posts3 .post-wrapper .post-thumb {
   width: 50%;

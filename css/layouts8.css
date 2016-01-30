@@ -1848,6 +1848,414 @@
     width: 100%;
   }
 }
+.header-container.construction1 .top-bar {
+  font-weight: normal;
+  padding: 8px 0;
+}
+.header-container.construction1 .top-bar .box-left .blog-header ul li i {
+  color: #cd232f;
+  font-size: 20px;
+}
+.header-container.construction1 .logo {
+  padding: 0;
+}
+.header-container.construction1 .header {
+  padding: 30px 0;
+  background: url(../images/bkg_header.png) repeat-x center bottom;
+}
+.header-container.construction1 .global-table {
+  height: 97px;
+}
+.header-container.construction1 .content-header {
+  padding: 30px 0 31px;
+  border-left: 1px solid #f1f0f0;
+}
+.header-container.construction1 .widget.widget_product_search {
+  display: block;
+  position: relative;
+  float: right;
+  left: inherit;
+  right: inherit;
+  bottom: inherit;
+  top: inherit;
+  width: 255px;
+  border: 1px solid #41414a;
+  border-radius: 3px;
+  height: 40px;
+}
+.header-container.construction1 .widget.widget_product_search #searchform #ws {
+  height: 40px;
+  width: 100%;
+  font-size: 12px;
+  color: #9d9d9e;
+  background: none;
+  padding-right: 40px;
+}
+.header-container.construction1 .widget.widget_product_search #searchform #wsearchsubmit {
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  background: none;
+}
+.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul {
+  text-align: right;
+}
+.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link {
+  padding: 29px 10px 28px;
+}
+.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link .link_text {
+  padding: 0 15px;
+  border-radius: 3px;
+}
+.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link .link_text:after {
+  margin: 0 0 0 5px;
+  color: #cd232f;
+}
+.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li:hover > a.item_link .link_text,
+.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.current-menu-ancestor > a.item_link .link_text,
+.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.current-menu-item > a.item_link .link_text {
+  background: #cd232f;
+  color: #fff;
+}
+.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li:hover > a.item_link .link_text:after,
+.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.current-menu-ancestor > a.item_link .link_text:after,
+.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.current-menu-item > a.item_link .link_text:after {
+  color: #fff;
+}
+.header-container.construction2 .header {
+  padding: 0;
+  background: none;
+}
+.header-container.construction2 .widget.widget_product_search {
+  border: 0;
+  box-shadow: none;
+  width: 200px;
+}
+.home .header-container.construction2 .header {
+  position: absolute;
+  width: 100%;
+}
+.construction-about .widget_text .widgettitle {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 600;
+}
+.construction-about .about-right .widget_text {
+  padding-left: 20px;
+}
+.construction-teams .short-biography {
+  text-align: center;
+}
+.construction-teams .short-biography .name-content {
+  padding: 15px;
+}
+.construction-teams .short-biography .name-content h3,
+.construction-teams .short-biography .name-content h4 {
+  font-size: 18px;
+}
+.construction-teams .short-biography .name-content h3 a,
+.construction-teams .short-biography .name-content h4 a {
+  color: #353535;
+}
+.construction-teams .short-biography .name-content h3 a:hover,
+.construction-teams .short-biography .name-content h4 a:hover {
+  color: #cd232f;
+}
+.construction-teams .short-biography .social {
+  padding: 15px;
+  background-color: #f1f0f0;
+}
+.construction-teams .short-biography .social br {
+  display: none;
+}
+.construction-teams .short-biography .social a {
+  display: inline-block;
+  color: #353535;
+  font-size: 0;
+  padding: 0 10px;
+}
+.construction-teams .short-biography .social a:hover {
+  color: #cd232f;
+}
+.construction-teams .short-biography .social a i {
+  font-size: 14px;
+}
+.box-construction {
+  text-align: center;
+}
+.box-construction .vc_icon_element >div {
+  width: 135px !important;
+  height: 135px !important;
+  line-height: 135px !important;
+  border-radius: 100%;
+  border: 2px solid #fff !important;
+  background: rgba(255,255,255,0.3);
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  transition: background 0.2s, color 0.2s;
+}
+.box-construction .vc_icon_element >div:hover {
+  background-color: #cd232f !important;
+  border-color: #cd232f !important;
+}
+.box-construction .vc_custom_heading {
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+}
+@media screen and (max-width: 767px) {
+  .header-container.construction1 .widget.widget_product_search {
+    float: none;
+    margin: 10px auto;
+  }
+  .header-container.construction1 .header .header-inner {
+    padding-top: 0;
+  }
+}
+.header-container.medician1 .top-bar {
+  border-bottom: 1px solid #f1f0f0;
+  padding: 0;
+}
+.header-container.medician1 .top-bar .box-left .blog-header ul li i {
+  font-size: 14px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 100%;
+  border: 1px solid #f1f0f0;
+  color: #9d9d9e;
+}
+.header-container.medician1 .widget.widget_product_search {
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  border-right: 1px solid #f1f0f0;
+  border-left: 1px solid #f1f0f0;
+}
+.header-container.medician1 .widget.widget_product_search #searchform #wsearchsubmit {
+  color: #9d9d9e;
+}
+.header-container.medician1 ul.social-icons {
+  float: right;
+  border-left: 1px solid #f1f0f0;
+}
+.header-container.medician1 ul.social-icons li {
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 40px;
+}
+.header-container.medician1 ul.social-icons li a {
+  font-size: 16px;
+  line-height: 1;
+}
+.header-container.medician1 ul.social-icons li a:hover {
+  color: #fbaf5d;
+}
+.header-container.medician1 .header {
+  padding: 0;
+  background-image: none;
+}
+.box-medician-1 .vc_custom_heading {
+  font-size: 34px;
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+}
+.box-medician-1 .vc_custom_heading:after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-bottom: 3px solid #cd232f;
+  margin: 15px 0;
+}
+.box-medician-1 .list-text-box {
+  margin: 20px 0 0;
+}
+.box-medician-1 .list-text-box ul li {
+  font-weight: 600;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  padding: 6px 0;
+  color: #353535;
+}
+.box-medician-1 .list-text-box ul li:before {
+  content: "\f058";
+  font-family: FontAwesome;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #cd232f;
+}
+.box-medician .widget_text {
+  text-align: center;
+}
+.box-medician .widget_text .widgettitle {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0 0 15px;
+  display: inline-block;
+  position: relative;
+}
+.box-medician .widget_text .widgettitle:before {
+  content: "";
+  display: block;
+  border-top: 3px solid #f1f0f0;
+  margin: 0 auto 20px;
+  width: 70%;
+}
+.corporate-medician p {
+  line-height: 1.4;
+  margin: 5px 0 0;
+}
+.main-container .corporate-blog.medician-blog .posts-carousel .item-col .post-wrapper {
+  padding: 40px 0 0;
+}
+.main-container .corporate-blog.medician-blog .posts-carousel .item-col .post-wrapper:hover .post-info .post-bottom {
+  line-height: 40px;
+}
+.main-container .corporate-blog.medician-blog .posts-carousel .item-col .post-wrapper .post-info .post-bottom {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.main-container .corporate-blog.medician-blog .posts-carousel .item-col .post-wrapper .post-info .post-bottom .post-date {
+  padding: 0 10px;
+  background-color: #cd232f;
+  color: #fff;
+}
+.main-container .corporate-blog.medician-blog .posts-carousel .item-col .post-wrapper .post-info .post-bottom .post-date span,
+.main-container .corporate-blog.medician-blog .posts-carousel .item-col .post-wrapper .post-info .post-bottom .post-date .fa {
+  color: #fff;
+}
+.main-container .title-medician1 {
+  text-align: center;
+}
+.main-container .title-medician1 .wpb_wrapper h3,
+.main-container .title-medician1 .wpb_wrapper h2 {
+  font-size: 34px;
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+}
+.main-container .title-medician1 .wpb_wrapper h3:after,
+.main-container .title-medician1 .wpb_wrapper h2:after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #cd232f;
+  width: 50%;
+  margin: 20px auto;
+}
+.main-container .medician-teams .short-biography {
+  text-align: center;
+  padding: 20px 0 0;
+}
+.main-container .medician-teams .short-biography .name-content {
+  color: #cd232f;
+}
+.main-container .medician-teams .short-biography .name-content h3,
+.main-container .medician-teams .short-biography .name-content h2 {
+  line-height: 1.2;
+}
+.main-container .medician-teams .short-biography .name-content h3 a,
+.main-container .medician-teams .short-biography .name-content h2 a {
+  font-size: 18px;
+  color: #353535;
+}
+.main-container .medician-teams .short-biography .name-content h3 a:hover,
+.main-container .medician-teams .short-biography .name-content h2 a:hover {
+  color: #cd232f;
+}
+.main-container .medician-teams .short-biography .social {
+  padding: 15px 0 0;
+  border-top: 1px solid #f1f0f0;
+  margin: 10px 0 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+.main-container .medician-teams .short-biography .social br {
+  display: none;
+}
+.main-container .medician-teams .short-biography .social a {
+  display: inline-block;
+  color: #353535;
+  font-size: 0;
+  padding: 0 10px;
+}
+.main-container .medician-teams .short-biography .social a:hover {
+  color: #cd232f;
+}
+.main-container .medician-teams .short-biography .social a i {
+  font-size: 16px;
+}
+.main-container .medician-teams .short-biography:hover .social {
+  opacity: 1;
+  visibility: visible;
+}
+.main-container .box-medician-2 {
+  text-align: center;
+}
+.main-container .box-medician-2 .wpb_content_element {
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.main-container .box-medician-2 .wpb_content_element > div h3,
+.main-container .box-medician-2 .wpb_content_element > div h4 {
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+.main-container .box-medician-2 .wpb_content_element > div h3:after,
+.main-container .box-medician-2 .wpb_content_element > div h4:after {
+  content: "";
+  display: block;
+  width: 90%;
+  margin: 15px auto;
+  border-bottom: 3px solid #fff;
+}
+.main-container .box-medician-2 .wpb_content_element > div i {
+  font-size: 0;
+}
+.main-container .box-medician-2 .wpb_content_element > div i:before {
+  font-size: 60px;
+}
+.main-container .box-medician-2 .wpb_content_element:hover {
+  background-color: #fff;
+  color: #18afd3;
+}
+.main-container .box-medician-2 .wpb_content_element:hover > div h3,
+.main-container .box-medician-2 .wpb_content_element:hover > div h4 {
+  color: #18afd3;
+}
+.main-container .box-medician-2 .wpb_content_element:hover > div h3:after,
+.main-container .box-medician-2 .wpb_content_element:hover > div h4:after {
+  border-color: #18afd3;
+}
+@media screen and (max-width: 767px) {
+  .header-container.medician1 ul.social-icons {
+    border: 0;
+    float: none;
+    display: inline-block;
+  }
+  .header-container.medician1 .logo-wrap .global-table {
+    height: auto;
+    padding: 30px 0;
+  }
+}
 .home .blog-header-title {
   display: none;
 }
@@ -2236,172 +2644,6 @@
     position: static;
   }
 }
-.header-container.construction1 .top-bar {
-  font-weight: normal;
-  padding: 8px 0;
-}
-.header-container.construction1 .top-bar .box-left .blog-header ul li i {
-  color: #cd232f;
-  font-size: 20px;
-}
-.header-container.construction1 .header {
-  padding: 30px 0;
-  background: url(../images/bkg_header.png) repeat-x center bottom;
-}
-.header-container.construction1 .global-table {
-  height: 97px;
-}
-.header-container.construction1 .content-header {
-  padding: 30px 0 31px;
-  border-left: 1px solid #f1f0f0;
-}
-.header-container.construction1 .widget.widget_product_search {
-  display: block;
-  position: relative;
-  float: right;
-  left: inherit;
-  right: inherit;
-  bottom: inherit;
-  top: inherit;
-  width: 255px;
-  border: 1px solid #41414a;
-  border-radius: 3px;
-  height: 40px;
-}
-.header-container.construction1 .widget.widget_product_search #searchform #ws {
-  height: 40px;
-  width: 100%;
-  font-size: 12px;
-  color: #9d9d9e;
-  background: none;
-  padding-right: 40px;
-}
-.header-container.construction1 .widget.widget_product_search #searchform #wsearchsubmit {
-  height: 40px;
-  line-height: 40px;
-  font-size: 15px;
-  background: none;
-}
-.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul {
-  text-align: right;
-}
-.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link {
-  padding: 29px 10px 28px;
-}
-.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link .link_text {
-  padding: 0 15px;
-  border-radius: 3px;
-}
-.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link .link_text:after {
-  margin: 0 0 0 5px;
-  color: #cd232f;
-}
-.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li:hover > a.item_link .link_text,
-.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.current-menu-ancestor > a.item_link .link_text,
-.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.current-menu-item > a.item_link .link_text {
-  background: #cd232f;
-  color: #fff;
-}
-.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li:hover > a.item_link .link_text:after,
-.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.current-menu-ancestor > a.item_link .link_text:after,
-.header-container.construction1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li.current-menu-item > a.item_link .link_text:after {
-  color: #fff;
-}
-.header-container.construction2 .header {
-  padding: 0;
-  background: none;
-}
-.header-container.construction2 .widget.widget_product_search {
-  border: 0;
-  box-shadow: none;
-  width: 200px;
-}
-.home .header-container.construction2 .header {
-  position: absolute;
-  width: 100%;
-}
-.construction-about .widget_text .widgettitle {
-  margin-bottom: 10px;
-  text-transform: capitalize;
-  font-size: 18px;
-  font-weight: 600;
-}
-.construction-about .about-right .widget_text {
-  padding-left: 20px;
-}
-.construction-teams .short-biography {
-  text-align: center;
-}
-.construction-teams .short-biography .name-content {
-  padding: 15px;
-}
-.construction-teams .short-biography .name-content h3,
-.construction-teams .short-biography .name-content h4 {
-  font-size: 18px;
-}
-.construction-teams .short-biography .name-content h3 a,
-.construction-teams .short-biography .name-content h4 a {
-  color: #353535;
-}
-.construction-teams .short-biography .name-content h3 a:hover,
-.construction-teams .short-biography .name-content h4 a:hover {
-  color: #cd232f;
-}
-.construction-teams .short-biography .social {
-  padding: 15px;
-  background-color: #f1f0f0;
-}
-.construction-teams .short-biography .social br {
-  display: none;
-}
-.construction-teams .short-biography .social a {
-  display: inline-block;
-  color: #353535;
-  font-size: 0;
-  padding: 0 10px;
-}
-.construction-teams .short-biography .social a:hover {
-  color: #cd232f;
-}
-.construction-teams .short-biography .social a i {
-  font-size: 14px;
-}
-.box-construction {
-  text-align: center;
-}
-.box-construction .vc_icon_element >div {
-  width: 135px !important;
-  height: 135px !important;
-  line-height: 135px !important;
-  border-radius: 100%;
-  border: 2px solid #fff !important;
-  background: rgba(255,255,255,0.3);
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  transition: color 0.3s;
-  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
-  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-  transition: transform 0.2s, opacity 0.2s;
-  transition: background 0.2s, color 0.2s;
-}
-.box-construction .vc_icon_element >div:hover {
-  background-color: #cd232f !important;
-  border-color: #cd232f !important;
-}
-.box-construction .vc_custom_heading {
-  display: inline-block;
-  text-transform: uppercase;
-  border-bottom: 1px solid #fff;
-}
-@media screen and (max-width: 767px) {
-  .header-container.construction1 .widget.widget_product_search {
-    float: none;
-    margin: 10px auto;
-  }
-  .header-container.construction1 .header .header-inner {
-    padding-top: 0;
-  }
-}
 .home .header-container.event1 {
   position: absolute;
   top: 0;
@@ -2579,11 +2821,12 @@
 .main-container .event1-static1 .content-static .button-container a.viewmore:hover {
   background: #3c9feb;
 }
-.main-container .event-title {
+.main-container .event-title h3 {
   font-size: 36px !important;
   font-weight: 700;
   color: #353535;
   text-transform: uppercase;
+  text-align: center;
 }
 .main-container .latest-posts3 .post-wrapper .post-thumb {
   width: 50%;
