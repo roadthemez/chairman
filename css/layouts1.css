@@ -2821,7 +2821,7 @@
 .main-container .event1-static1 .content-static .button-container a.viewmore:hover {
   background: #a43d21;
 }
-.main-container .event-title {
+.main-container .event-title h3 {
   font-size: 36px !important;
   font-weight: 700;
   color: #353535;
