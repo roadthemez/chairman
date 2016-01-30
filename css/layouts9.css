@@ -2028,22 +2028,22 @@
   text-align: center;
   line-height: 25px;
   border-radius: 100%;
-  border: 1px solid #f1f0f0;
+  border: 1px solid #ffffff;
   color: #666666;
 }
 .header-container.medician1 .widget.widget_product_search {
   border: 0;
   box-shadow: none;
   border-radius: 0;
-  border-right: 1px solid #f1f0f0;
-  border-left: 1px solid #f1f0f0;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
 }
 .header-container.medician1 .widget.widget_product_search #searchform #wsearchsubmit {
   color: #666666;
 }
 .header-container.medician1 ul.social-icons {
   float: right;
-  border-left: 1px solid #f1f0f0;
+  border-left: 1px solid #ffffff;
 }
 .header-container.medician1 ul.social-icons li {
   display: inline-block;
