@@ -2028,22 +2028,22 @@
   text-align: center;
   line-height: 25px;
   border-radius: 100%;
-  border: 1px solid #f1f0f0;
+  border: 1px solid #4b4d4e;
   color: #9d9d9e;
 }
 .header-container.medician1 .widget.widget_product_search {
   border: 0;
   box-shadow: none;
   border-radius: 0;
-  border-right: 1px solid #f1f0f0;
-  border-left: 1px solid #f1f0f0;
+  border-right: 1px solid #4b4d4e;
+  border-left: 1px solid #4b4d4e;
 }
 .header-container.medician1 .widget.widget_product_search #searchform #wsearchsubmit {
   color: #9d9d9e;
 }
 .header-container.medician1 ul.social-icons {
   float: right;
-  border-left: 1px solid #f1f0f0;
+  border-left: 1px solid #4b4d4e;
 }
 .header-container.medician1 ul.social-icons li {
   display: inline-block;
@@ -2244,6 +2244,50 @@
 .main-container .box-medician-2 .wpb_content_element:hover > div h3:after,
 .main-container .box-medician-2 .wpb_content_element:hover > div h4:after {
   border-color: #18afd3;
+}
+.medician-contacts .box-opending {
+  color: #fff;
+}
+.medician-contacts .box-opending .wpb_wrapper h3,
+.medician-contacts .box-opending .wpb_wrapper h4 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.medician-contacts .box-opending .wpb_wrapper ul {
+  text-align: right;
+  color: #999999;
+}
+.medician-contacts .box-opending .wpb_wrapper ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #484848;
+}
+.medician-contacts .box-opending .wpb_wrapper ul li strong {
+  text-align: left;
+  float: left;
+  color: #fff;
+}
+.medician-contacts .box-times {
+  color: #fff;
+}
+.medician-contacts .box-times ul li {
+  margin-bottom: 15px;
+}
+.medician-contacts .box-times ul li i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  background: #258acd;
+  font-size: 0;
+  margin-right: 15px;
+}
+.medician-contacts .box-times ul li i:before {
+  font-size: 14px;
+}
+.medician-contacts .box-times ul li:last-child {
+  margin-bottom: 0;
 }
 @media screen and (max-width: 767px) {
   .header-container.medician1 ul.social-icons {
