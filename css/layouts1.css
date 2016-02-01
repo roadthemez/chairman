@@ -2872,23 +2872,17 @@
   text-transform: uppercase;
   text-align: center;
 }
-.main-container .latest-posts3 .post-wrapper .post-thumb {
-  width: 50%;
-  float: left;
-  padding-right: 20px;
+.main-container .video-static .description a {
+  background: #fbaf5d;
+  border-radius: 4px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
+  padding: 0 25px;
+  text-transform: uppercase;
 }
-.main-container .latest-posts3 .post-wrapper .post-info {
-  padding-left: 20px;
-  width: 50%;
-  text-align: left;
-  float: left;
-}
-.main-container .latest-posts3 .post-wrapper .post-info .post-title a {
-  color: #353535;
-}
-.main-container .latest-posts3 .post-wrapper .post-info .post-title a:hover {
-  color: #fbaf5d;
-}
-.main-container .latest-posts3 .post-wrapper .post-info .post-bottom .comment {
-  margin: 0 10px;
+.main-container .video-static .description a:hover {
+  background: #a43d21;
 }
