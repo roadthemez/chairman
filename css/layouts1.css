@@ -2322,6 +2322,47 @@
 .medician-contacts2 .box-col .media-body h4 {
   font-size: 18px;
 }
+.medician-team-member .wpb_single_image {
+  border: 1px solid #d8d6d6;
+}
+.medician-team-member .short-biography {
+  padding-left: 30px;
+}
+.medician-team-member .short-biography .name-content h3 {
+  line-height: 1;
+}
+.medician-team-member .short-biography .name-content h3 a {
+  color: #353535;
+  font-size: 18px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.medician-team-member .short-biography .name-content h3 a:hover {
+  color: #fbaf5d;
+}
+.medician-team-member .short-biography .name-content .role {
+  color: #fbaf5d;
+}
+.medician-team-member .short-biography .social {
+  border-top: 1px solid #d8d6d6;
+  margin-top: 40px;
+  padding: 20px 0 0;
+}
+.medician-team-member .short-biography .social br {
+  display: none;
+}
+.medician-team-member .short-biography .social a {
+  display: inline-block;
+  color: #353535;
+  font-size: 0;
+  padding: 0 10px;
+}
+.medician-team-member .short-biography .social a:hover {
+  color: #fbaf5d;
+}
+.medician-team-member .short-biography .social a i {
+  font-size: 16px;
+}
 @media screen and (max-width: 767px) {
   .header-container.medician1 ul.social-icons {
     border: 0;

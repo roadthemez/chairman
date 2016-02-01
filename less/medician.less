@@ -367,6 +367,55 @@
 	}
 }
 
+// medician-team-member
+
+.medician-team-member{
+	.wpb_single_image{
+		border: 1px solid darken(@bordercolor, 10%);
+	}
+	.short-biography{
+		padding-left: 30px;
+		.name-content{
+			h3{
+				line-height: 1;
+				a{
+					color: @headingcolor;
+					font-size: 18px;
+					font-family: @headingfont;
+					font-weight: bold;
+					&:hover{
+						color: @primarycolor;
+					}
+				}
+			}
+			.role{
+				color: @primarycolor;
+			}
+		}
+		.social{
+			border-top: 1px solid darken(@bordercolor, 10%);
+			margin-top: 40px;
+			padding: 20px 0 0;
+			br{
+				display: none;
+			}
+			a{
+				display: inline-block;
+				color:  @headingcolor;
+				font-size: 0;
+				padding: 0 10px;
+				&:hover{
+					color: @primarycolor;
+				}
+				i{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+
 @media screen and (max-width: 767px){
 	.header-container{
 		&.medician1{
