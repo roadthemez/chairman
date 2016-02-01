@@ -2289,6 +2289,39 @@
 .medician-contacts .box-times ul li:last-child {
   margin-bottom: 0;
 }
+.medician-contacts2 .box-col {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.medician-contacts2 .box-col:last-child {
+  margin-bottom: 0;
+}
+.medician-contacts2 .box-col:hover .pull-left {
+  background: #fbaf5d;
+  color: #fff;
+}
+.medician-contacts2 .box-col .pull-left {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 100%;
+  margin-right: 25px;
+  border: 2px solid #fbaf5d;
+  color: #fbaf5d;
+  font-size: 0;
+}
+.medician-contacts2 .box-col .pull-left i {
+  display: block;
+  line-height: 100px;
+}
+.medician-contacts2 .box-col .pull-left i:before {
+  font-size: 40px;
+}
+.medician-contacts2 .box-col .media-body h3,
+.medician-contacts2 .box-col .media-body h4 {
+  font-size: 18px;
+}
 @media screen and (max-width: 767px) {
   .header-container.medician1 ul.social-icons {
     border: 0;
