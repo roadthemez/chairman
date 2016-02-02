@@ -2946,7 +2946,11 @@
   text-transform: uppercase;
   text-align: center;
 }
+.main-container .video-static .description {
+  line-height: 26px;
+}
 .main-container .video-static .description a {
+  margin-top: 20px;
   background: #fbaf5d;
   border-radius: 4px;
   display: inline-block;
