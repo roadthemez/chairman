@@ -668,6 +668,16 @@ Class chairman {
 						$themevariables['footer_link_hover_color'] = '#18afd3';
 					break;
 
+					case 10:
+						$themevariables['primary_color'] = '#b00e09';
+						$themevariables['header_bg'] = '#1f1f21';    
+						$themevariables['menu_color'] = '#ffffff';
+						$themevariables['header_link_color'] = '#ffffff';
+						$themevariables['header_link_hover_color'] = '#b00e09';
+						$themevariables['link_color'] = '#fe8100';
+						$themevariables['footer_link_hover_color'] = '#b00e09';
+					break;
+
 				}
 
 				if(function_exists('compileLessFile')){

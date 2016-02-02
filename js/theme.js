@@ -259,6 +259,45 @@
 			});
 		});
 
+		//Brand logos carousel
+		jQuery('.event2-brands-logo .brands-carousel').each(function(){
+			var chairman_brandcols = jQuery(this).attr('data-col');
+			jQuery(this).slick({
+				infinite: true,
+				slidesToShow: 5,
+				slidesToScroll: chairman_brandscrollnumber,
+				speed: chairman_brandanimate,
+				easing: 'linear',
+				dots: false,
+				arrows: true,
+				autoplay: chairman_brandscroll,
+				autoplaySpeed: chairman_brandpause,
+				responsive: [
+					{
+					  breakpoint: 1200,
+					  settings: {
+						slidesToShow: 4,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 768,
+					  settings: {
+						slidesToShow: 3,
+						slidesToScroll: 1
+					  }
+					},
+					{
+					  breakpoint: 480,
+					  settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					  }
+					}
+				]
+			});
+		});
+
 		
 
 		//Categories carousel

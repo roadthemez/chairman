@@ -85,6 +85,7 @@
 			}
 		}
 		.header {
+			background: none;
 			.box-left {
 				background: @primarycolor;
 				position: relative;
@@ -259,6 +260,15 @@
 			text-align: center;
 		}
 	} 
+	.event2-title {
+		h3 {
+			font-size: 30px !important;
+			font-weight: 400;
+			color: @headingcolor;
+			text-transform: uppercase;	
+			text-align: center;
+		}
+	} 
 	.video-static {
 		.description {
 			line-height: 26px;
@@ -275,6 +285,145 @@
 				text-transform: uppercase;
 				&:hover {
 					background: @linkcolor;
+				}
+			}
+		}
+	}
+	.event2-static1 {
+		background: linear-gradient(40deg, #f7f7f7 50% , transparent 50%);
+		background: -webkit-linear-gradient(40deg, #f7f7f7 50% , transparent 50%);
+	    background: -moz-linear-gradient(40deg, #f7f7f7 50% , transparent 50%);
+	    background: -o-linear-gradient(40deg, #f7f7f7 50% , transparent 50%); 
+		text-align: center;
+		.content-static {  
+			.text-content {
+				width: 80%;
+				margin: 0 auto 30px;
+			}
+			h3 {
+				font-size: 30px;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				font-weight: 400;
+			} 
+			.button-container {
+				a {
+					border-radius: 3px;
+					color: #fff;
+					display: inline-block;
+					line-height: 50px;
+					padding: 0 25px;
+					text-transform: uppercase;
+					vertical-align: middle;
+					margin:  20px 5px 0;
+					&.ticket {
+						background: @linkcolor;
+						&:hover {
+							background: @primarycolor;
+						}
+					}
+					&.viewmore {
+						background: @primarycolor;
+						&:hover {
+							background: @linkcolor;
+						}
+					}
+				}
+			}
+		}
+	}
+	.event2-brands-logo {
+		.event2-title {
+			width: 80%;
+			margin: auto;
+			text-align: center;
+			position: relative;
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+			&:after {
+				background: @primarycolor;
+				content: "";
+				height: 3px;
+				width: 90px;
+				position: absolute;
+				bottom: 0;
+				margin: auto;
+				left: 0;
+				right: 0;
+			}
+			h3 {
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.latest-posts {
+		&.event2 {
+			background-attachment: fixed;
+			.event2-title {
+				h3 {
+					color: #fff;
+				} 
+			}
+			.posts-carousel {
+				.item-col {
+					.post-wrapper {
+						background: #fff;
+						padding: 5px;
+					}
+					.post-info {
+						position: static;
+						background: none;
+						padding: 20px 10px;
+						h3.post-title {
+							a {
+								color: @headingcolor;
+								font-weight: 700;
+								font-size: 20px;
+								text-transform: capitalize;
+								position: relative;
+								padding-bottom: 15px;
+								margin-bottom: 15px;
+								&:hover {
+									color: @linkcolor;
+								}
+								&:before {
+									content: "";
+									display: block;
+									background: @bordercolor;
+									height: 1px;
+									width: 120px;
+									position: absolute;
+									left: 0;
+									bottom: 0;
+								}
+								&:after {
+									display: none;
+								}
+							}
+						}
+						.post-excerpt {
+							display: none;
+						}
+						.post-bottom {
+							.opacity(1);
+							.scaleY(1);
+							line-height: 20px;
+							margin-top: 5px;
+						}
+						.post-date, .comment, .author {
+							color: #9d9d9e;
+							height: 20px;
+							.fa {
+								color: @linkcolor;
+							}
+							a {
+								color: #9d9d9e;
+								&:hover {
+									color: @linkcolor;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
