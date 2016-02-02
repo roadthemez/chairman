@@ -2028,22 +2028,22 @@
   text-align: center;
   line-height: 25px;
   border-radius: 100%;
-  border: 1px solid #f1f0f0;
+  border: 1px solid #ffffff;
   color: #666666;
 }
 .header-container.medician1 .widget.widget_product_search {
   border: 0;
   box-shadow: none;
   border-radius: 0;
-  border-right: 1px solid #f1f0f0;
-  border-left: 1px solid #f1f0f0;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
 }
 .header-container.medician1 .widget.widget_product_search #searchform #wsearchsubmit {
   color: #666666;
 }
 .header-container.medician1 ul.social-icons {
   float: right;
-  border-left: 1px solid #f1f0f0;
+  border-left: 1px solid #ffffff;
 }
 .header-container.medician1 ul.social-icons li {
   display: inline-block;
@@ -2244,6 +2244,83 @@
 .main-container .box-medician-2 .wpb_content_element:hover > div h3:after,
 .main-container .box-medician-2 .wpb_content_element:hover > div h4:after {
   border-color: #18afd3;
+}
+.medician-contacts .box-opending {
+  color: #fff;
+}
+.medician-contacts .box-opending .wpb_wrapper h3,
+.medician-contacts .box-opending .wpb_wrapper h4 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+.medician-contacts .box-opending .wpb_wrapper ul {
+  text-align: right;
+  color: #999999;
+}
+.medician-contacts .box-opending .wpb_wrapper ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #484848;
+}
+.medician-contacts .box-opending .wpb_wrapper ul li strong {
+  text-align: left;
+  float: left;
+  color: #fff;
+}
+.medician-contacts .box-times {
+  color: #fff;
+}
+.medician-contacts .box-times ul li {
+  margin-bottom: 15px;
+}
+.medician-contacts .box-times ul li i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  background: #258acd;
+  font-size: 0;
+  margin-right: 15px;
+}
+.medician-contacts .box-times ul li i:before {
+  font-size: 14px;
+}
+.medician-contacts .box-times ul li:last-child {
+  margin-bottom: 0;
+}
+.medician-contacts2 .box-col {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.medician-contacts2 .box-col:last-child {
+  margin-bottom: 0;
+}
+.medician-contacts2 .box-col:hover .pull-left {
+  background: #18afd3;
+  color: #fff;
+}
+.medician-contacts2 .box-col .pull-left {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 100%;
+  margin-right: 25px;
+  border: 2px solid #18afd3;
+  color: #18afd3;
+  font-size: 0;
+}
+.medician-contacts2 .box-col .pull-left i {
+  display: block;
+  line-height: 100px;
+}
+.medician-contacts2 .box-col .pull-left i:before {
+  font-size: 40px;
+}
+.medician-contacts2 .box-col .media-body h3,
+.medician-contacts2 .box-col .media-body h4 {
+  font-size: 18px;
 }
 @media screen and (max-width: 767px) {
   .header-container.medician1 ul.social-icons {
@@ -2784,4 +2861,66 @@
 }
 .footer.event2 .footer-bottom .footer-bottom-inner .widget.widget-social .social-icons li a:hover {
   color: #fff;
+}
+.main-container .event1-static1 {
+  text-align: center;
+}
+.main-container .event1-static1 .content-static {
+  background: url(../images/event1_img1.png) no-repeat 50% 0;
+  padding-top: 80px;
+}
+.main-container .event1-static1 .content-static h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.main-container .event1-static1 .content-static h3 {
+  margin-bottom: 20px;
+}
+.main-container .event1-static1 .content-static .button-container a {
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  line-height: 50px;
+  padding: 0 25px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin: 20px 5px 0;
+}
+.main-container .event1-static1 .content-static .button-container a.ticket {
+  background: #a43d21;
+}
+.main-container .event1-static1 .content-static .button-container a.ticket:hover {
+  background: #18afd3;
+}
+.main-container .event1-static1 .content-static .button-container a.viewmore {
+  background: #18afd3;
+}
+.main-container .event1-static1 .content-static .button-container a.viewmore:hover {
+  background: #a43d21;
+}
+.main-container .event-title h3 {
+  font-size: 36px !important;
+  font-weight: 700;
+  color: #353535;
+  text-transform: uppercase;
+}
+.main-container .latest-posts3 .post-wrapper .post-thumb {
+  width: 50%;
+  float: left;
+  padding-right: 20px;
+}
+.main-container .latest-posts3 .post-wrapper .post-info {
+  padding-left: 20px;
+  width: 50%;
+  text-align: left;
+  float: left;
+}
+.main-container .latest-posts3 .post-wrapper .post-info .post-title a {
+  color: #353535;
+}
+.main-container .latest-posts3 .post-wrapper .post-info .post-title a:hover {
+  color: #18afd3;
+}
+.main-container .latest-posts3 .post-wrapper .post-info .post-bottom .comment {
+  margin: 0 10px;
 }

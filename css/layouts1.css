@@ -2289,6 +2289,80 @@
 .medician-contacts .box-times ul li:last-child {
   margin-bottom: 0;
 }
+.medician-contacts2 .box-col {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.medician-contacts2 .box-col:last-child {
+  margin-bottom: 0;
+}
+.medician-contacts2 .box-col:hover .pull-left {
+  background: #fbaf5d;
+  color: #fff;
+}
+.medician-contacts2 .box-col .pull-left {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 100%;
+  margin-right: 25px;
+  border: 2px solid #fbaf5d;
+  color: #fbaf5d;
+  font-size: 0;
+}
+.medician-contacts2 .box-col .pull-left i {
+  display: block;
+  line-height: 100px;
+}
+.medician-contacts2 .box-col .pull-left i:before {
+  font-size: 40px;
+}
+.medician-contacts2 .box-col .media-body h3,
+.medician-contacts2 .box-col .media-body h4 {
+  font-size: 18px;
+}
+.medician-team-member .wpb_single_image {
+  border: 1px solid #d8d6d6;
+}
+.medician-team-member .short-biography {
+  padding-left: 30px;
+}
+.medician-team-member .short-biography .name-content h3 {
+  line-height: 1;
+}
+.medician-team-member .short-biography .name-content h3 a {
+  color: #353535;
+  font-size: 18px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.medician-team-member .short-biography .name-content h3 a:hover {
+  color: #fbaf5d;
+}
+.medician-team-member .short-biography .name-content .role {
+  color: #fbaf5d;
+}
+.medician-team-member .short-biography .social {
+  border-top: 1px solid #d8d6d6;
+  margin-top: 40px;
+  padding: 20px 0 0;
+}
+.medician-team-member .short-biography .social br {
+  display: none;
+}
+.medician-team-member .short-biography .social a {
+  display: inline-block;
+  color: #353535;
+  font-size: 0;
+  padding: 0 10px;
+}
+.medician-team-member .short-biography .social a:hover {
+  color: #fbaf5d;
+}
+.medician-team-member .short-biography .social a i {
+  font-size: 16px;
+}
 @media screen and (max-width: 767px) {
   .header-container.medician1 ul.social-icons {
     border: 0;
@@ -2875,6 +2949,7 @@
   text-transform: uppercase;
   text-align: center;
 }
+<<<<<<< HEAD
 .main-container .event2-title h3 {
   font-size: 30px !important;
   font-weight: 400;
@@ -2882,6 +2957,8 @@
   text-transform: uppercase;
   text-align: center;
 }
+=======
+>>>>>>> origin/master
 .main-container .video-static .description {
   line-height: 26px;
 }
