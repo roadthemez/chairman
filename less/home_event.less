@@ -355,6 +355,22 @@
 				margin-bottom: 20px;
 			}
 		}
+		.slick-slider {
+			.slick-list {
+				border: 1px solid @bordercolor;
+				.slick-slide {
+					&.group {
+						border-right: 1px solid @bordercolor;
+						div {
+							border-bottom: 1px solid @bordercolor;
+							&:after {
+								border: 0;
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	.latest-posts {
 		&.event2 {
