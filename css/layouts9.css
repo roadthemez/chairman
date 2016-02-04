@@ -2322,6 +2322,47 @@
 .medician-contacts2 .box-col .media-body h4 {
   font-size: 18px;
 }
+.medician-team-member .wpb_single_image {
+  border: 1px solid #d8d6d6;
+}
+.medician-team-member .short-biography {
+  padding-left: 30px;
+}
+.medician-team-member .short-biography .name-content h3 {
+  line-height: 1;
+}
+.medician-team-member .short-biography .name-content h3 a {
+  color: #353535;
+  font-size: 18px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.medician-team-member .short-biography .name-content h3 a:hover {
+  color: #18afd3;
+}
+.medician-team-member .short-biography .name-content .role {
+  color: #18afd3;
+}
+.medician-team-member .short-biography .social {
+  border-top: 1px solid #d8d6d6;
+  margin-top: 40px;
+  padding: 20px 0 0;
+}
+.medician-team-member .short-biography .social br {
+  display: none;
+}
+.medician-team-member .short-biography .social a {
+  display: inline-block;
+  color: #353535;
+  font-size: 0;
+  padding: 0 10px;
+}
+.medician-team-member .short-biography .social a:hover {
+  color: #18afd3;
+}
+.medician-team-member .short-biography .social a i {
+  font-size: 16px;
+}
 @media screen and (max-width: 767px) {
   .header-container.medician1 ul.social-icons {
     border: 0;
@@ -2903,24 +2944,23 @@
   font-weight: 700;
   color: #353535;
   text-transform: uppercase;
+  text-align: center;
 }
-.main-container .latest-posts3 .post-wrapper .post-thumb {
-  width: 50%;
-  float: left;
-  padding-right: 20px;
+.main-container .video-static .description {
+  line-height: 26px;
 }
-.main-container .latest-posts3 .post-wrapper .post-info {
-  padding-left: 20px;
-  width: 50%;
-  text-align: left;
-  float: left;
+.main-container .video-static .description a {
+  margin-top: 20px;
+  background: #18afd3;
+  border-radius: 4px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
+  padding: 0 25px;
+  text-transform: uppercase;
 }
-.main-container .latest-posts3 .post-wrapper .post-info .post-title a {
-  color: #353535;
-}
-.main-container .latest-posts3 .post-wrapper .post-info .post-title a:hover {
-  color: #18afd3;
-}
-.main-container .latest-posts3 .post-wrapper .post-info .post-bottom .comment {
-  margin: 0 10px;
+.main-container .video-static .description a:hover {
+  background: #a43d21;
 }
