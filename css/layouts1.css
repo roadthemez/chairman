@@ -2520,7 +2520,7 @@
   padding: 0 10px;
 }
 .header-container.blog1 .header .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
   line-height: 60px;
 }
@@ -2575,7 +2575,7 @@
   padding: 0 10px;
 }
 .header-container.blog2 .header .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
   line-height: 48px;
 }
@@ -2637,7 +2637,7 @@
   padding: 0 10px;
 }
 .header-container.blog3 .header .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
   line-height: 60px;
 }
@@ -2816,7 +2816,7 @@
   padding: 0 7px;
 }
 .header-container.event1 .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
 }
 .header-container.event1 .social-icons li a:hover {
@@ -2852,7 +2852,7 @@
   padding: 0 7px;
 }
 .header-container.event2 .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
 }
 .header-container.event2 .social-icons li a:hover {
@@ -3193,4 +3193,18 @@
   font-size: 16px;
   color: #9d9d9e;
   margin-bottom: 20px;
+}
+.main-container .event2-static2 .box-text .social-icon ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+.main-container .event2-static2 .box-text .social-icon ul li a {
+  font-size: 0;
+  color: #575859;
+}
+.main-container .event2-static2 .box-text .social-icon ul li a:hover {
+  color: #fff;
+}
+.main-container .event2-static2 .box-text .social-icon ul li a i {
+  font-size: 16px;
 }
