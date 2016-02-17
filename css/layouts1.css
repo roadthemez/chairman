@@ -2397,6 +2397,12 @@
   width: 94%;
   text-align: right;
 }
+@media screen and (max-width: 992px) {
+  .medician-team-member .pull-left {
+    float: none !important;
+    border: 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .header-container.medician1 ul.social-icons {
     border: 0;
