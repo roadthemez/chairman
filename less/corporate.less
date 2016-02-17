@@ -44,7 +44,7 @@
 						display: block;
 					}
 					.chairmantip {
-						display: none;
+						display: none !important;
 					}
 				}
 			}
@@ -544,9 +544,24 @@
 @media screen and (max-width: 992px) and (min-width: 768px) {
 
 }
-
+@media screen and (max-width: 992px) {
+	.header-container {
+		&.corporate3{
+			.top-bar .social-icons{
+				float: none;
+			}
+		}		
+	}
+}
 @media screen and (max-width: 767px) {
 	.corporate-contact7 .wpcf7 .contact-input, .corporate-contact7 .wpcf7 .contact-message{
 		width: 100%;
+	}
+	.header-container {
+		&.corporate3{
+			.header .header-inner .content-header{
+				top: 10px;
+			}
+		}
 	}
 }

@@ -778,7 +778,7 @@ button {
   color: #fbaf5d;
 }
 .header-container .vmenu-toggler .vmenu-toggler-button {
-  color: #323334;
+  color: #5b6e82;
   cursor: pointer;
   font-size: 22px;
   float: left;
@@ -885,7 +885,7 @@ button {
   margin: auto;
 }
 .header-container .widget_shopping_cart .widget_shopping_cart_content .cart-toggler a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
   font-size: 16px;
   font-weight: bold;
@@ -1122,7 +1122,7 @@ button {
 .header-container .header-search .search-icon:before {
   display: block;
   content: "\f002";
-  color: #323334;
+  color: #5b6e82;
   font-family: FontAwesome;
   font-size: 16px;
   line-height: 36px;

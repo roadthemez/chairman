@@ -1432,7 +1432,7 @@
 }
 .header-container.corporate3 .top-bar .social-icons li .chairmantip,
 .header-container.corporate3 .header .social-icons li .chairmantip {
-  display: none;
+  display: none !important;
 }
 .home .header-container.corporate1 {
   position: absolute;
@@ -1842,10 +1842,18 @@
   background: #2f2f2f;
   border-color: #2f2f2f;
 }
+@media screen and (max-width: 992px) {
+  .header-container.corporate3 .top-bar .social-icons {
+    float: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .corporate-contact7 .wpcf7 .contact-input,
   .corporate-contact7 .wpcf7 .contact-message {
     width: 100%;
+  }
+  .header-container.corporate3 .header .header-inner .content-header {
+    top: 10px;
   }
 }
 .header-container.construction1 .top-bar {
@@ -2526,7 +2534,7 @@
   padding: 0 10px;
 }
 .header-container.blog1 .header .social-icons li a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
   line-height: 60px;
 }
@@ -2581,7 +2589,7 @@
   padding: 0 10px;
 }
 .header-container.blog2 .header .social-icons li a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
   line-height: 48px;
 }
@@ -2643,7 +2651,7 @@
   padding: 0 10px;
 }
 .header-container.blog3 .header .social-icons li a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
   line-height: 60px;
 }
@@ -2822,7 +2830,7 @@
   padding: 0 7px;
 }
 .header-container.event1 .social-icons li a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
 }
 .header-container.event1 .social-icons li a:hover {
@@ -2861,7 +2869,7 @@
   padding: 0 7px;
 }
 .header-container.event2 .social-icons li a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
 }
 .header-container.event2 .social-icons li a:hover {
