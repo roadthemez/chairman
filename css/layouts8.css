@@ -2979,6 +2979,83 @@
 .main-container .event1-static1 .content-static .button-container a.viewmore:hover {
   background: #3c9feb;
 }
+.main-container .event1-static2 .box {
+  width: 25%;
+  float: left;
+  position: relative;
+  height: 580px;
+}
+.main-container .event1-static2 .box .info {
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 100%;
+  z-index: 1;
+  padding: 30px;
+}
+.main-container .event1-static2 .box .info:before {
+  position: absolute;
+  content: "";
+  border-color: transparent;
+  border-right-color: #fff;
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  display: block;
+  left: -10px;
+  top: 30px;
+}
+.main-container .event1-static2 .box .info .author {
+  text-transform: capitalize;
+  color: #9d9d9e;
+  font-size: 16px;
+  font-style: italic;
+}
+.main-container .event1-static2 .box .info .title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.main-container .event1-static2 .box .info p {
+  margin: 0;
+}
+.main-container .event1-static2 .box .info .social-icon {
+  border-top: 1px solid #f1f0f0;
+  margin-top: 10px;
+}
+.main-container .event1-static2 .box .info .social-icon li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding-top: 15px;
+}
+.main-container .event1-static2 .box .info .social-icon li a {
+  color: #9d9d9e;
+  font-size: 0;
+}
+.main-container .event1-static2 .box .info .social-icon li a:hover {
+  color: #cd232f;
+}
+.main-container .event1-static2 .box .info .social-icon li a:before {
+  font-size: 18px;
+}
+.main-container .event1-static2 .box.box1 .info,
+.main-container .event1-static2 .box.box3 .info {
+  bottom: 0;
+}
+.main-container .event1-static2 .box.box2 .info {
+  top: 0;
+}
+.main-container .event1-static2 .box.box3 {
+  padding-top: 290px;
+}
+.main-container .event1-static2 .box.box4 .info {
+  left: 0;
+  top: 25%;
+  background: none;
+  height: 25%;
+}
+.main-container .event1-static2 .box.box4 .info .title {
+  color: #fff;
+}
 .main-container .event-title h3 {
   font-size: 36px !important;
   font-weight: 700;
@@ -3209,6 +3286,24 @@
   color: #fff;
 }
 .main-container .event2-static2 .box-text .social-icon ul li a i {
+  font-size: 16px;
+}
+.main-container .upcoming-event .event-title {
+  text-align: center;
+}
+.main-container .upcoming-event .event-title:after {
+  background: #9d9d9e;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 150px;
+  margin: 15px auto 0;
+}
+.main-container .upcoming-event .event-title h3 {
+  color: #fff;
+}
+.main-container .upcoming-event .event-title p {
+  color: #9d9d9e;
   font-size: 16px;
 }
 @media screen and (max-width: 1400px) {

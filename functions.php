@@ -836,6 +836,15 @@ Class chairman {
 			'before_title' => '<h3 class="widget-title"><span>',
 			'after_title' => '</span></h3>',
 		) );
+		register_sidebar( array(
+			'name' => esc_html__( 'Home event', 'chairman' ),
+			'id' => 'home-event',
+			'description' => esc_html__( 'show event in home page event', 'chairman' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title"><span>',
+			'after_title' => '</span></h3>',
+		) );
 	}
 	function chairman_meta_box_callback( $post ) {
 
