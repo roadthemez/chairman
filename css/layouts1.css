@@ -2534,7 +2534,7 @@
   padding: 0 10px;
 }
 .header-container.blog1 .header .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
   line-height: 60px;
 }
@@ -2589,7 +2589,7 @@
   padding: 0 10px;
 }
 .header-container.blog2 .header .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
   line-height: 48px;
 }
@@ -2651,7 +2651,7 @@
   padding: 0 10px;
 }
 .header-container.blog3 .header .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
   line-height: 60px;
 }
@@ -2830,7 +2830,7 @@
   padding: 0 7px;
 }
 .header-container.event1 .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
 }
 .header-container.event1 .social-icons li a:hover {
@@ -2869,7 +2869,7 @@
   padding: 0 7px;
 }
 .header-container.event2 .social-icons li a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
 }
 .header-container.event2 .social-icons li a:hover {
@@ -2992,6 +2992,9 @@
 }
 .main-container .event1-static1 .content-static .button-container a.viewmore:hover {
   background: #a43d21;
+}
+.main-container .event1-static2 .event-title h3 {
+  color: #fff;
 }
 .main-container .event1-static2 .box {
   width: 25%;
@@ -3319,6 +3322,36 @@
 .main-container .upcoming-event .event-title p {
   color: #9d9d9e;
   font-size: 16px;
+}
+.main-container .upcoming-event .upcoming-content > .wpb_wrapper h2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.main-container .upcoming-event .upcoming-content .event-list li {
+  background: #fff;
+  position: relative;
+  padding: 10px 0 5px 120px;
+  min-height: 100px;
+}
+.main-container .upcoming-event .upcoming-content .event-list li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main-container .upcoming-event .upcoming-content .event-list li a {
+  color: #fbaf5d;
+  text-transform: capitalize;
+}
+.main-container .upcoming-event .upcoming-content .event-list li a:hover {
+  color: #a43d21;
+}
+.main-container .upcoming-event .upcoming-content .event-list li p {
+  margin: 0;
+}
+.main-container .upcoming-event .upcoming-content .event-list li .date-time {
+  color: #3c9feb;
+  font-weight: 700;
 }
 @media screen and (max-width: 1400px) {
   .main-container .event2-static2 .box-text h4 {

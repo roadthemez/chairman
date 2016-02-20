@@ -1432,7 +1432,7 @@
 }
 .header-container.corporate3 .top-bar .social-icons li .chairmantip,
 .header-container.corporate3 .header .social-icons li .chairmantip {
-  display: none;
+  display: none !important;
 }
 .home .header-container.corporate1 {
   position: absolute;
@@ -1842,10 +1842,18 @@
   background: #2f2f2f;
   border-color: #2f2f2f;
 }
+@media screen and (max-width: 992px) {
+  .header-container.corporate3 .top-bar .social-icons {
+    float: none;
+  }
+}
 @media screen and (max-width: 767px) {
   .corporate-contact7 .wpcf7 .contact-input,
   .corporate-contact7 .wpcf7 .contact-message {
     width: 100%;
+  }
+  .header-container.corporate3 .header .header-inner .content-header {
+    top: 10px;
   }
 }
 .header-container.construction1 .top-bar {
@@ -2396,6 +2404,12 @@
 .medician-wpcf7 .wpcf7 .contact-submit {
   width: 94%;
   text-align: right;
+}
+@media screen and (max-width: 992px) {
+  .medician-team-member .pull-left {
+    float: none !important;
+    border: 0;
+  }
 }
 @media screen and (max-width: 767px) {
   .header-container.medician1 ul.social-icons {
@@ -2979,6 +2993,9 @@
 .main-container .event1-static1 .content-static .button-container a.viewmore:hover {
   background: #3c9feb;
 }
+.main-container .event1-static2 .event-title h3 {
+  color: #fff;
+}
 .main-container .event1-static2 .box {
   width: 25%;
   float: left;
@@ -3305,6 +3322,36 @@
 .main-container .upcoming-event .event-title p {
   color: #9d9d9e;
   font-size: 16px;
+}
+.main-container .upcoming-event .upcoming-content > .wpb_wrapper h2 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+.main-container .upcoming-event .upcoming-content .event-list li {
+  background: #fff;
+  position: relative;
+  padding: 10px 0 5px 120px;
+  min-height: 100px;
+}
+.main-container .upcoming-event .upcoming-content .event-list li img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main-container .upcoming-event .upcoming-content .event-list li a {
+  color: #cd232f;
+  text-transform: capitalize;
+}
+.main-container .upcoming-event .upcoming-content .event-list li a:hover {
+  color: #3c9feb;
+}
+.main-container .upcoming-event .upcoming-content .event-list li p {
+  margin: 0;
+}
+.main-container .upcoming-event .upcoming-content .event-list li .date-time {
+  color: #3c9feb;
+  font-weight: 700;
 }
 @media screen and (max-width: 1400px) {
   .main-container .event2-static2 .box-text h4 {
