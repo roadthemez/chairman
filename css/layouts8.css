@@ -3355,10 +3355,7 @@
   font-weight: 700;
 }
 .main-container .upcoming-event2 .upcoming-content > .wpb_wrapper h2 {
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
+  display: none;
 }
 .main-container .upcoming-event2 .upcoming-content .event-list li {
   background: #fff;
