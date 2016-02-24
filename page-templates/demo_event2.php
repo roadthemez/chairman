@@ -62,6 +62,7 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 	<div id="yith-wcwl-popup-message" style="display:none;"><div id="yith-wcwl-message"></div></div>
 	<div class="wrapper <?php if($chairman_opt['page_layout']=='box'){echo 'box-layout';}?>">
 		<div class="page-wrapper">
+			<?php putRevSlider("event1-slider")?>
 			<div class="header-container event2">  
 				<div class="header">
 					<div class="<?php if(isset($chairman_opt['sticky_header']) && $chairman_opt['sticky_header']) {echo 'header-sticky';} ?> <?php if ( is_admin_bar_showing() ) {echo 'with-admin-bar';} ?>">
