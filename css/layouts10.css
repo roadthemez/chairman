@@ -3506,6 +3506,10 @@
   .footer.event2 .footer-bottom .footer-bottom-inner .widget.widget-social .social-icons {
     text-align: center;
   }
+  .footer.event2 .footer-bottom .widget-copyright {
+    float: none;
+    text-align: center;
+  }
   .main-container .event2-static2 {
     padding: 0;
   }
