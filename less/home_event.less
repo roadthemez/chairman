@@ -337,6 +337,9 @@
 					top: 25%;
 					background: none; 
 					height: 25%;
+					&:before {
+						display: none;
+					}
 					.title {
 						color: #fff;
 					}
@@ -798,7 +801,28 @@
 			h3 {
 				font-size: 25px !important;
 			}
-		}		
+		}	
+		.event2-title {
+			h3 {
+				font-size: 25px !important;
+			}
+		}
+		.event1-static2 {
+			.box {
+				height: 450px;
+				.info {
+					padding: 15px;
+				}
+				&.box3 {
+					padding-top: 225px;
+				}
+				&.box4 {
+					.info {
+						top: 20%;
+					}
+				}
+			}
+		}	 
 	}
 }
 @media screen and (max-width: 992px) {
@@ -861,6 +885,10 @@
 						}
 					}
 				}
+				.widget-copyright {
+					float: none;
+					text-align: center;
+				}
 			}
 		}
 	}
@@ -880,10 +908,88 @@
 				}
 			}
 		}
+		.event1-static2 {
+			.box {
+				height: auto;
+			    width: 100%;
+			    display: block;
+			    clear: both;
+			    margin-bottom: 30px;
+			    .info {
+			    	height: 100%;
+			    }
+			    .avatar {
+			    	margin: 0;
+			    }
+			    &.box3 {
+			    	padding: 0;
+			    }
+			    &.box4 {
+			    	margin: 0;
+			    	.info {
+			    		top: auto;
+			    		bottom: 20px;
+			    		height: auto;
+			    	}
+			    }
+			}
+		}
+		.latest-posts {
+			&.event2 {
+				.posts-carousel {
+					.item-col {
+						.post-info {
+							h3.post-title {
+								a {
+									font-size: 17px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.event-speaker {
+			.box {
+				.box-content {
+					.image {
+						padding: 0 25px;
+					}
+				}
+			}
+		}
 	}
 }
 @media screen and (max-width: 767px) {
-
+	.main-container {
+		.event1-static2 {
+			.box { 
+			    .info {
+			    	position: static;
+			    	&:before {
+			    		display: none;
+			    	}
+			    } 
+			    .avatar {
+			    	a {
+			    		display: block;
+			    		img {
+			    			display: block;
+			    			width: 100%;
+			    		}
+			    	}
+			    }
+			    &.box4 {
+			    	.info {
+			    		background: #fff;
+			    		.title {
+			    			color: @headingcolor;
+			    		}
+			    	}
+			    }
+			}
+		}
+	}
 }
 @media screen and (max-width: 400px) {
 	.footer {

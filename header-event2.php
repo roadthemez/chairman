@@ -14,6 +14,7 @@ if(is_ssl()){
 	$chairman_opt['logo_main']['url'] = str_replace('http:', 'https:', $chairman_opt['logo_main']['url']);
 }
 ?>
+	<?php putRevSlider("event1-slider")?>
 	<div class="header-container event2"> 
 		
 		<div class="header">
