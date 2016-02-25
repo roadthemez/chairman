@@ -2534,7 +2534,7 @@
   padding: 0 10px;
 }
 .header-container.blog1 .header .social-icons li a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
   line-height: 60px;
 }
@@ -2589,7 +2589,7 @@
   padding: 0 10px;
 }
 .header-container.blog2 .header .social-icons li a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
   line-height: 48px;
 }
@@ -2651,7 +2651,7 @@
   padding: 0 10px;
 }
 .header-container.blog3 .header .social-icons li a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
   line-height: 60px;
 }
@@ -2830,7 +2830,7 @@
   padding: 0 7px;
 }
 .header-container.event1 .social-icons li a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
 }
 .header-container.event1 .social-icons li a:hover {
@@ -2869,7 +2869,7 @@
   padding: 0 7px;
 }
 .header-container.event2 .social-icons li a {
-  color: #323334;
+  color: #5b6e82;
   display: block;
 }
 .header-container.event2 .social-icons li a:hover {
@@ -3504,6 +3504,10 @@
     float: none;
   }
   .footer.event2 .footer-bottom .footer-bottom-inner .widget.widget-social .social-icons {
+    text-align: center;
+  }
+  .footer.event2 .footer-bottom .widget-copyright {
+    float: none;
     text-align: center;
   }
   .main-container .event2-static2 {
