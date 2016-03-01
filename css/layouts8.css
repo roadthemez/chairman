@@ -3449,6 +3449,9 @@
   .main-container .event-title h3 {
     font-size: 25px !important;
   }
+  .main-container .event2-title h3 {
+    font-size: 25px !important;
+  }
   .main-container .event1-static2 .box {
     height: 450px;
   }
@@ -3503,6 +3506,10 @@
   .footer.event2 .footer-bottom .footer-bottom-inner .widget.widget-social .social-icons {
     text-align: center;
   }
+  .footer.event2 .footer-bottom .widget-copyright {
+    float: none;
+    text-align: center;
+  }
   .main-container .event2-static2 {
     padding: 0;
   }
@@ -3545,6 +3552,12 @@
     bottom: 20px;
     height: auto;
   }
+  .main-container .latest-posts.event2 .posts-carousel .item-col .post-info h3.post-title a {
+    font-size: 17px;
+  }
+  .main-container .event-speaker .box .box-content .image {
+    padding: 0 25px;
+  }
 }
 @media screen and (max-width: 767px) {
   .main-container .event1-static2 .box .info {
@@ -3571,5 +3584,60 @@
   .footer .footer-top .footer-top-inner .widget.widget_wysija form.widget_wysija .widget_wysija .wysija-paragraph .wysija-input,
   .footer .footer-top .footer-top-inner .widget.widget_wysija .widget_wysija_cont .widget_wysija .wysija-paragraph .wysija-input {
     width: 135px;
+  }
+}
+.home .header-container.restaurant1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.home .header-container.restaurant1 .header {
+  background: rgba(18,18,18,0.96);
+}
+.header-container.restaurant1 .global-table {
+  height: 90px;
+}
+.header-container.restaurant1 .logo {
+  padding: 0;
+}
+.header-container.restaurant1 .social-icons {
+  float: right;
+  padding: 33px 0;
+}
+.header-container.restaurant1 .social-icons li {
+  display: inline-block;
+  padding: 0 7px;
+}
+.header-container.restaurant1 .social-icons li a {
+  color: #ffffff;
+  display: block;
+}
+.header-container.restaurant1 .social-icons li a:hover {
+  color: #cd232f;
+}
+.header-container.restaurant1 .header .horizontal-menu {
+  float: right;
+}
+.header-container.restaurant1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link {
+  padding: 25px 23px;
+}
+.header-container.restaurant1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link .link_text:after {
+  display: none;
+}
+@media screen and (max-width: 1200px) {
+  .header-container.restaurant1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link {
+    padding: 25px 20px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-container.restaurant1 {
+    text-align: center;
+  }
+  .header-container.restaurant1 .header .horizontal-menu {
+    float: none;
+  }
+  .header-container.restaurant1 .social-icons {
+    float: none;
+    padding: 10px 0 25px;
   }
 }

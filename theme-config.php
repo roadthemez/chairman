@@ -844,6 +844,13 @@ if (!class_exists('chairman_Theme_Config')) {
                         'title'    => esc_html__( 'Menu Blog1', 'chairman' ),
                         'subtitle' => esc_html__( 'Select a menu', 'chairman' ),
                     ),
+                    array(
+                        'id'       => 'menu_restaurant1',
+                        'type'     => 'select',
+                        'data'     => 'menus',
+                        'title'    => esc_html__( 'Menu Restaurant1', 'chairman' ),
+                        'subtitle' => esc_html__( 'Select a menu', 'chairman' ),
+                    ),
 				)
 			);
             
