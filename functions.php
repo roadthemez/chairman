@@ -688,7 +688,17 @@ Class chairman {
 						$themevariables['footer_bg'] = '#000000';
 						$themevariables['heading_font_weight'] = '700';
 					break;
-
+					case 12:
+						$themevariables['primary_color'] = '#b00e09';
+						$themevariables['header_bg'] = '#fff';    
+						$themevariables['menu_color'] = '#323334';
+						$themevariables['header_link_color'] = '#323334';
+						$themevariables['header_link_hover_color'] = '#b00e09';
+						$themevariables['link_color'] = '#f2ba17';
+						$themevariables['footer_link_hover_color'] = '#b00e09';
+						$themevariables['footer_bg'] = '#151616';
+						$themevariables['heading_font_weight'] = '700';
+					break;
 				}
 
 				if(function_exists('compileLessFile')){

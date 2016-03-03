@@ -61,6 +61,9 @@
 			}
 		}
 	} 
+	&.restaurant2 {
+		margin: 45px 0 20px;
+	}
 }
 
 .main-container {
@@ -394,7 +397,7 @@
 			}
 		}
 	}
-	.restaurant1-title {
+	.restaurant1-title, .restaurant2-title {
 		text-align: center;
 		h3 {
 			font-size: 30px !important; 
@@ -492,7 +495,7 @@
 			}
 		}
 	}
-	.home-aboutus {
+	.restaurant1-aboutus {
 		.info {
 			ul {
 				li {
@@ -545,6 +548,309 @@
 			}
 		}
 	}
+	.restaurant2-aboutus {
+		.map {
+			margin-left: -15px;
+		}
+		.info {
+			ul {
+				li { 
+					color: #fff;
+					position: relative;
+					min-height: 32px;
+					padding-left: 40px;
+					margin-bottom: 10px;
+					i { 
+						color: #fff;
+						border: 2px solid #fff;
+						border-radius: 2px;
+						font-size: 14px;
+						position: absolute;
+						margin-top: -16px;
+						top: 50%;
+						text-align: center;
+						line-height: 28px;
+						left: 0;
+						height: 32px;
+						width: 32px;
+					}
+				}
+			}
+		}
+		.time-work {
+			color: #fff;
+			border-top: 1px solid #585858;
+			border-bottom: 1px solid #585858;
+			padding: 20px 0;
+			margin: 20px 0;
+		}
+		.social {
+			ul {
+				li {
+					display: inline-block;
+					margin: 0 5px 0 0;
+					a {
+						color: #9d9d9e;
+						display: block;
+						font-size: 0;
+						&:before {
+							font-size: 16px;
+						}
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	.restaurant2-slider {
+		background: #fff;
+		padding: 10px;
+		margin-right: -10px;
+	}
+	.restaurant2-static1 {
+		.restaurant2-title {
+			margin-bottom: 10px;
+			text-align: left;
+		}
+		.social {
+			ul {
+				border-top: 1px solid @bordercolor;
+				text-align: center;
+				margin-top: 40px;
+				padding-top: 50px;
+				li {
+					display: inline-block;
+					margin: 0 5px;
+					a {
+						color: #9d9d9e;
+						display: block;
+						font-size: 0;
+						&:hover {
+							color: @primarycolor;
+						}
+						i {
+							font-size: 24px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.restaurant2-event {
+		.restaurant2-title {
+			text-align: left;
+		}
+		.upcoming-content {
+			.event-list {
+				h2 {
+					display: none;
+				}
+				.event-item {
+					margin: 20px 0;
+					padding-left: 130px;
+					position: relative;
+					img {
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+					.time {
+						display: block;
+						font-size: 14px;
+						font-weight: 700;
+						color: @headingcolor;
+						border-bottom: 1px solid @bordercolor;
+						padding-bottom: 15px;
+						margin-bottom: 15px;
+						i {
+							margin-right: 5px; 
+						}
+					}
+					a {
+						color: @primarycolor;
+						font-size: 16px;
+						&:hover {
+							color: @linkcolor;
+						}
+					}
+				}
+			}
+		}
+	}
+	.restaurant2-static2 {
+		position: relative;
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			right: 0;
+			margin-top: -150px;
+			text-align: center;
+			h3 {
+				color: #fff;
+				font-size: 30px;
+				text-transform: uppercase;
+				margin-top: 40px;
+			}
+			h4 {
+				color: #fff;
+				font-size: 18px;
+				font-weight: 300;
+				text-transform: uppercase;
+			}
+			.shop-now {
+				background: @primarycolor;
+				border-radius: 4px;
+				color: #fff;
+				display: inline-block;
+				font-size: 16px;
+				font-weight: 700;
+				padding: 0 30px;
+				margin-top: 40px;
+				line-height: 50px;
+				text-transform: uppercase;
+				&:hover {
+					background: @linkcolor;
+				}
+			}
+		}
+	}
+	.restaurant2-static3 {
+		text-align: center;
+		.restaurant2-title {
+			padding: 30px 0;
+			margin: 0;
+			h3 {
+				color: #fff;
+			}
+		}
+		.box-container {
+			margin: 0 -15px;
+			overflow: hidden;
+			&.box-container1 {
+				.box {
+					&.box1 {
+						width: 50%; 
+					}
+					&.box2 {
+						width: 25%; 
+					}
+					&.box3 {
+						width: 25%; 
+					}
+				}
+			}
+			&.box-container2 {
+				.box {
+					&.box1 {
+						width: 25%; 
+					}  
+					&.box2 {
+						width: 50%;
+						.box-inner4, .box-inner5 {
+							float: left;
+							width: 50%;
+						}
+					}
+					&.box3 {
+						width: 25%; 
+					}
+				}
+			}
+		}
+		.box {
+			float: left;  
+			.box-inner {
+				position: relative;
+				overflow: hidden;
+				&:hover {
+					&:before {
+						.opacity(1);
+					}
+					.text {
+						.opacity(1);
+						.scaleY(1);
+					}
+				}
+				&:before {
+					background: rgba(0, 0, 0, 0.8);
+					content: "";
+					display: block;
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					pointer-events: none;
+					.transition();
+					.opacity(0);
+				}
+				&:after {
+					content: "";
+					display: table;
+					clear: both;
+				}
+				p {
+					margin: 0;
+				}
+				.image {
+					display: block;
+					img {
+						width: 100%;
+						display: block;
+					}
+				}
+				.text {
+					position: absolute;
+					top: 50%;
+					right: 30px; 
+					left: 30px; 
+					text-align: center;
+					.opacity(0);
+					.scaleY(0);
+					.transition();
+					&.text1 {
+						margin-top: -122px;
+					}
+					&.text2 {
+						margin-top: -86px;
+					}
+					.name {
+						color: #fff;
+						font-size: 30px;
+					}
+					p {
+						color: #9d9d9e;
+						font-size: 16px;
+						.price {
+							background: url(../images/restaurant_line.png) no-repeat 50% 0;
+							color: @linkcolor;
+							display: block;
+							font-size: 42px;
+							padding-top: 30px;
+							line-height: 40px;
+							margin-top: 10px;
+						}
+					}
+				}
+			}	 
+		}
+		.viewmore {
+			border-radius: 3px;
+			display: inline-block;
+			color: #fff;
+			background: @primarycolor;
+			font-size: 16px;
+			text-transform: uppercase;
+			line-height: 50px;
+			padding: 0 25px;
+			&:hover {
+				background: @linkcolor;
+			}
+		}
+	}
 }
 
 //footer 
@@ -574,6 +880,32 @@
 			}
 		}
 	} 
+	&.restaurant2 {
+		background: none;
+		.footer-bottom {
+			border: 0;
+			background: @footerbg;
+			padding-left: 10px
+		}
+		.menu-restaurant {
+			ul {
+				text-align: right;
+				li {
+					display: inline-block;
+					margin: 0 15px;
+					a {
+						color: #fff;
+						display: block;
+						font-weight: 700;
+						text-transform: uppercase;
+						&:hover {
+							color: @primarycolor;
+						}
+					}
+				}
+			}
+		}
+	}
 }
  
 @media screen and (max-width: 1200px) {

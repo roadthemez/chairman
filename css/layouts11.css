@@ -3624,6 +3624,9 @@
 .header-container.restaurant1 .header .horizontal-menu #mega_main_menu_first > .menu_holder .menu_inner > ul > li > a.item_link .link_text:after {
   display: none;
 }
+.header-container.restaurant2 {
+  margin: 45px 0 20px;
+}
 .main-container .restaurant1-static1 .box {
   position: relative;
 }
@@ -3962,10 +3965,12 @@
 .main-container .latest-posts.restaurant1 .posts-carousel .item-col .post-info .author a:hover {
   color: #f2ba17;
 }
-.main-container .restaurant1-title {
+.main-container .restaurant1-title,
+.main-container .restaurant2-title {
   text-align: center;
 }
-.main-container .restaurant1-title h3 {
+.main-container .restaurant1-title h3,
+.main-container .restaurant2-title h3 {
   font-size: 30px !important;
   text-transform: uppercase;
 }
@@ -4003,6 +4008,7 @@
   font-size: 14px;
   font-weight: 700;
   padding: 0 0 10px 0;
+  margin: 0 0 10px 0;
 }
 .main-container .restaurant1-event .upcoming-content .event-list .event-item .time i {
   margin-right: 5px;
@@ -4091,6 +4097,221 @@
 }
 .main-container .home-aboutus .social ul li a:hover {
   color: #fff;
+}
+.main-container .restaurant2-slider {
+  background: #fff;
+  padding: 10px;
+  margin-right: -10px;
+}
+.main-container .restaurant2-static1 .restaurant2-title {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.main-container .restaurant2-static1 .social ul {
+  border-top: 1px solid #f1f0f0;
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 50px;
+}
+.main-container .restaurant2-static1 .social ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.main-container .restaurant2-static1 .social ul li a {
+  color: #9d9d9e;
+  display: block;
+  font-size: 0;
+}
+.main-container .restaurant2-static1 .social ul li a:hover {
+  color: #b00e09;
+}
+.main-container .restaurant2-static1 .social ul li a i {
+  font-size: 24px;
+}
+.main-container .restaurant2-event .restaurant2-title {
+  text-align: left;
+}
+.main-container .restaurant2-event .upcoming-content .event-list h2 {
+  display: none;
+}
+.main-container .restaurant2-event .upcoming-content .event-list .event-item {
+  margin: 20px 0;
+  padding-left: 130px;
+  position: relative;
+}
+.main-container .restaurant2-event .upcoming-content .event-list .event-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main-container .restaurant2-event .upcoming-content .event-list .event-item .time {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #353535;
+  border-bottom: 1px solid #f1f0f0;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.main-container .restaurant2-event .upcoming-content .event-list .event-item .time i {
+  margin-right: 5px;
+}
+.main-container .restaurant2-event .upcoming-content .event-list .event-item a {
+  color: #b00e09;
+  font-size: 16px;
+}
+.main-container .restaurant2-event .upcoming-content .event-list .event-item a:hover {
+  color: #f2ba17;
+}
+.main-container .restaurant2-static2 {
+  position: relative;
+}
+.main-container .restaurant2-static2 .text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -150px;
+  text-align: center;
+}
+.main-container .restaurant2-static2 .text h3 {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+.main-container .restaurant2-static2 .text h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.main-container .restaurant2-static2 .text .shop-now {
+  background: #b00e09;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 30px;
+  margin-top: 40px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.main-container .restaurant2-static2 .text .shop-now:hover {
+  background: #f2ba17;
+}
+.main-container .restaurant2-static3 {
+  text-align: center;
+}
+.main-container .restaurant2-static3 .restaurant2-title {
+  padding: 30px 0;
+  margin: 0;
+}
+.main-container .restaurant2-static3 .restaurant2-title h3 {
+  color: #fff;
+}
+.main-container .restaurant2-static3 .box {
+  float: left;
+}
+.main-container .restaurant2-static3 .box .box-inner {
+  position: relative;
+  overflow: hidden;
+}
+.main-container .restaurant2-static3 .box .box-inner:hover:before {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+}
+.main-container .restaurant2-static3 .box .box-inner:hover .text {
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+  -moz-transform: scaleY(1);
+  -ms-transform: scaleYscaleY(1);
+  -o-transform: scaleY(1);
+}
+.main-container .restaurant2-static3 .box .box-inner:before {
+  background: rgba(0,0,0,0.8);
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+.main-container .restaurant2-static3 .box .box-inner:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-container .restaurant2-static3 .box .box-inner p {
+  margin: 0;
+}
+.main-container .restaurant2-static3 .box .box-inner .image {
+  display: block;
+}
+.main-container .restaurant2-static3 .box .box-inner .image img {
+  width: 100%;
+  display: block;
+}
+.main-container .restaurant2-static3 .box .box-inner .text {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  left: 30px;
+  text-align: center;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+  -webkit-transform: scaleY(0);
+  -moz-transform: scaleY(0);
+  -ms-transform: scaleYscaleY(0);
+  -o-transform: scaleY(0);
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+}
+.main-container .restaurant2-static3 .box .box-inner .text .name {
+  color: #fff;
+  font-size: 30px;
+}
+.main-container .restaurant2-static3 .box .box-inner .text p {
+  color: #9d9d9e;
+  font-size: 16px;
+}
+.main-container .restaurant2-static3 .box .box-inner .text p .price {
+  background: url(../images/restaurant_line.png) no-repeat 50% 0;
+  color: #f2ba17;
+  display: block;
+  font-size: 42px;
+  padding-top: 30px;
+  line-height: 40px;
+  margin-top: 10px;
+}
+.main-container .restaurant2-static3 .viewmore {
+  border-radius: 3px;
+  display: inline-block;
+  color: #fff;
+  background: #b00e09;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 50px;
+  padding: 0 25px;
+}
+.main-container .restaurant2-static3 .viewmore:hover {
+  background: #f2ba17;
 }
 .footer.restaurant1 {
   background: #000000;
