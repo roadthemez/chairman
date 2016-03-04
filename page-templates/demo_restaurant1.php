@@ -133,7 +133,7 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 					<div class="container">
 						<div class="footer-bottom-inner">
 							<div class="row">
-								<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="col-lg-5 col-md-5 col-sm-12">
 									<div class="widget-copyright">
 										<?php 
 										if( isset($chairman_opt['copyright']) && $chairman_opt['copyright']!='' ) {
@@ -152,7 +152,7 @@ var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items']))
 										?>
 									</div>
 								</div>
-								<div class="col-lg-6 col-md-6 col-sm-12">
+								<div class="col-lg-7 col-md-7 col-sm-12">
 									<?php 
 										if( isset($chairman_opt['menu_restaurant1']) && $chairman_opt['menu_restaurant1']!='' ) { 
 											$menu1_args = array(
