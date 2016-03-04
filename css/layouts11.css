@@ -4477,6 +4477,28 @@
   .main-container .restaurant1-static2 .box-content h3 {
     font-size: 40px;
   }
+  .main-container .restaurant2-static1 .social ul {
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  .main-container .restaurant2-static2 .text h3 {
+    font-size: 25px;
+  }
+  .main-container .restaurant2-static3 .box .box-inner .text .name {
+    font-size: 20px;
+  }
+  .main-container .restaurant2-static3 .box .box-inner .text p {
+    font-size: 14px;
+  }
+  .main-container .restaurant2-static3 .box .box-inner .text p .price {
+    font-size: 35px;
+  }
+  .main-container .latest-posts.restaurant1 .posts-carousel .item-col .post-info h3.post-title a {
+    font-size: 16px;
+  }
+  .main-container .video-static.restaurant1 .description h3 {
+    font-size: 23px;
+  }
 }
 @media screen and (max-width: 1200px) and (min-width: 992px) {
   .main-container .restaurant1-static3 .box .box-inner .text {
@@ -4516,15 +4538,49 @@
     width: 100% !important;
     margin: 0;
   }
-  .footer.restaurant1 {
+  .main-container .restaurant2-home-slider .vc_column_container {
+    width: 100% !important;
+  }
+  .main-container .restaurant2-slider {
+    margin: 0 0 20px;
+  }
+  .main-container .restaurant2-event .vc_column_container {
+    width: 100% !important;
+  }
+  .main-container .restaurant2-static3 .box-container.box-container1 .box {
+    width: 100% !important;
+  }
+  .main-container .restaurant2-static3 .box-container.box-container2 .box {
+    width: 100% !important;
+  }
+  .footer.restaurant1,
+  .footer.restaurant2 {
     text-align: center;
   }
-  .footer.restaurant1 .footer-bottom .widget-copyright {
+  .footer.restaurant1 .footer-bottom .widget-copyright,
+  .footer.restaurant2 .footer-bottom .widget-copyright {
     float: none;
     display: inline-block;
   }
-  .footer.restaurant1 .menu-restaurant ul {
+  .footer.restaurant1 .menu-restaurant ul,
+  .footer.restaurant2 .menu-restaurant ul {
     text-align: center;
+  }
+}
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .main-container .restaurant2-static3 .box .box-inner .text {
+    margin-top: -20px !important;
+    right: 15px;
+    left: 15px;
+  }
+  .main-container .restaurant2-static3 .box .box-inner .text p {
+    display: none;
+  }
+  .main-container .restaurant2-static3 .box .box-inner .text .name {
+    font-size: 15px;
+  }
+  .main-container .restaurant2-aboutus .info ul li {
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -4558,5 +4614,11 @@
   }
   .main-container .restaurant1-aboutus .info {
     margin-top: 30px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-container .restaurant2-static3 .box-container.box-container2 .box.box2 .box-inner4,
+  .main-container .restaurant2-static3 .box-container.box-container2 .box.box2 .box-inner5 {
+    width: 100%;
   }
 }
