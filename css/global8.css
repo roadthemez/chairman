@@ -625,6 +625,9 @@ button {
 .header-container .global-table {
   height: 122px;
 }
+.header-container .chairmantip {
+  display: none !important;
+}
 .header-container .content-header {
   z-index: 5000;
   float: right;
