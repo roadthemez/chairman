@@ -698,7 +698,7 @@ Class chairman {
 						$themevariables['footer_link_hover_color'] = '#b00e09';
 						$themevariables['footer_bg'] = '#151616';
 						$themevariables['heading_font_weight'] = '700';
-					break;
+					break; 
 				}
 
 				if(function_exists('compileLessFile')){

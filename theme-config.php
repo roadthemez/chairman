@@ -371,6 +371,7 @@ if (!class_exists('chairman_Theme_Config')) {
                         //Must provide key => value pairs for select options
                         'options'   => array(
                             'default' => 'Default',
+							'landing' => 'Landing',
                             'furniture2' => 'Furniture2',
                             'portfolio1' => 'Portfolio1',  
 							'corporate1' => 'Corporate1',
@@ -623,6 +624,7 @@ if (!class_exists('chairman_Theme_Config')) {
                         //Must provide key => value pairs for select options
                         'options'   => array(
                             'default' => 'Default',
+							'landing' => 'Landing',
                             'furniture2' => 'Furniture2',
                             'portfolio1' => 'Portfolio1', 
                             'blog1' => 'Blog1',

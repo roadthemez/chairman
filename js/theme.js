@@ -1150,6 +1150,7 @@
 			jQuery('.list_projects #projects_list').shuffle( 'shuffle', group );
 		});
 	});
+ 
 })(jQuery);
 
 "use strict";
