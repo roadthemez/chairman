@@ -46,7 +46,7 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->g
 		</div>
 		<div class="col-xs-12 col-md-6">
 			<div class="order-box">
-				<h3 id="order_review_heading"><?php _e( 'Your order', 'chairman' ); ?></h3>
+				<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'chairman' ); ?></h3>
 				
 				<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 

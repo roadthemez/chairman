@@ -21,18 +21,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 		<p><?php echo apply_filters( 'woocommerce_lost_password_message', esc_html__( 'Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.', 'chairman' ) ); ?></p>
 
-		<p class="form-row form-row-first"><label for="user_login"><?php _e( 'Username or email', 'chairman' ); ?></label> <input class="input-text" type="text" name="user_login" id="user_login" /></p>
+		<p class="form-row form-row-first"><label for="user_login"><?php esc_html_e( 'Username or email', 'chairman' ); ?></label> <input class="input-text" type="text" name="user_login" id="user_login" /></p>
 
 	<?php else : ?>
 
 		<p><?php echo apply_filters( 'woocommerce_reset_password_message', esc_html__( 'Enter a new password below.', 'chairman') ); ?></p>
 
 		<p class="form-row form-row-first">
-			<label for="password_1"><?php _e( 'New password', 'chairman' ); ?> <span class="required">*</span></label>
+			<label for="password_1"><?php esc_html_e( 'New password', 'chairman' ); ?> <span class="required">*</span></label>
 			<input type="password" class="input-text" name="password_1" id="password_1" />
 		</p>
 		<p class="form-row form-row-last">
-			<label for="password_2"><?php _e( 'Re-enter new password', 'chairman' ); ?> <span class="required">*</span></label>
+			<label for="password_2"><?php esc_html_e( 'Re-enter new password', 'chairman' ); ?> <span class="required">*</span></label>
 			<input type="password" class="input-text" name="password_2" id="password_2" />
 		</p>
 

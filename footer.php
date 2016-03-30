@@ -8,8 +8,9 @@
  * @subpackage chairman_Themes
  * @since Huge Shop 1.0
  */
+ 
+$chairman_opt = get_option( 'chairman_opt' );
 ?>
-<?php global $chairman_opt; ?>
 			<?php
 			if ( !isset($chairman_opt['footer_layout']) || $chairman_opt['footer_layout']=='default' ) {
 				get_footer('first');

@@ -9,18 +9,18 @@
  * @since Huge Shop 1.0
  */
 ?>
-<?php global $chairman_opt; 
+<?php $chairman_opt = get_option( 'chairman_opt' );
 if(is_ssl()){
 	$chairman_opt['logo_main']['url'] = str_replace('http:', 'https:', $chairman_opt['logo_main']['url']);
 }
 ?>
-	<div class="header-container"> 
+	<div class="header-container">
+		<?php if(has_nav_menu( 'login' ) || (isset($chairman_opt['blog_header']) && $chairman_opt['blog_header']!='')) { ?>
 		<div class="top-bar">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
 						<div class="box-left">
-							<div class="top-message"><?php echo esc_html($chairman_opt['welcome_message']); ?></div>
 							<?php if((isset($chairman_opt['blog_header']) && $chairman_opt['blog_header']!=''))
 							{ ?>
 								<div class="blog-header"> 
@@ -54,16 +54,20 @@ if(is_ssl()){
 					<div class="col-xs-12 col-md-6">
 						<div class="box-right"> 
 							<div class="switcher">
-								<?php wp_nav_menu( array('menu' => 'login' )); ?>
-								<?php do_action('icl_language_selector'); ?>
-								<div class="currency"><?php do_action('currency_switcher'); ?></div>
-								
+								<?php if ( has_nav_menu( 'login' ) ) {
+									wp_nav_menu( array( 'theme_location' => 'login', 'container_class' => 'menu-login-container', 'menu_class' => 'menu' ) );
+								} ?>
+								<?php if (class_exists('SitePress')) {
+									do_action('icl_language_selector'); ?>
+									<div class="currency"><?php do_action('currency_switcher'); ?></div>
+								<?php } ?>
 							</div> 
 						</div> 
 					</div>
 				</div>
 			</div>
-		</div> 
+		</div>
+		<?php } ?>
 		<div class="header">
 			<div class="<?php if(isset($chairman_opt['sticky_header']) && $chairman_opt['sticky_header']) {echo 'header-sticky';} ?> <?php if ( is_admin_bar_showing() ) {echo 'with-admin-bar';} ?>">
 				<div class="container header-inner">
@@ -92,7 +96,10 @@ if(is_ssl()){
 								<div class="visible-small mobile-menu">
 									<div class="nav-container">
 										<div class="mbmenu-toggler"><?php echo esc_html($chairman_opt['mobile_menu_label']);?><span class="mbmenu-icon"><i class="fa fa-bars"></i></span></div>
-										<?php wp_nav_menu( array( 'theme_location' => 'mobilemenu', 'container_class' => 'mobile-menu-container', 'menu_class' => 'nav-menu' ) ); ?>
+										<?php
+										if ( has_nav_menu( 'mobilemenu' ) ) {
+											wp_nav_menu( array( 'theme_location' => 'mobilemenu', 'container_class' => 'mobile-menu-container', 'menu_class' => 'nav-menu' ) );
+										} ?>
 									</div>
 								</div>
 							</div>
@@ -110,14 +117,18 @@ if(is_ssl()){
 								<?php if ( class_exists( 'WC_Widget_Cart' ) ) {
 									the_widget('Custom_WC_Widget_Cart'); 
 								} ?>
+								<?php if ( has_nav_menu( 'mobilemenu' ) ) { ?>
 								<div class="vmenu-toggler">
 									<div class="vmenu-toggler-button">
 										<i class="fa fa-bars"></i>
 									</div>
 									<div class="vmenu-content">
-										<?php wp_nav_menu( array( 'theme_location' => 'topmenu', 'container_class' => 'top-menu-container', 'menu_class' => 'nav-menu' ) ); ?> 
+										<?php
+											wp_nav_menu( array( 'theme_location' => 'topmenu', 'container_class' => 'top-menu-container', 'menu_class' => 'nav-menu' ) );
+										?>
 									</div>
 								</div>
+								<?php } ?> 
 							</div>
 						</div>
 						

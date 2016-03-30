@@ -1,8 +1,8 @@
 <?php
 //WooCommerce Ajax
 
-add_action('wp_head','roadthemes_woo_ajaxurl');
-function roadthemes_woo_ajaxurl() {
+add_action('wp_head','chairman_woo_ajaxurl');
+function chairman_woo_ajaxurl() {
 ?>
 	<script type="text/javascript">
 	var ajaxurl = '<?php echo admin_url('admin-ajax.php'); ?>';

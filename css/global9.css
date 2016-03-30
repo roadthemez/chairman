@@ -625,6 +625,9 @@ button {
 .header-container .global-table {
   height: 122px;
 }
+.header-container .chairmantip {
+  display: none !important;
+}
 .header-container .content-header {
   z-index: 5000;
   float: right;
@@ -778,7 +781,7 @@ button {
   color: #18afd3;
 }
 .header-container .vmenu-toggler .vmenu-toggler-button {
-  color: #5b6e82;
+  color: #323334;
   cursor: pointer;
   font-size: 22px;
   float: left;
@@ -885,7 +888,7 @@ button {
   margin: auto;
 }
 .header-container .widget_shopping_cart .widget_shopping_cart_content .cart-toggler a {
-  color: #5b6e82;
+  color: #323334;
   display: block;
   font-size: 16px;
   font-weight: bold;
@@ -1122,7 +1125,7 @@ button {
 .header-container .header-search .search-icon:before {
   display: block;
   content: "\f002";
-  color: #5b6e82;
+  color: #323334;
   font-family: FontAwesome;
   font-size: 16px;
   line-height: 36px;

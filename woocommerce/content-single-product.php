@@ -10,8 +10,10 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+
+$chairman_opt = get_option( 'chairman_opt' );
+
 ?>
-<?php global $chairman_opt, $chairman_secondimage; ?>
 
 <div class="container">
 <?php

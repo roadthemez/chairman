@@ -8,7 +8,7 @@ function chairman_blog_sharing() {
 	$posttitle = get_the_title( $post->ID );
 	?>
 	<div class="widget widget_socialsharing_widget">
-		<h3 class="widget-title"><?php if(isset($chairman_opt['blog_share_title'])) { echo esc_html($chairman_opt['blog_share_title']); } else { _e('Share this post', 'chairman'); } ?></h3>
+		<h3 class="widget-title"><?php if(isset($chairman_opt['blog_share_title'])) { echo esc_html($chairman_opt['blog_share_title']); } else { esc_html_e('Share this post', 'chairman'); } ?></h3>
 		<ul class="social-icons">
 			<li><a class="facebook social-icon" href="#" onclick="javascript: window.open('<?php echo 'https://www.facebook.com/sharer/sharer.php?u='.$share_url; ?>'); return false;" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
 			<li><a class="twitter social-icon" href="#" title="Twitter" onclick="javascript: window.open('<?php echo 'https://twitter.com/home?status='.$posttitle.'&nbsp;'.$share_url; ?>'); return false;" target="_blank"><i class="fa fa-twitter"></i></a></li>

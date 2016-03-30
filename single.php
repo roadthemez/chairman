@@ -7,11 +7,10 @@
  * @since Huge Shop 1.0
  */
 
-global $chairman_opt;
+$chairman_opt = get_option( 'chairman_opt' );
 
 get_header();
-?>
-<?php 
+
 $bloglayout = 'nosidebar';
 if(isset($chairman_opt['blog_layout']) && $chairman_opt['blog_layout']!=''){
 	$bloglayout = $chairman_opt['blog_layout'];
@@ -42,7 +41,7 @@ switch($bloglayout) {
 		<div class="container">
 			<div class="title-breadcrumb-inner">
 				<header class="entry-header">
-					<h1 class="entry-title"><?php if(isset($chairman_opt)) { echo esc_html($chairman_opt['blog_header_text']); } else { _e('Blog', 'chairman');}  ?></h1>
+					<h1 class="entry-title"><?php if(isset($chairman_opt)) { echo esc_html($chairman_opt['blog_header_text']); } else { esc_html_e('Blog', 'chairman');}  ?></h1>
 				</header>
 				<?php Chairman::chairman_breadcrumb(); ?>
 			</div>
@@ -65,7 +64,7 @@ switch($bloglayout) {
 						<?php comments_template( '', true ); ?>
 						
 						<!--<nav class="nav-single">
-							<h3 class="assistive-text"><?php _e( 'Post navigation', 'chairman' ); ?></h3>
+							<h3 class="assistive-text"><?php esc_html_e( 'Post navigation', 'chairman' ); ?></h3>
 							<span class="nav-previous"><?php previous_post_link( '%link', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'chairman' ) . '</span> %title' ); ?></span>
 							<span class="nav-next"><?php next_post_link( '%link', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'chairman' ) . '</span>' ); ?></span>
 						</nav><!-- .nav-single -->

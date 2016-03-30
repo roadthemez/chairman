@@ -9,7 +9,7 @@
  * @since Huge Shop 1.0
  */
 
-global $chairman_opt;
+$chairman_opt = get_option( 'chairman_opt' );
  
 $blogsidebar = 'right';
 if(isset($chairman_opt['sidebarblog_pos']) && $chairman_opt['sidebarblog_pos']!=''){

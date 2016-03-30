@@ -1799,6 +1799,7 @@ body.quickview {
 .main-container .product-view .single-product-sharing ul.social-icons li {
   display: inline-block;
   margin-right: 15px;
+  position: relative;
 }
 .main-container .product-view .single-product-sharing ul.social-icons li a {
   display: block;

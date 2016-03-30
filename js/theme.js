@@ -1107,7 +1107,7 @@
 				//Sticky header
 				if(chairman_sticky_header==true){
 					
-					if(scrollP >= stickyOffset){
+					if(scrollP >= stickyOffset+20){
 						jQuery('#back-top').addClass('show');
 						jQuery('.header-sticky').addClass('ontop');
 						jQuery('.headerSpace').addClass('show');
@@ -1150,7 +1150,6 @@
 			jQuery('.list_projects #projects_list').shuffle( 'shuffle', group );
 		});
 	});
- 
 })(jQuery);
 
 "use strict";

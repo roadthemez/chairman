@@ -1,17 +1,30 @@
 <?php
 /**
- * The template for displaying product content within loops.
+ * The template for displaying product content within loops
  *
- * Override this template by copying it to yourtheme/woocommerce/content-product.php
+ * This template can be overridden by copying it to yourtheme/woocommerce/content-product.php.
  *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     2.4.0
+ * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
+ * will need to copy the new files to your theme to maintain compatibility. We try to do this.
+ * as little as possible, but it does happen. When this occurs the version of the template file will.
+ * be bumped and the readme will list any important changes.
+ *
+ * @see     http://docs.woothemes.com/document/template-structure/
+ * @author  WooThemes
+ * @package WooCommerce/Templates
+ * @version 2.5.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 
-global $product, $woocommerce_loop, $chairman_opt, $chairman_productrows, $chairman_productsfound, $chairman_viewmode;
+global $product, $woocommerce_loop;
+
+$chairman_opt = get_option( 'chairman_opt' );
+
+$chairman_viewmode = Chairman::chairman_show_view_mode();
+$chairman_productsfound = Chairman::chairman_shortcode_products_count();
 
 // Store loop count we're currently on
 if ( empty( $woocommerce_loop['loop'] ) )
@@ -44,9 +57,7 @@ $colwidth = round(12/$woocommerce_loop['columns']);
 $classes[] = ' item-col col-xs-12 col-full-hd col-sm-'.$colwidth ;?>
 
 <?php if ( ( 0 == ( $woocommerce_loop['loop'] - 1 ) % 2 ) && ( $woocommerce_loop['columns'] == 2 ) ) {
-	if($chairman_productrows!=1){
-		echo '<div class="group">';
-	}
+	echo '<div class="group">';
 } ?>
 
 <div <?php post_class( $classes ); ?>>
@@ -84,7 +95,7 @@ $classes[] = ' item-col col-xs-12 col-full-hd col-sm-'.$colwidth ;?>
 							} ?>
 						</li>
 						<li class="last quickviewbtn">
-							<a class="detail-link quickview fa fa-external-link" data-quick-id="<?php the_ID();?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php _e('Quick View', 'chairman');?></a>
+							<a class="detail-link quickview fa fa-external-link" data-quick-id="<?php the_ID();?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php esc_html_e('Quick View', 'chairman');?></a>
 						</li>
 					</ul>
 				</div>
@@ -147,7 +158,5 @@ $classes[] = ' item-col col-xs-12 col-full-hd col-sm-'.$colwidth ;?>
 	</div>
 </div>
 <?php if ( ( ( 0 == $woocommerce_loop['loop'] % 2 || $chairman_productsfound == $woocommerce_loop['loop'] ) && $woocommerce_loop['columns'] == 2 )  ) { /* for odd case: $chairman_productsfound == $woocommerce_loop['loop'] */
-	if($chairman_productrows!=1){
-		echo '</div>';
-	}
+	echo '</div>';
 } ?>

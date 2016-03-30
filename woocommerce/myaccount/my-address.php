@@ -42,7 +42,7 @@ $col = 1;
 	<div class="col-<?php echo ( ( $col = $col * -1 ) < 0 ) ? 1 : 2; ?> address">
 		<header class="title">
 			<h3><?php echo ''.$title; ?></h3>
-			<a href="<?php echo wc_get_endpoint_url( 'edit-address', $name ); ?>" class="edit"><?php _e( 'Edit', 'chairman' ); ?></a>
+			<a href="<?php echo wc_get_endpoint_url( 'edit-address', $name ); ?>" class="edit"><?php esc_html_e( 'Edit', 'chairman' ); ?></a>
 		</header>
 		<address>
 			<?php
@@ -61,7 +61,7 @@ $col = 1;
 				$formatted_address = WC()->countries->get_formatted_address( $address );
 
 				if ( ! $formatted_address )
-					_e( 'You have not set up this type of address yet.', 'chairman' );
+					esc_html_e( 'You have not set up this type of address yet.', 'chairman' );
 				else
 					echo ''.$formatted_address;
 			?>

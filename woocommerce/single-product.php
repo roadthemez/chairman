@@ -12,7 +12,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 get_header( 'shop' ); ?>
-<?php global $chairman_opt; ?>
+
 <div class="main-container">
 
 	<div class="page-content">

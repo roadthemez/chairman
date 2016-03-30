@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php if ( $notes = $order->get_customer_order_notes() ) :
 	?>
-	<h2><?php _e( 'Order Updates', 'chairman' ); ?></h2>
+	<h2><?php esc_html_e( 'Order Updates', 'chairman' ); ?></h2>
 	<ol class="commentlist notes">
 		<?php foreach ( $notes as $note ) : ?>
 		<li class="comment note">

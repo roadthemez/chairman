@@ -9,11 +9,10 @@
  * @since Huge Shop 1.0
  */
 
-global $chairman_opt, $chairman_postthumb;
+$chairman_opt = get_option( 'chairman_opt' );
 
 get_header();
-?>
-<?php 
+
 $bloglayout = 'nosidebar';
 if(isset($chairman_opt['blog_layout']) && $chairman_opt['blog_layout']!=''){
 	$bloglayout = $chairman_opt['blog_layout'];
@@ -32,13 +31,13 @@ switch($bloglayout) {
 	case 'sidebar':
 		$blogclass = 'blog-sidebar';
 		$blogcolclass = 9;
-		$chairman_postthumb = 'chairman-category-thumb'; //750x510px
+		Chairman::chairman_post_thumbnail_size('chairman-category-thumb');
 		break;
 	default:
 		$blogclass = 'blog-nosidebar';
 		$blogcolclass = 12;
 		$blogsidebar = 'none';
-		$chairman_postthumb = 'chairman-post-thumb'; //500x500px
+		Chairman::chairman_post_thumbnail_size('chairman-post-thumb');
 }
 ?>
 <div class="main-container page-wrapper">
@@ -46,7 +45,7 @@ switch($bloglayout) {
 		<div class="container">
 			<div class="title-breadcrumb-inner">
 				<header class="entry-header">
-					<h1 class="entry-title"><?php if(isset($chairman_opt)) { echo esc_html($chairman_opt['blog_header_text']); } else { _e('Blog', 'chairman');}  ?></h1>
+					<h1 class="entry-title"><?php if(isset($chairman_opt)) { echo esc_html($chairman_opt['blog_header_text']); } else { esc_html_e('Blog', 'chairman');}  ?></h1>
 				</header>
 				<?php Chairman::chairman_breadcrumb(); ?>
 			</div>
@@ -105,7 +104,7 @@ switch($bloglayout) {
 											 *     @type int The attachment width in pixels.
 											 * }
 											 */
-											$attachment_size = apply_filters( 'roadthemes_attachment_size', array( 960, 960 ) );
+											$attachment_size = apply_filters( 'chairman_attachment_size', array( 960, 960 ) );
 											echo wp_get_attachment_image( $post->ID, $attachment_size );
 											?></a>
 

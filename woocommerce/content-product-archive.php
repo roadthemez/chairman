@@ -11,7 +11,11 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $product, $woocommerce_loop, $chairman_opt, $chairman_shopclass, $chairman_viewmode;
+global $product, $woocommerce_loop;
+
+$chairman_opt = get_option( 'chairman_opt' );
+
+$chairman_viewmode = Chairman::chairman_show_view_mode();
 
 // Store loop count we're currently on
 if ( empty( $woocommerce_loop['loop'] ) )
@@ -38,6 +42,8 @@ if ( 0 == $woocommerce_loop['loop'] % $woocommerce_loop['columns'] ) {
 }
 
 $count   = $product->get_rating_count();
+
+$chairman_shopclass = Chairman::chairman_shop_class('');
 
 if($chairman_shopclass=='shop-fullwidth') {
 	if(isset($chairman_opt)){
@@ -105,7 +111,7 @@ if($chairman_shopclass=='shop-fullwidth') {
 							} ?>
 						</li>
 						<li class="last quickviewbtn">
-							<a class="detail-link quickview fa fa-external-link" data-quick-id="<?php the_ID();?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php _e('Quick View', 'chairman');?></a>
+							<a class="detail-link quickview fa fa-external-link" data-quick-id="<?php the_ID();?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php esc_html_e('Quick View', 'chairman');?></a>
 						</li>
 					</ul>
 				</div>
@@ -146,7 +152,7 @@ if($chairman_shopclass=='shop-fullwidth') {
 							} ?>
 						</li>
 						<li class="last quickviewbtn">
-							<a class="detail-link quickview fa fa-external-link" data-quick-id="<?php the_ID();?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php _e('Quick View', 'chairman');?></a>
+							<a class="detail-link quickview fa fa-external-link" data-quick-id="<?php the_ID();?>" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php esc_html_e('Quick View', 'chairman');?></a>
 						</li>
 					</ul>
 				</div>

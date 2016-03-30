@@ -23,7 +23,7 @@ if ( ! comments_open() ) {
 			if ( get_option( 'woocommerce_enable_review_rating' ) === 'yes' && ( $count = $product->get_review_count() ) )
 				printf( _n( '%s review for %s', '%s reviews for %s', $count, 'chairman' ), $count, get_the_title() );
 			else
-				_e( 'Reviews', 'chairman' );
+				esc_html_e( 'Reviews', 'chairman' );
 		?></h2>
 
 		<?php if ( have_comments() ) : ?>
@@ -44,7 +44,7 @@ if ( ! comments_open() ) {
 
 		<?php else : ?>
 
-			<p class="woocommerce-noreviews"><?php _e( 'There are no reviews yet.', 'chairman' ); ?></p>
+			<p class="woocommerce-noreviews"><?php esc_html_e( 'There are no reviews yet.', 'chairman' ); ?></p>
 
 		<?php endif; ?>
 	</div>
@@ -92,7 +92,7 @@ if ( ! comments_open() ) {
 
 	<?php else : ?>
 
-		<p class="woocommerce-verification-required"><?php _e( 'Only logged in customers who have purchased this product may leave a review.', 'chairman' ); ?></p>
+		<p class="woocommerce-verification-required"><?php esc_html_e( 'Only logged in customers who have purchased this product may leave a review.', 'chairman' ); ?></p>
 
 	<?php endif; ?>
 

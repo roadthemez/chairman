@@ -1,5 +1,5 @@
 <?php
-global $chairman_opt;
+$chairman_opt = get_option( 'chairman_opt' );
 
 //Style Switcher
 function style_switcher() { ?>

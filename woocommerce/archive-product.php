@@ -13,7 +13,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 get_header( 'shop' ); ?>
 <?php
-global $chairman_viewmode, $chairman_opt, $chairman_shopclass, $wp_query, $woocommerce_loop;
+global $wp_query, $woocommerce_loop;
+
+$chairman_opt = get_option( 'chairman_opt' );
 
 $shoplayout = 'sidebar';
 if(isset($chairman_opt['shop_layout']) && $chairman_opt['shop_layout']!=''){
@@ -31,26 +33,18 @@ if(isset($_GET['sidebar']) && $_GET['sidebar']!=''){
 }
 switch($shoplayout) {
 	case 'fullwidth':
-		$chairman_shopclass = 'shop-fullwidth';
+		Chairman::chairman_shop_class('shop-fullwidth');
 		$shopcolclass = 12;
 		$shopsidebar = 'none';
 		$productcols = 4;
 		break;
 	default:
-		$chairman_shopclass = 'shop-sidebar';
+		Chairman::chairman_shop_class('shop-sidebar');
 		$shopcolclass = 9;
 		$productcols = 3;
 }
 
-$chairman_viewmode = 'grid-view';
-if(isset($chairman_opt['default_view'])) {
-	if($chairman_opt['default_view']=='list-view'){
-		$chairman_viewmode = 'list-view';
-	}
-}
-if(isset($_GET['view']) && $_GET['view']=='list-view'){
-	$chairman_viewmode = $_GET['view'];
-}
+$chairman_viewmode = Chairman::chairman_show_view_mode();
 ?>
 <div class="main-container">
 	<div class="page-content"> 
@@ -98,7 +92,7 @@ if(isset($_GET['view']) && $_GET['view']=='list-view'){
 							$shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) );
 						?>
 							<ul>
-								<li class="active"><a href="<?php echo esc_attr($shop_page_url);?>"><?php _e('All', 'roadthemes');?></a></li>
+								<li class="active"><a href="<?php echo esc_attr($shop_page_url);?>"><?php esc_html_e('All', 'chairman');?></a></li>
 								<?php
 								foreach($pcategories as $pcategoy) { ?>
 									<li><a href="<?php echo get_term_link($pcategoy->slug, 'product_cat'); ?>"><?php echo esc_html($pcategoy->name); ?></a></li>
@@ -115,23 +109,18 @@ if(isset($_GET['view']) && $_GET['view']=='list-view'){
 					<div id="archive-product" class="col-xs-12 <?php echo 'col-md-'.$shopcolclass; ?>">
 						
 						<div class="archive-border">
-							<?php if ( have_posts() ) : ?>
 								
-								<?php
-									/**
-									* remove message from 'woocommerce_before_shop_loop' and show here
-									*/
-									do_action( 'woocommerce_show_message' );
-								?>
-								<div class="shop-products">
-									<?php woocommerce_product_subcategories();
-									//reset loop
-									$woocommerce_loop['loop'] = 0; ?>
-								</div>
-								
+							<?php
+								/**
+								* remove message from 'woocommerce_before_shop_loop' and show here
+								*/
+								do_action( 'woocommerce_show_message' );
+							?>
+							
+							<?php if ( woocommerce_products_will_display() ) { ?>
 								<div class="toolbar">
 									<div class="view-mode">
-										<label><?php _e('View on', 'chairman');?></label>
+										<label><?php esc_html_e('View on', 'chairman');?></label>
 										<a href="#" class="grid <?php if($chairman_viewmode=='grid-view'){ echo ' active';} ?>" title="<?php echo esc_attr__( 'Grid', 'chairman' ); ?>"><i class="fa fa-th"></i></a>
 										<a href="#" class="list <?php if($chairman_viewmode=='list-view'){ echo ' active';} ?>" title="<?php echo esc_attr__( 'List', 'chairman' ); ?>"><i class="fa fa-th-list"></i></a>
 									</div>
@@ -146,13 +135,14 @@ if(isset($_GET['view']) && $_GET['view']=='list-view'){
 									?>
 									<div class="clearfix"></div>
 								</div>
-							<?php endif; ?>	
-								
+							<?php } ?>
 							<?php if ( have_posts() ) : ?>	
 							
 								<?php //woocommerce_product_loop_start(); ?>
 								<div class="shop-products products row <?php echo esc_attr($chairman_viewmode);?> <?php echo esc_attr($shoplayout);?>">
-									
+									<?php woocommerce_product_subcategories();
+									//reset loop
+									//$woocommerce_loop['loop'] = 0; ?>
 									<?php $woocommerce_loop['columns'] = $productcols; ?>
 									
 									<?php while ( have_posts() ) : the_post(); ?>
@@ -163,6 +153,7 @@ if(isset($_GET['view']) && $_GET['view']=='list-view'){
 								</div>
 								<?php //woocommerce_product_loop_end(); ?>
 								
+								<?php if ( woocommerce_products_will_display() ) { ?>
 								<div class="toolbar tb-bottom">
 									<?php
 										/**
@@ -176,6 +167,7 @@ if(isset($_GET['view']) && $_GET['view']=='list-view'){
 									?>
 									<div class="clearfix"></div>
 								</div>
+								<?php } ?>
 								
 							<?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
 

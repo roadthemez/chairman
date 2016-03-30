@@ -23,10 +23,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<thead>
 		<tr>
 			<th class="product-thumbnail"></th>
-			<th class="product-name"><?php _e( 'Product', 'chairman' ); ?></th>
-			<th class="product-price"><?php _e( 'Price', 'chairman' ); ?></th>
-			<th class="product-quantity"><?php _e( 'Quantity', 'chairman' ); ?></th>
-			<th class="product-subtotal"><?php _e( 'Total', 'chairman' ); ?></th>
+			<th class="product-name"><?php esc_html_e( 'Product', 'chairman' ); ?></th>
+			<th class="product-price"><?php esc_html_e( 'Price', 'chairman' ); ?></th>
+			<th class="product-quantity"><?php esc_html_e( 'Quantity', 'chairman' ); ?></th>
+			<th class="product-subtotal"><?php esc_html_e( 'Total', 'chairman' ); ?></th>
 			<th class="product-remove"></th>
 		</tr>
 	</thead>
@@ -128,17 +128,17 @@ do_action( 'woocommerce_before_cart' ); ?>
 <div class="row">
 	<div class="col-xs-12">
 		<div class="buttons-cart">
-			<input type="submit" class="button" name="update_cart" value="<?php _e( 'Update Cart', 'chairman' ); ?>" />
-			<a class="continue button" href="<?php echo get_permalink( wc_get_page_id( 'shop' ) );?>"><?php _e('Continue Shopping', 'chairman');?></a>
+			<input type="submit" class="button" name="update_cart" value="<?php esc_html_e( 'Update Cart', 'chairman' ); ?>" />
+			<a class="continue button" href="<?php echo get_permalink( wc_get_page_id( 'shop' ) );?>"><?php esc_html_e('Continue Shopping', 'chairman');?></a>
 		</div>
 	</div>
 	<div class="col-xs-12 col-md-8">
 		<?php if ( WC()->cart->coupons_enabled() ) { ?>
 			<div class="coupon">
-				<h3><?php _e( 'Coupon', 'chairman' ); ?></h3>
-				<p><?php _e('Enter your coupon code if you have one.', 'chairman');?></p>
-				<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php _e( 'Coupon code', 'chairman' ); ?>" />
-				<input type="submit" class="button" name="apply_coupon" value="<?php _e( 'Apply Coupon', 'chairman' ); ?>" />
+				<h3><?php esc_html_e( 'Coupon', 'chairman' ); ?></h3>
+				<p><?php esc_html_e('Enter your coupon code if you have one.', 'chairman');?></p>
+				<input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_html_e( 'Coupon code', 'chairman' ); ?>" />
+				<input type="submit" class="button" name="apply_coupon" value="<?php esc_html_e( 'Apply Coupon', 'chairman' ); ?>" />
 
 				<?php do_action( 'woocommerce_cart_coupon' ); ?>
 

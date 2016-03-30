@@ -2,14 +2,24 @@
 /**
  * Mini-cart
  *
- * Contains the markup for the mini-cart, used by the cart widget
+ * Contains the markup for the mini-cart, used by the cart widget.
  *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     2.1.0
+ * This template can be overridden by copying it to yourtheme/woocommerce/cart/mini-cart.php.
+ *
+ * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
+ * will need to copy the new files to your theme to maintain compatibility. We try to do this.
+ * as little as possible, but it does happen. When this occurs the version of the template file will.
+ * be bumped and the readme will list any important changes.
+ *
+ * @see     http://docs.woothemes.com/document/template-structure/
+ * @author  WooThemes
+ * @package WooCommerce/Templates
+ * @version 2.5.0
  */
 
-if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
+}
 
 global $woocommerce;
 ?>
@@ -22,7 +32,7 @@ global $woocommerce;
 		</span>
 	</a>
 	<span class="mini-cart-link">
-		<span class="cart-title"><?php _e('My cart', 'chairman');?></span>
+		<span class="cart-title"><?php esc_html_e('My cart', 'chairman');?></span>
 		<span class="cart-total"><?php echo WC()->cart->get_cart_subtotal(); ?></span>
 	</span>
 </div>
@@ -62,20 +72,20 @@ global $woocommerce;
 			</ul><!-- end product list -->
 		<?php else: ?>
 			<ul class="cart_empty <?php echo esc_attr($args['list_class']); ?>">
-				<li><?php _e( 'You have no items in your shopping cart', 'chairman' ); ?></li>
-				<li class="total"><?php _e( 'Subtotal', 'chairman' ); ?>: <?php echo WC()->cart->get_cart_subtotal(); ?></li>
+				<li><?php esc_html_e( 'You have no items in your shopping cart', 'chairman' ); ?></li>
+				<li class="total"><?php esc_html_e( 'Subtotal', 'chairman' ); ?>: <?php echo WC()->cart->get_cart_subtotal(); ?></li>
 			</ul>
 		<?php endif; ?>
 
 		<?php if ( sizeof( WC()->cart->get_cart() ) > 0 ) : ?>
 
-			<p class="total"><?php _e( 'Subtotal', 'chairman' ); ?>: <?php echo WC()->cart->get_cart_subtotal(); ?></p>
+			<p class="total"><?php esc_html_e( 'Subtotal', 'chairman' ); ?>: <?php echo WC()->cart->get_cart_subtotal(); ?></p>
 
 			<?php do_action( 'woocommerce_widget_shopping_cart_before_buttons' ); ?>
 
 			<p class="buttons">
-				<a href="<?php echo WC()->cart->get_checkout_url(); ?>" class="button checkout wc-forward"><?php _e( 'Checkout', 'chairman' ); ?></a>
-				<a href="<?php echo WC()->cart->get_cart_url(); ?>" class="button wc-forward"><?php _e( 'View Cart', 'chairman' ); ?></a>
+				<a href="<?php echo WC()->cart->get_checkout_url(); ?>" class="button checkout wc-forward"><?php esc_html_e( 'Checkout', 'chairman' ); ?></a>
+				<a href="<?php echo WC()->cart->get_cart_url(); ?>" class="button wc-forward"><?php esc_html_e( 'View Cart', 'chairman' ); ?></a>
 			</p>
 
 		<?php endif; ?>

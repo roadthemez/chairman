@@ -1371,3 +1371,6 @@
 .main-container.service-page .box-services .vc_column-inner > .wpb_wrapper .box-content i:before {
   margin-left: 10px;
 }
+.error404 .header-container {
+  background: #fff;
+}

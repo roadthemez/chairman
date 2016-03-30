@@ -55,6 +55,11 @@ var chairman_testiscroll = <?php echo esc_js($chairman_opt['testiscroll'])==1 ? 
 	chairman_testianimate = <?php if(isset($chairman_opt['testianimate'])) { echo esc_js($chairman_opt['testianimate']); } else { echo '700'; } ?>;
 var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items'])) { echo esc_js((int)$chairman_opt['vertical_menu_items']+1); } else { echo '9';} ?>;
 </script>
+<style>
+.header-container .header .header-sticky.ontop.show {
+    background: rgba(176,14,9,1);
+}
+</style>
 <?php wp_head(); ?> 
 </head>
 

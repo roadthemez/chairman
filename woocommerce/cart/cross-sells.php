@@ -9,7 +9,9 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $product, $woocommerce, $woocommerce_loop, $chairman_opt;
+global $product, $woocommerce, $woocommerce_loop;
+
+$chairman_opt = get_option( 'chairman_opt' );
 
 $crosssells = WC()->cart->get_cross_sells();
 
@@ -37,7 +39,7 @@ if ( $products->have_posts() ) : ?>
 	<div class="cross-sells">
 
 		<h3 class="widget-title"><?php echo esc_html($chairman_opt['crosssells_title']); ?></h3>
-		<!--<p><?php _e('Base on your selection, you may be interested in the 
+		<!--<p><?php esc_html_e('Base on your selection, you may be interested in the 
 following items:', 'chairman');?></p>-->
 		<div class="cross-carousel">
 			<?php woocommerce_product_loop_start(); ?>

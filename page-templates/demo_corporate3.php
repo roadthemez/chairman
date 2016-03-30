@@ -24,7 +24,7 @@ $_SESSION["preset"] = 5;
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-<?php global $chairman_opt; ?>
+<?php $chairman_opt = get_option( 'chairman_opt' ); ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11" />
@@ -55,6 +55,11 @@ var chairman_testiscroll = <?php echo esc_js($chairman_opt['testiscroll'])==1 ? 
 	chairman_testianimate = <?php if(isset($chairman_opt['testianimate'])) { echo esc_js($chairman_opt['testianimate']); } else { echo '700'; } ?>;
 var chairman_menu_number = <?php if(isset($chairman_opt['vertical_menu_items'])) { echo esc_js((int)$chairman_opt['vertical_menu_items']+1); } else { echo '9';} ?>;
 </script>
+<style>
+.header-container .header .header-sticky.ontop.show {
+    background: rgba(28,55,82,0.9);
+}
+</style>
 <?php wp_head(); ?> 
 </head>
 

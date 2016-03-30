@@ -13,19 +13,13 @@
  * @subpackage chairman_Themes
  * @since Huge Shop 1.0
  */
-global $chairman_opt, $chairman_postthumb, $chairman_postcount, $chairman_postclass;
 
-get_header(); ?>
-<?php
-$chairman_postcount = 0;
-$chairman_postindex = 0;
-$chairman_postclass = '';
+$chairman_opt = get_option( 'chairman_opt' );
 
-if(isset($chairman_opt)){
-	$bloglayout = 'nosidebar';
-} else {
-	$bloglayout = 'sidebar';
-}
+get_header();
+
+$bloglayout = 'sidebar';
+
 if(isset($chairman_opt['blog_layout']) && $chairman_opt['blog_layout']!=''){
 	$bloglayout = $chairman_opt['blog_layout'];
 }
@@ -39,27 +33,28 @@ if(isset($chairman_opt['sidebarblog_pos']) && $chairman_opt['sidebarblog_pos']!=
 if(isset($_GET['sidebar']) && $_GET['sidebar']!=''){
 	$blogsidebar = $_GET['sidebar'];
 }
+
 switch($bloglayout) {
 	case 'sidebar':
 		$blogclass = 'blog-sidebar';
 		$blogcolclass = 9;
-		$chairman_postthumb = 'chairman-category-thumb';
+		Chairman::chairman_post_thumbnail_size('chairman-category-thumb');
 		break;
 	case 'largeimage':
 		$blogclass = 'blog-large';
 		$blogcolclass = 9;
-		$chairman_postthumb = 'chairman-category-thumb';
+		Chairman::chairman_post_thumbnail_size('chairman-category-thumb');
 		break;
 	case 'grid':
 		$blogclass = 'grid';
 		$blogcolclass = 9;
-		$chairman_postthumb = 'chairman-category-thumb';
+		Chairman::chairman_post_thumbnail_size('chairman-category-thumb');
 		break;
 	default:
 		$blogclass = 'blog-nosidebar';
 		$blogcolclass = 12;
 		$blogsidebar = 'none';
-		$chairman_postthumb = 'chairman-post-thumb';
+		Chairman::chairman_post_thumbnail_size('chairman-post-thumb');
 }
 ?>
 
@@ -68,7 +63,7 @@ switch($bloglayout) {
 		<div class="container">
 			<div class="title-breadcrumb-inner">
 				<header class="entry-header">
-					<h1 class="entry-title"><?php if(isset($chairman_opt)) { echo esc_html($chairman_opt['blog_header_text']); } else { _e('Blog', 'chairman');}  ?></h1>
+					<h1 class="entry-title"><?php if(isset($chairman_opt)) { echo esc_html($chairman_opt['blog_header_text']); } else { esc_html_e('Blog', 'chairman');}  ?></h1>
 				</header>
 				<?php Chairman::chairman_breadcrumb(); ?>
 			</div>
@@ -97,15 +92,9 @@ switch($bloglayout) {
 
 						<?php /* Start the Loop */ ?>
 						<?php while ( have_posts() ) : the_post(); ?>
-							<?php if($chairman_postindex == 0){
-								$chairman_postclass = 'odd';
-							} else {
-								$chairman_postclass = 'even';
-							}?>
+							
 							<?php get_template_part( 'content', get_post_format() ); ?>
-							<?php
-								$chairman_postindex = 1 - $chairman_postindex;
-							?>
+							
 						<?php endwhile; ?>
 
 						<div class="pagination">
@@ -120,7 +109,7 @@ switch($bloglayout) {
 							// Show a different message to a logged-in user who can add posts.
 						?>
 							<header class="entry-header">
-								<h1 class="entry-title"><?php _e( 'No posts to display', 'chairman' ); ?></h1>
+								<h1 class="entry-title"><?php esc_html_e( 'No posts to display', 'chairman' ); ?></h1>
 							</header>
 
 							<div class="entry-content">
@@ -131,11 +120,11 @@ switch($bloglayout) {
 							// Show the default message to everyone else.
 						?>
 							<header class="entry-header">
-								<h1 class="entry-title"><?php _e( 'Nothing Found', 'chairman' ); ?></h1>
+								<h1 class="entry-title"><?php esc_html_e( 'Nothing Found', 'chairman' ); ?></h1>
 							</header>
 
 							<div class="entry-content">
-								<p><?php _e( 'Apologies, but no results were found. Perhaps searching will help find a related post.', 'chairman' ); ?></p>
+								<p><?php esc_html_e( 'Apologies, but no results were found. Perhaps searching will help find a related post.', 'chairman' ); ?></p>
 								<?php get_search_form(); ?>
 							</div><!-- .entry-content -->
 						<?php endif; // end current_user_can() check ?>

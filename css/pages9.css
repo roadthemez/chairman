@@ -945,9 +945,6 @@
 .main-container.contact-page .contact-input span.wpcf7-not-valid-tip {
   margin: 0;
 }
-.main-container.contact-page .contact-input span.your-subject {
-  width: 100%;
-}
 .main-container.contact-page .contact-input span span {
   width: 100%;
 }
@@ -1373,4 +1370,7 @@
 }
 .main-container.service-page .box-services .vc_column-inner > .wpb_wrapper .box-content i:before {
   margin-left: 10px;
+}
+.error404 .header-container {
+  background: #fff;
 }

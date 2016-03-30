@@ -8,8 +8,15 @@
  * @subpackage chairman_Themes
  * @since Huge Shop 1.0
  */
+$chairman_opt = get_option( 'chairman_opt' );
 
-global $chairman_opt, $chairman_postthumb, $chairman_postclass;
+$chairman_postthumb = Chairman::chairman_post_thumbnail_size('');
+
+if(Chairman::chairman_post_odd_event() == 1){
+	$chairman_postclass='even';
+} else {
+	$chairman_postclass='odd';
+}
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class($chairman_postclass); ?>>
 	<header class="entry-header">
@@ -113,7 +120,7 @@ global $chairman_opt, $chairman_postthumb, $chairman_postclass;
 				<div class="author-info">
 					<div class="author-avatar">
 						<?php
-						$author_bio_avatar_size = apply_filters( 'roadthemes_author_bio_avatar_size', 68 );
+						$author_bio_avatar_size = apply_filters( 'chairman_author_bio_avatar_size', 68 );
 						echo get_avatar( get_the_author_meta( 'user_email' ), $author_bio_avatar_size );
 						?>
 					</div>

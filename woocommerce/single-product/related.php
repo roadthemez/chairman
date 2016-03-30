@@ -9,7 +9,10 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-global $product, $woocommerce_loop, $chairman_opt;
+global $product, $woocommerce_loop;
+
+$chairman_opt = get_option( 'chairman_opt' );
+
 $related = $product->get_related( $posts_per_page );
 
 if ( sizeof( $related ) == 0 ) return;

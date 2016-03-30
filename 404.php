@@ -7,7 +7,7 @@
  * @since Huge Shop 1.0
  */
 
-global $chairman_opt;
+$chairman_opt = get_option( 'chairman_opt' );
 
 get_header();
 
@@ -16,10 +16,10 @@ get_header();
 		<div class="container">
 			<div class="search-form-wrapper">
 				<h1>404</h1>
-				<h2><?php _e( "Opps! PAGE NOT BE FOUND", 'chairman' ); ?></h2>
-				<p class="home-link"><?php _e( "Sorry but the page you are looking for does not exist, have been removed, name changed or is temporarity unavailable.", 'chairman' ); ?></p>
+				<h2><?php esc_html_e( "Opps! PAGE NOT BE FOUND", 'chairman' ); ?></h2>
+				<p class="home-link"><?php esc_html_e( "Sorry but the page you are looking for does not exist, have been removed, name changed or is temporarity unavailable.", 'chairman' ); ?></p>
 				<?php get_search_form(); ?>
-				<a class="button" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php _e( 'Back to home', 'chairman' ); ?>"><?php _e( 'Back to home page', 'chairman' ); ?></a>
+				<a class="button" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php esc_html_e( 'Back to home', 'chairman' ); ?>"><?php esc_html_e( 'Back to home page', 'chairman' ); ?></a>
 			</div>
 		</div>
 		<div class="brands-logo other-page">

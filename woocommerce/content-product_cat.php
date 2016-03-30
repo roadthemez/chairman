@@ -1,12 +1,18 @@
 <?php
 /**
- * The template for displaying product category thumbnails within loops.
+ * The template for displaying product category thumbnails within loops
  *
- * Override this template by copying it to yourtheme/woocommerce/content-product_cat.php
+ * This template can be overridden by copying it to yourtheme/woocommerce/content-product_cat.php.
  *
- * @author 		WooThemes
- * @package 	WooCommerce/Templates
- * @version     2.4.0
+ * HOWEVER, on occasion WooCommerce will need to update template files and you (the theme developer).
+ * will need to copy the new files to your theme to maintain compatibility. We try to do this.
+ * as little as possible, but it does happen. When this occurs the version of the template file will.
+ * be bumped and the readme will list any important changes.
+ *
+ * @see     http://docs.woothemes.com/document/template-structure/
+ * @author  WooThemes
+ * @package WooCommerce/Templates
+ * @version 2.5.2
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -71,7 +77,7 @@ $woocommerce_loop['loop']++;
 		<h1><?php echo ''.$category->name; ?></h1>
 		<div class="category-desc"><?php echo ''.$category->description; ?></div>
 		<a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>">
-			<?php _e('Browse Category', 'chairman');?>
+			<?php esc_html_e('Browse Category', 'chairman');?>
 		</a>
 	</div>
 	<?php

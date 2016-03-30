@@ -9,7 +9,7 @@
  * @since Chairman 1.0
  */
 ?>
-<?php global $chairman_opt; 
+<?php $chairman_opt = get_option( 'chairman_opt' );
 if(is_ssl()){
 	$chairman_opt['logo_main']['url'] = str_replace('http:', 'https:', $chairman_opt['logo_main']['url']);
 }

@@ -12,7 +12,7 @@
  * @since Twenty Twelve 1.0
  */
 
-global $chairman_opt;
+$chairman_opt = get_option( 'chairman_opt' );
 
 get_header();
 ?>

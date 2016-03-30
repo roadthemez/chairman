@@ -9,7 +9,7 @@
  * @since Chairman 1.0
  */
 ?>
-<?php global $chairman_opt; 
+<?php $chairman_opt = get_option( 'chairman_opt' );
 if(is_ssl()){
 	$chairman_opt['logo_main']['url'] = str_replace('http:', 'https:', $chairman_opt['logo_main']['url']);
 }
@@ -66,12 +66,14 @@ if(is_ssl()){
 										<i class="fa fa-bars"></i>
 									</div>
 									<div class="vmenu-content">
-										<?php wp_nav_menu( array( 'theme_location' => 'topmenu', 'container_class' => 'top-menu-container', 'menu_class' => 'nav-menu' ) ); ?> 
+										<?php wp_nav_menu( array( 'theme_location' => 'topmenu', 'container_class' => 'top-menu-container', 'menu_class' => 'nav-menu' ) ); ?>
+										<?php if (class_exists('SitePress')) { ?>
 										<div class="switcher">
 											<?php do_action('icl_language_selector'); ?>
 											<div class="currency"><?php do_action('currency_switcher'); ?></div>
 											
-										</div> 
+										</div>
+										<?php } ?>
 									</div>
 								</div>
 							</div>
