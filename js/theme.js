@@ -1122,7 +1122,7 @@
 				//Sticky header
 				if(chairman_sticky_header==true){
 					
-					if(scrollP >= stickyOffset+20){
+					if(scrollP >= stickyOffset){
 						jQuery('#back-top').addClass('show');
 						jQuery('.header-sticky').addClass('ontop');
 						jQuery('.headerSpace').addClass('show');

@@ -33,6 +33,56 @@ if ( file_exists( get_template_directory().'/include/productsharing.php' ) ) {
 }
 
 Class chairman {
+	
+	/**
+	* Global values
+	*/
+	static function chairman_post_odd_event(){
+		global $chairman_postcount;
+		
+		$chairman_postcount = 1 - $chairman_postcount;
+		
+		return $chairman_postcount;
+	}
+	static function chairman_post_thumbnail_size($size){
+		global $chairman_postthumb;
+		
+		if($size!=''){
+			$chairman_postthumb = $size;
+		}
+		
+		return $chairman_postthumb;
+	}
+	static function chairman_shop_class($class){
+		global $chairman_shopclass;
+		
+		if($class!=''){
+			$chairman_shopclass = $chairman_shopclass;
+		}
+		
+		return $chairman_shopclass;
+	}
+	static function chairman_show_view_mode(){
+		global $chairman_viewmode;
+		
+		$chairman_viewmode = 'grid-view';
+		if(isset($chairman_opt['default_view'])) {
+			if($chairman_opt['default_view']=='list-view'){
+				$chairman_viewmode = 'list-view';
+			}
+		}
+		if(isset($_GET['view']) && $_GET['view']=='list-view'){
+			$chairman_viewmode = $_GET['view'];
+		}
+		
+		return $chairman_viewmode;
+	}
+	static function chairman_shortcode_products_count(){
+		global $chairman_productsfound;
+		
+		return $chairman_productsfound;
+	}
+	
 	/**
 	* Constructor
 	*/
@@ -378,7 +428,6 @@ Class chairman {
 
 		// Register menus
 		register_nav_menu( 'primary', esc_html__( 'Primary Menu', 'chairman' ) );
-		register_nav_menu( 'categories', esc_html__( 'Categories Menu', 'chairman' ) );
 		register_nav_menu( 'topmenu', esc_html__( 'Top Menu', 'chairman' ) );
 		register_nav_menu( 'mobilemenu', esc_html__( 'Mobile Menu', 'chairman' ) );
 
@@ -513,10 +562,10 @@ Class chairman {
 
 		$font_url = $this->chairman_get_font_url();
 		if ( ! empty( $font_url ) )
-			wp_enqueue_style( 'roadthemes-fonts', esc_url_raw( $font_url ), array(), null );
+			wp_enqueue_style( 'chairman-fonts', esc_url_raw( $font_url ), array(), null );
 
 		// Loads our main stylesheet.
-		wp_enqueue_style( 'roadthemes-style', get_stylesheet_uri() );
+		wp_enqueue_style( 'chairman-style', get_stylesheet_uri() );
 		
 		// Mega Main Menu
 		wp_enqueue_style( 'megamenu-css', get_template_directory_uri() . '/css/megamenu_style.css', array(), '2.0.4' );
@@ -583,13 +632,11 @@ Class chairman {
 					'saletext_color' => $chairman_opt['saletext_color'],
 					'rate_color' => $chairman_opt['rate_color'],
 
-					'topbar_bg' => $chairman_opt['topbar_bg']['background-color'],
 					'topbar_color' => $chairman_opt['topbar_color'],
 					'topbar_link_color' => $chairman_opt['topbar_link_color']['regular'],
 					'topbar_link_hover_color' => $chairman_opt['topbar_link_color']['hover'],
 					'topbar_link_active_color' => $chairman_opt['topbar_link_color']['active'],
 
-					'header_bg' => $chairman_opt['header_bg']['background-color'],
 					'header_color' => $chairman_opt['header_color'],
 					'header_link_color' => $chairman_opt['header_link_color']['regular'],
 					'header_link_hover_color' => $chairman_opt['header_link_color']['hover'],
@@ -600,7 +647,6 @@ Class chairman {
 					'price_size'=> $chairman_opt['pricefont']['font-size'],
 					'price_font_weight'=> $chairman_opt['pricefont']['font-weight'],
 
-					'footer_bg' => $chairman_opt['footer_bg']['background-color'],
 					'footer_color' => $chairman_opt['footer_color'],
 					'footer_link_color' => $chairman_opt['footer_link_color']['regular'],
 					'footer_link_hover_color' => $chairman_opt['footer_link_color']['hover'],
@@ -611,10 +657,15 @@ Class chairman {
 				} else {
 					$themevariables['header_bg'] = 'transparent';
 				}
+				if(isset($chairman_opt['topbar_bg']['background-color']) && $chairman_opt['topbar_bg']['background-color']!="") {
+					$themevariables['topbar_bg'] = $chairman_opt['topbar_bg']['background-color'];
+				} else {
+					$themevariables['topbar_bg'] = 'transparent';
+				}
 				if(isset($chairman_opt['header_sticky_bg']['rgba']) && $chairman_opt['header_sticky_bg']['rgba']!="") {
 					$themevariables['header_sticky_bg'] = $chairman_opt['header_sticky_bg']['rgba'];
 				} else {
-					$themevariables['header_sticky_bg'] = '#fff';
+					$themevariables['header_sticky_bg'] = 'transparent';
 				}
 				if(isset($chairman_opt['footer_bg']['background-color']) && $chairman_opt['footer_bg']['background-color']!="") {
 					$themevariables['footer_bg'] = $chairman_opt['footer_bg']['background-color'];
@@ -698,7 +749,7 @@ Class chairman {
 						$themevariables['footer_link_hover_color'] = '#b00e09';
 						$themevariables['footer_bg'] = '#151616';
 						$themevariables['heading_font_weight'] = '700';
-					break; 
+					break;
 				}
 
 				if(function_exists('compileLessFile')){
@@ -870,7 +921,7 @@ Class chairman {
 		$value = get_post_meta( $post->ID, '_chairman_meta_value_key', true );
 
 		echo '<label for="chairman_post_intro">';
-		_e( 'This content will be used to replace the featured image, use shortcode here', 'chairman' );
+		esc_html_e( 'This content will be used to replace the featured image, use shortcode here', 'chairman' );
 		echo '</label><br />';
 		//echo '<textarea id="chairman_post_intro" name="chairman_post_intro" rows="5" cols="50" />' . esc_attr( $value ) . '</textarea>';
 		wp_editor( $value, 'chairman_post_intro', $settings = array() );
@@ -969,7 +1020,7 @@ Class chairman {
 	 * @since Huge Shop 1.0
 	 */
 	function chairman_customize_preview_js() {
-		wp_enqueue_script( 'roadthemes-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130301', true );
+		wp_enqueue_script( 'chairman-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130301', true );
 	}
 	// Remove Redux Ads
 	function chairman_remove_redux_ads() { ?>
@@ -996,7 +1047,7 @@ Class chairman {
 			echo '<a href="';
 			echo esc_url( home_url( '/' ));
 			echo '">';
-			echo 'Home';
+			echo esc_html('Home', 'chairman');
 			echo '</a>'.$brseparator;
 			if (is_category() || is_single()) {
 				the_category($brseparator);
@@ -1027,12 +1078,12 @@ Class chairman {
 				}
 			}
 			elseif (is_tag()) {single_tag_title();}
-			elseif (is_day()) {echo"<span>Archive for "; the_time('F jS, Y'); echo'</span>';}
-			elseif (is_month()) {echo"<span>Archive for "; the_time('F, Y'); echo'</span>';}
-			elseif (is_year()) {echo"<span>Archive for "; the_time('Y'); echo'</span>';}
-			elseif (is_author()) {echo"<span>Author Archive"; echo'</span>';}
-			elseif (isset($_GET['paged']) && !empty($_GET['paged'])) {echo "<span>Blog Archives"; echo'</span>';}
-			elseif (is_search()) {echo"<span>Search Results"; echo'</span>';}
+			elseif (is_day()) {echo "<span>".esc_html__('Archive for','chairman'); the_time('F jS, Y'); echo'</span>';}
+			elseif (is_month()) {echo "<span>".esc_html__('Archive for','chairman'); the_time('F, Y'); echo'</span>';}
+			elseif (is_year()) {echo "<span>".esc_html__('Archive for','chairman'); the_time('Y'); echo'</span>';}
+			elseif (is_author()) {echo "<span>".esc_html__('Archive for','chairman'); echo'</span>';}
+			elseif (isset($_GET['paged']) && !empty($_GET['paged'])) {echo "<span>".esc_html__('Blog Archives','chairman'); echo'</span>';}
+			elseif (is_search()) {echo "<span>".esc_html__('Search Results','chairman'); echo'</span>';}
 			
 			echo '</div>';
 		} else {
@@ -1041,13 +1092,13 @@ Class chairman {
 			echo '<a href="';
 			echo esc_url( home_url( '/' ) );
 			echo '">';
-			echo 'Home';
+			echo esc_html('Home', 'chairman');
 			echo '</a>'.$brseparator;
 			
 			if(isset($chairman_opt['blog_header_text']) && $chairman_opt['blog_header_text']!=""){
 				echo esc_html($chairman_opt['blog_header_text']);
 			} else {
-				echo 'Blog';
+				echo esc_html('Blog', 'chairman');
 			}
 			
 			echo '</div>';
@@ -1152,7 +1203,7 @@ Class chairman {
 
 		if ( $wp_query->max_num_pages > 1 ) : ?>
 			<nav id="<?php echo esc_attr($html_id); ?>" class="navigation" role="navigation">
-				<h3 class="assistive-text"><?php _e( 'Post navigation', 'chairman' ); ?></h3>
+				<h3 class="assistive-text"><?php esc_html_e( 'Post navigation', 'chairman' ); ?></h3>
 				<div class="nav-previous"><?php next_posts_link( wp_kses(__( '<span class="meta-nav">&larr;</span> Older posts', 'chairman' ),array('span'=>array('class'=>array())) )); ?></div>
 				<div class="nav-next"><?php previous_posts_link( wp_kses(__( 'Newer posts <span class="meta-nav">&rarr;</span>', 'chairman' ), array('span'=>array('class'=>array())) )); ?></div>
 			</nav>
@@ -1191,7 +1242,7 @@ Class chairman {
 			// Display trackbacks differently than normal comments.
 		?>
 		<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
-			<p><?php _e( 'Pingback:', 'chairman' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( esc_html__( '(Edit)', 'chairman' ), '<span class="edit-link">', '</span>' ); ?></p>
+			<p><?php esc_html_e( 'Pingback:', 'chairman' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( esc_html__( '(Edit)', 'chairman' ), '<span class="edit-link">', '</span>' ); ?></p>
 		<?php
 				break;
 			default :
@@ -1223,7 +1274,7 @@ Class chairman {
 						</div><!-- .reply -->
 					</header><!-- .comment-meta -->
 					<?php if ( '0' == $comment->comment_approved ) : ?>
-						<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'chairman' ); ?></p>
+						<p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'chairman' ); ?></p>
 					<?php endif; ?>
 
 					<section class="comment-content comment">

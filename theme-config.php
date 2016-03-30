@@ -260,8 +260,8 @@ if (!class_exists('chairman_Theme_Config')) {
                     array( 
                         'id'       => 'border_color',
                         'type'     => 'border',
-                        'title'    => __('Border Option', 'chairman'),
-                        'subtitle' => __('Only color validation can be done on this field type', 'chairman'),
+                        'title'    => esc_html__('Border Option', 'chairman'),
+                        'subtitle' => esc_html__('Only color validation can be done on this field type', 'chairman'),
                         'default'  => array('border-color' => '#e1e1e1'),
                     ), 
                     array(
@@ -371,7 +371,6 @@ if (!class_exists('chairman_Theme_Config')) {
                         //Must provide key => value pairs for select options
                         'options'   => array(
                             'default' => 'Default',
-							'landing' => 'Landing',
                             'furniture2' => 'Furniture2',
                             'portfolio1' => 'Portfolio1',  
 							'corporate1' => 'Corporate1',
@@ -511,23 +510,23 @@ if (!class_exists('chairman_Theme_Config')) {
             
             $this->sections[] = array(
                 'icon'       => 'el-icon-website',
-                'title'      => esc_html__( 'Top Bar', 'dilima' ),
+                'title'      => esc_html__( 'Top Bar', 'chairman' ),
                 'subsection' => true,
                 'fields'     => array(
                     array(
                         'id'        => 'topbar_bg',
                         'type'      => 'background',
                         'output'    => array('.top-bar'),
-                        'title'     => esc_html__('Top bar background', 'dilima'),
-                        'subtitle'  => esc_html__('Upload image or select color.', 'dilima'),
+                        'title'     => esc_html__('Top bar background', 'chairman'),
+                        'subtitle'  => esc_html__('Upload image or select color.', 'chairman'),
                         'default'   => array('background-color' => '#323334'),
                     ),
                     array(
                         'id'        => 'topbar_color',
                         'type'      => 'color',
                         'output'    => array('.top-bar'),
-                        'title'     => esc_html__('Top bar text color', 'dilima'),
-                        'subtitle'  => esc_html__('Pick a color for top bar text color (default: #9d9d9e).', 'dilima'),
+                        'title'     => esc_html__('Top bar text color', 'chairman'),
+                        'subtitle'  => esc_html__('Pick a color for top bar text color (default: #9d9d9e).', 'chairman'),
                         'transparent' => false,
                         'default'   => '#9d9d9e',
                         'validate'  => 'color',
@@ -536,8 +535,8 @@ if (!class_exists('chairman_Theme_Config')) {
                         'id'       => 'topbar_link_color',
                         'type'     => 'link_color',
                         'output'    => array('.top-bar a'),
-                        'title'     => esc_html__('Top bar link color', 'dilima'),
-                        'subtitle'  => esc_html__('Pick a color for top bar link color (default: #9d9d9e).', 'dilima'),
+                        'title'     => esc_html__('Top bar link color', 'chairman'),
+                        'subtitle'  => esc_html__('Pick a color for top bar link color (default: #9d9d9e).', 'chairman'),
                         'default'  => array(
                             'regular'  => '#9d9d9e',
                             'hover'    => '#fbaf5d',
@@ -548,8 +547,8 @@ if (!class_exists('chairman_Theme_Config')) {
                     array(
                         'id'=>'blog_header',
                         'type' => 'editor',
-                        'title' => esc_html__('Blog Header', 'dilima'), 
-                        'subtitle'         => esc_html__('HTML tags allowed: a, label, img, br, em, strong, p, ul, li', 'dilima'),
+                        'title' => esc_html__('Blog Header', 'chairman'), 
+                        'subtitle'         => esc_html__('HTML tags allowed: a, label, img, br, em, strong, p, ul, li', 'chairman'),
                         'default' => '',
                         'args'   => array(
                             'teeny'            => true,
@@ -624,7 +623,6 @@ if (!class_exists('chairman_Theme_Config')) {
                         //Must provide key => value pairs for select options
                         'options'   => array(
                             'default' => 'Default',
-							'landing' => 'Landing',
                             'furniture2' => 'Furniture2',
                             'portfolio1' => 'Portfolio1', 
                             'blog1' => 'Blog1',
@@ -954,7 +952,7 @@ if (!class_exists('chairman_Theme_Config')) {
                     array(
                         'id'            => 'pricefont',
                         'type'          => 'typography',
-                        'title'         => esc_html__('Price font', 'dilima'),
+                        'title'         => esc_html__('Price font', 'chairman'),
                         //'compiler'      => true,  // Use if you want to hook in your own CSS compiler
                         'google'        => true,    // Disable google fonts. Won't work if you haven't defined your google api key
                         'font-backup'   => false,    // Select a backup non-google font in addition to a google font
@@ -971,7 +969,7 @@ if (!class_exists('chairman_Theme_Config')) {
                         //'output'        => array('h1, h2, h3, h4, h5, h6'), // An array of CSS selectors to apply this font style to dynamically
                         //'compiler'      => array('h2.site-description-compiler'), // An array of CSS selectors to apply this font style to dynamically
                         'units'         => 'px', // Defaults to px
-                        'subtitle'      => esc_html__('Price font.', 'dilima'),
+                        'subtitle'      => esc_html__('Price font.', 'chairman'),
                         'default'       => array(
                             'color'         => '#616161',
                             'font-weight'    => '700',
@@ -1096,65 +1094,6 @@ if (!class_exists('chairman_Theme_Config')) {
                 ),
             );
 
-            //Categories carousel
-            $this->sections[] = array(
-                'title'     => esc_html__('Categories carousel', 'chairman'),
-                'desc'      => esc_html__('Upload category images and links', 'chairman'),
-                'icon'      => 'el-icon-random',
-                'fields'    => array(
-                    array(
-                        'id'       => 'catescroll',
-                        'type'     => 'switch',
-                        'title'    => esc_html__('Auto scroll', 'chairman'),
-                        'default'  => true,
-                    ),
-                    array(
-                        'id'        => 'catescrollnumber',
-                        'type'      => 'slider',
-                        'title'     => esc_html__('Scroll amount', 'chairman'),
-                        'desc'      => esc_html__('Number of categories to scroll one time, default value: 1', 'chairman'),
-                        "default"   => 1,
-                        "min"       => 1,
-                        "step"      => 1,
-                        "max"       => 4,
-                        'display_value' => 'text'
-                    ),
-                    array(
-                        'id'        => 'catepause',
-                        'type'      => 'slider',
-                        'title'     => esc_html__('Pause in (seconds)', 'chairman'),
-                        'desc'      => esc_html__('Pause time, default value: 3000', 'chairman'),
-                        "default"   => 3000,
-                        "min"       => 1000,
-                        "step"      => 500,
-                        "max"       => 10000,
-                        'display_value' => 'text'
-                    ),
-                    array(
-                        'id'        => 'cateanimate',
-                        'type'      => 'slider',
-                        'title'     => esc_html__('Animate in (seconds)', 'chairman'),
-                        'desc'      => esc_html__('Animate time, default value: 2000', 'chairman'),
-                        "default"   => 2000,
-                        "min"       => 300,
-                        "step"      => 100,
-                        "max"       => 5000,
-                        'display_value' => 'text'
-                    ),
-                    array(
-                        'id'          => 'cate_images',
-                        'type'        => 'slides',
-                        'title'       => esc_html__('Categories', 'chairman'),
-                        'desc'        => esc_html__('Upload image and enter category link.', 'chairman'),
-                        'placeholder' => array(
-                            'title'           => esc_html__('Title', 'chairman'),
-                            'description'     => esc_html__('Description', 'chairman'),
-                            'url'             => esc_html__('Link', 'chairman'),
-                        ),
-                    ),
-                ),
-            );
-
 			// Sidebar
 			$this->sections[] = array(
                 'title'     => esc_html__('Sidebar', 'chairman'),
@@ -1192,42 +1131,6 @@ if (!class_exists('chairman_Theme_Config')) {
                             'right' => 'Right'),
                         'default'  => 'right'
                     )
-                ),
-            );
-			
-			// Portfolio
-            $this->sections[] = array(
-                'title'     => esc_html__('Portfolio', 'chairman'),
-                'desc'      => esc_html__('Use this section to select options for portfolio', 'chairman'),
-                'icon'      => 'el-icon-bookmark',
-                'fields'    => array(
-					array(
-						'id'        => 'portfolio_columns',
-						'type'      => 'slider',
-						'title'     => esc_html__('Portfolio Columns', 'chairman'),
-						"default"   => 3,
-						"min"       => 2,
-						"step"      => 1,
-						"max"       => 4,
-						'display_value' => 'text'
-					),
-					array(
-						'id'        => 'portfolio_per_page',
-						'type'      => 'slider',
-						'title'     => esc_html__('Projects per page', 'chairman'),
-						'desc'      => esc_html__('Amount of projects per page on portfolio page', 'chairman'),
-						"default"   => 12,
-						"min"       => 4,
-						"step"      => 1,
-						"max"       => 48,
-						'display_value' => 'text'
-					),
-					array(
-                        'id'        => 'related_project_title',
-                        'type'      => 'text',
-                        'title'     => esc_html__('Related projects title', 'chairman'),
-                        'default'   => 'Related Projects'
-                    ),
                 ),
             );
 			
@@ -1310,17 +1213,6 @@ if (!class_exists('chairman_Theme_Config')) {
                         'type'      => 'text',
                         'title'     => esc_html__('Cross-Sells title', 'chairman'),
                         'default'   => 'Cross-Sells'
-                    ),
-                    array(
-                        'id'               => 'static_block3',
-                        'type'             => 'editor',
-                        'title'    => esc_html__('Static Block3', 'chairman'),
-                        'subtitle'         => esc_html__('HTML tags allowed: a, img', 'chairman'),
-                        'default'          => '',
-                        'args'   => array(
-                            'teeny'            => true,
-                            'textarea_rows'    => 5,
-                        )
                     ),
                 ),
             );
@@ -1425,7 +1317,7 @@ if (!class_exists('chairman_Theme_Config')) {
                             'sidebar' => 'Sidebar',
 							'grid' => 'Grid',
                         ),
-                        'default'   => 'nosidebar'
+                        'default'   => 'sidebar'
                     ),
                     array(
                         'id'        => 'readmore_text',
