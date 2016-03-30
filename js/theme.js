@@ -1078,7 +1078,7 @@
 		//end - vertical menu on home 6
 		
 		//Landing tabs
-		jQuery('.landing-link ul li a').each(function(){
+		jQuery('.landing-link a').each(function(){
 			var menulinkID = jQuery(this).attr('href');
 			var targetOffset = jQuery(menulinkID).offset().top;
 			
