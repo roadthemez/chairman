@@ -1076,6 +1076,19 @@
 			});
 		});
 		//end - vertical menu on home 6
+		
+		//Landing tabs
+		jQuery('.landing-link ul li a').each(function(){
+			var menulinkID = jQuery(this).attr('href');
+			var targetOffset = jQuery(menulinkID).offset().top;
+			
+			jQuery(this).click(function(event){
+				event.preventDefault();
+				
+				jQuery("html, body").animate({ scrollTop: targetOffset }, "slow");
+			});
+			
+		});
 
 		//Sticky header
 			//add a space for header
