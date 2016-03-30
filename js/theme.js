@@ -1080,14 +1080,16 @@
 		//Landing tabs
 		jQuery('.landing-link a').each(function(){
 			var menulinkID = jQuery(this).attr('href');
-			var targetOffset = jQuery(menulinkID).offset().top;
 			
-			jQuery(this).click(function(event){
-				event.preventDefault();
-				
-				jQuery("html, body").animate({ scrollTop: targetOffset }, "slow");
-			});
+			if(jQuery(menulinkID).length > 0){
+				var targetOffset = jQuery(menulinkID).offset().top;
 			
+				jQuery(this).click(function(event){
+					event.preventDefault();
+					
+					jQuery("html, body").animate({ scrollTop: targetOffset }, "slow");
+				});
+			}
 		});
 
 		//Sticky header
